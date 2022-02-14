@@ -78,52 +78,61 @@ and <a href="https://github.com/DataDog/apigentools">apigentools</a>.</p>
 <h3 id="install-published-ruby-gem">Install published Ruby gem</h3>
 
 <ol>
-<li><p>Add the <code>datadog_api_client</code> gem to you Gemfile:</p>
-
-<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_source'>source</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>https://rubygems.org</span><span class='tstring_end'>&#39;</span></span>
-<span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>datadog_api_client</span><span class='tstring_end'>&#39;</span></span>
-</code></pre></li>
-<li><p>Install the gem with <code>bundle install</code></p></li>
-<li><p>(optional) You can configure site and <a href="#authentication">authentication</a> using environment variables or code block:</p>
-
-<pre class="code ruby"><code class="ruby"><span class='const'><span class='object_link'><a href="DatadogAPIClient.html" title="DatadogAPIClient (module)">DatadogAPIClient</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="DatadogAPIClient/V1.html" title="DatadogAPIClient::V1 (module)">V1</a></span></span><span class='period'>.</span><span class='id identifier rubyid_configure'><span class='object_link'><a href="DatadogAPIClient/V1.html#configure-class_method" title="DatadogAPIClient::V1.configure (method)">configure</a></span></span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_config'>config</span><span class='op'>|</span>
-  <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_server_variables'>server_variables</span><span class='lbracket'>[</span><span class='symbol'>:site</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>datadoghq.eu</span><span class='tstring_end'>&#39;</span></span>
-<span class='kw'>end</span>
-</code></pre></li>
+<li>Add the <code>datadog_api_client</code> gem to you Gemfile:</li>
 </ol>
+
+<pre class="code ruby"><code class="ruby">   <span class='id identifier rubyid_source'>source</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>https://rubygems.org</span><span class='tstring_end'>&#39;</span></span>
+   <span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>datadog_api_client</span><span class='tstring_end'>&#39;</span></span>
+</code></pre>
+
+<ol>
+<li><p>Install the gem with <code>bundle install</code></p></li>
+<li><p>(optional) You can configure site and <a href="#authentication">authentication</a> using environment variables or code block:</p></li>
+</ol>
+
+<pre class="code ruby"><code class="ruby">   <span class='const'><span class='object_link'><a href="DatadogAPIClient.html" title="DatadogAPIClient (module)">DatadogAPIClient</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="DatadogAPIClient/V1.html" title="DatadogAPIClient::V1 (module)">V1</a></span></span><span class='period'>.</span><span class='id identifier rubyid_configure'><span class='object_link'><a href="DatadogAPIClient/V1.html#configure-class_method" title="DatadogAPIClient::V1.configure (method)">configure</a></span></span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_config'>config</span><span class='op'>|</span>
+     <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_server_variables'>server_variables</span><span class='lbracket'>[</span><span class='symbol'>:site</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>datadoghq.eu</span><span class='tstring_end'>&#39;</span></span>
+   <span class='kw'>end</span>
+</code></pre>
 
 <h3 id="build-a-gem">Build a gem</h3>
 
 <ol>
-<li><p>Build the Ruby code into a gem:</p>
-
-<pre class="code shell"><code class="shell">gem build datadog_api_client.gemspec
-</code></pre></li>
-<li><p>Install the gem locally:</p>
-
-<pre class="code shell"><code class="shell">gem install ./datadog_api_client-*.gem
-</code></pre></li>
+<li>Build the Ruby code into a gem:</li>
 </ol>
+
+<pre class="code shell"><code class="shell">   gem build datadog_api_client.gemspec
+</code></pre>
+
+<ol>
+<li>Install the gem locally:</li>
+</ol>
+
+<pre class="code shell"><code class="shell">   gem install ./datadog_api_client-*.gem
+</code></pre>
 
 <h3 id="install-from-git">Install from Git</h3>
 
 <ol>
-<li><p>Add the following in the Gemfile:</p>
+<li>Add the following in the Gemfile:</li>
+</ol>
 
-<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>datadog_api_client</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:git</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>https://github.com/DataDog/datadog-api-client-ruby.git</span><span class='tstring_end'>&#39;</span></span>
-</code></pre></li>
-<li><p>Install the gem with <code>bundle install</code></p></li>
+<pre class="code ruby"><code class="ruby">   <span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>datadog_api_client</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:git</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>https://github.com/DataDog/datadog-api-client-ruby.git</span><span class='tstring_end'>&#39;</span></span>
+</code></pre>
+
+<ol>
+<li>Install the gem with <code>bundle install</code></li>
 </ol>
 
 <h3 id="include-the-ruby-code-directly">Include the Ruby code directly</h3>
 
 <ol>
 <li><p>Create <code>example.rb</code> script (find inspiration on <a href="https://docs.datadoghq.com/api/">https://docs.datadoghq.com/api/</a>)</p></li>
-<li><p>Include the Ruby code directly using <code>-I</code> as follows:</p>
-
-<pre class="code shell"><code class="shell">ruby -Ilib example.rb
-</code></pre></li>
+<li><p>Include the Ruby code directly using <code>-I</code> as follows:</p></li>
 </ol>
+
+<pre class="code shell"><code class="shell">   ruby -Ilib example.rb
+</code></pre>
 
 <h2 id="getting-started">Getting Started</h2>
 
@@ -205,7 +214,7 @@ on your configuration object:</p>
 </div></div>
 
       <div id="footer">
-  Generated on Fri Feb 11 18:46:36 2022 by
+  Generated on Mon Feb 14 18:01:32 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.5).
 </div>
