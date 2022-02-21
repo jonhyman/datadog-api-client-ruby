@@ -6,7 +6,7 @@
 <title>
   Class: DatadogAPIClient::V1::MetricsAPI
   
-    &mdash; datadog-api-client 1.6.1.dev.1 documentation
+    &mdash; datadog-api-client 1.7.0.dev.1 documentation
   
 </title>
 
@@ -1241,7 +1241,7 @@ Search for metrics from the last 24 hours in Datadog.</p>
       
       
         &mdash;
-        <div class='inline'><p>Query string to search metrics upon. Must be prefixed with &#x60;metrics:&#x60;.</p>
+        <div class='inline'><p>Query string to search metrics upon. Must be prefixed with <code>metrics:</code>.</p>
 </div>
       
     </li>
@@ -1333,7 +1333,7 @@ Search for metrics from the last 24 hours in Datadog.</p>
       
       
         &mdash;
-        <div class='inline'><p>Query string to search metrics upon. Must be prefixed with &#x60;metrics:&#x60;.</p>
+        <div class='inline'><p>Query string to search metrics upon. Must be prefixed with <code>metrics:</code>.</p>
 </div>
       
     </li>
@@ -1894,7 +1894,19 @@ Query timeseries points.</p>
 </h3><div class="docstring">
   <div class="discussion">
     <p>Submit metrics
-The metrics end-point allows you to post time-series data that can be graphed on Datadog’s dashboards. The maximum payload size is 3.2 megabytes (3200000 bytes). Compressed payloads must have a decompressed size of less than 62 megabytes (62914560 bytes).  If you’re submitting metrics directly to the Datadog API without using DogStatsD, expect:  - 64 bits for the timestamp - 32 bits for the value - 20 bytes for the metric names - 50 bytes for the timeseries - The full payload is approximately 100 bytes. However, with the DogStatsD API, compression is applied, which reduces the payload size.</p>
+The metrics end-point allows you to post time-series data that can be graphed on Datadog’s dashboards.
+The maximum payload size is 3.2 megabytes (3200000 bytes). Compressed payloads must have a decompressed size of less than 62 megabytes (62914560 bytes).</p>
+
+<p>If you’re submitting metrics directly to the Datadog API without using DogStatsD, expect:</p>
+
+<ul>
+<li>64 bits for the timestamp</li>
+<li>32 bits for the value</li>
+<li>20 bytes for the metric names</li>
+<li>50 bytes for the timeseries</li>
+<li>The full payload is approximately 100 bytes. However, with the DogStatsD API,
+compression is applied, which reduces the payload size.</li>
+</ul>
 
 
   </div>
@@ -2005,7 +2017,19 @@ The metrics end-point allows you to post time-series data that can be graphed on
 </h3><div class="docstring">
   <div class="discussion">
     <p>Submit metrics
-The metrics end-point allows you to post time-series data that can be graphed on Datadog’s dashboards. The maximum payload size is 3.2 megabytes (3200000 bytes). Compressed payloads must have a decompressed size of less than 62 megabytes (62914560 bytes).  If you’re submitting metrics directly to the Datadog API without using DogStatsD, expect:  - 64 bits for the timestamp - 32 bits for the value - 20 bytes for the metric names - 50 bytes for the timeseries - The full payload is approximately 100 bytes. However, with the DogStatsD API, compression is applied, which reduces the payload size.</p>
+The metrics end-point allows you to post time-series data that can be graphed on Datadog’s dashboards.
+The maximum payload size is 3.2 megabytes (3200000 bytes). Compressed payloads must have a decompressed size of less than 62 megabytes (62914560 bytes).</p>
+
+<p>If you’re submitting metrics directly to the Datadog API without using DogStatsD, expect:</p>
+
+<ul>
+<li>64 bits for the timestamp</li>
+<li>32 bits for the value</li>
+<li>20 bytes for the metric names</li>
+<li>50 bytes for the timeseries</li>
+<li>The full payload is approximately 100 bytes. However, with the DogStatsD API,
+compression is applied, which reduces the payload size.</li>
+</ul>
 
 
   </div>
@@ -2561,7 +2585,7 @@ Edit metadata of a specific metric. Find out more about <a href="https://docs.da
 </div>
 
       <div id="footer">
-  Generated on Wed Feb  2 20:36:21 2022 by
+  Generated on Mon Feb 21 18:15:43 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.5).
 </div>

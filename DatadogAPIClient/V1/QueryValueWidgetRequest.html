@@ -136,7 +136,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Returns the value of attribute aggregator.</p>
+    <span class="summary_desc"><div class='inline'><p>Aggregator used for the request.</p>
 </div></span>
   
 </li>
@@ -162,7 +162,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Returns the value of attribute apm_query.</p>
+    <span class="summary_desc"><div class='inline'><p>The log query.</p>
 </div></span>
   
 </li>
@@ -188,7 +188,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Returns the value of attribute audit_query.</p>
+    <span class="summary_desc"><div class='inline'><p>The log query.</p>
 </div></span>
   
 </li>
@@ -240,7 +240,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Returns the value of attribute event_query.</p>
+    <span class="summary_desc"><div class='inline'><p>The log query.</p>
 </div></span>
   
 </li>
@@ -292,7 +292,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Returns the value of attribute log_query.</p>
+    <span class="summary_desc"><div class='inline'><p>The log query.</p>
 </div></span>
   
 </li>
@@ -318,7 +318,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Returns the value of attribute network_query.</p>
+    <span class="summary_desc"><div class='inline'><p>The log query.</p>
 </div></span>
   
 </li>
@@ -344,7 +344,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Returns the value of attribute process_query.</p>
+    <span class="summary_desc"><div class='inline'><p>The process query to use in the widget.</p>
 </div></span>
   
 </li>
@@ -370,7 +370,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Returns the value of attribute profile_metrics_query.</p>
+    <span class="summary_desc"><div class='inline'><p>The log query.</p>
 </div></span>
   
 </li>
@@ -448,7 +448,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Returns the value of attribute response_format.</p>
+    <span class="summary_desc"><div class='inline'><p>Timeseries or Scalar response.</p>
 </div></span>
   
 </li>
@@ -474,7 +474,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Returns the value of attribute rum_query.</p>
+    <span class="summary_desc"><div class='inline'><p>The log query.</p>
 </div></span>
   
 </li>
@@ -500,7 +500,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Returns the value of attribute security_query.</p>
+    <span class="summary_desc"><div class='inline'><p>The log query.</p>
 </div></span>
   
 </li>
@@ -511,259 +511,6 @@
 
 
 
-  
-    <h2>
-      Instance Method Summary
-      <small><a href="#" class="summary_toggle">collapse</a></small>
-    </h2>
-
-    <ul class="summary">
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(attributes = {})  &#x21d2; QueryValueWidgetRequest </a>
-    
-
-    
-  </span>
-  
-  
-    <span class="note title constructor">constructor</span>
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'><p>Initializes the object.</p>
-</div></span>
-  
-</li>
-
-      
-    </ul>
-  
-
-<div id="constructor_details" class="method_details_list">
-  <h2>Constructor Details</h2>
-  
-    <div class="method_details first">
-  <h3 class="signature first" id="initialize-instance_method">
-  
-    #<strong>initialize</strong>(attributes = {})  &#x21d2; <tt><span class='object_link'><a href="" title="DatadogAPIClient::V1::QueryValueWidgetRequest (class)">QueryValueWidgetRequest</a></span></tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    <p>Initializes the object</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  <p class="tag_title">Parameters:</p>
-<ul class="param">
-  
-    <li>
-      
-        <span class='name'>attributes</span>
-      
-      
-        <span class='type'>(<tt>Hash</tt>)</span>
-      
-      
-        <em class="default">(defaults to: <tt>{}</tt>)</em>
-      
-      
-        &mdash;
-        <div class='inline'><p>attributes Model attributes in the form of hash</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128
-129
-130
-131
-132
-133
-134
-135
-136
-137
-138
-139
-140
-141
-142
-143
-144
-145
-146
-147
-148
-149
-150
-151
-152
-153
-154
-155
-156
-157
-158
-159
-160
-161
-162
-163
-164
-165
-166
-167
-168
-169
-170
-171
-172
-173
-174
-175
-176
-177
-178
-179
-180
-181
-182
-183
-184
-185
-186
-187
-188
-189
-190
-191
-192</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 114</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_attributes'>attributes</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
-  <span class='kw'>if</span> <span class='lparen'>(</span><span class='op'>!</span><span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Hash</span><span class='rparen'>)</span><span class='rparen'>)</span>
-    <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>The input argument (attributes) must be a hash in `DatadogAPIClient::V1::QueryValueWidgetRequest` initialize method</span><span class='tstring_end'>&quot;</span></span>
-  <span class='kw'>end</span>
-
-  <span class='comment'># check to see if the attribute exists and convert string to symbol for hash key
-</span>  <span class='id identifier rubyid_attributes'>attributes</span> <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_each_with_object'>each_with_object</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='lparen'>(</span><span class='id identifier rubyid_k'>k</span><span class='comma'>,</span> <span class='id identifier rubyid_v'>v</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='id identifier rubyid_h'>h</span><span class='op'>|</span>
-    <span class='kw'>if</span> <span class='lparen'>(</span><span class='op'>!</span><span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='period'>.</span><span class='id identifier rubyid_attribute_map'>attribute_map</span><span class='period'>.</span><span class='id identifier rubyid_key?'>key?</span><span class='lparen'>(</span><span class='id identifier rubyid_k'>k</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span><span class='rparen'>)</span><span class='rparen'>)</span>
-      <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>`</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_k'>k</span><span class='embexpr_end'>}</span><span class='tstring_content'>` is not a valid attribute in `DatadogAPIClient::V1::QueryValueWidgetRequest`. Please check the name to make sure it&#39;s valid. List of attributes: </span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='period'>.</span><span class='id identifier rubyid_attribute_map'>attribute_map</span><span class='period'>.</span><span class='id identifier rubyid_keys'>keys</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
-    <span class='kw'>end</span>
-    <span class='id identifier rubyid_h'>h</span><span class='lbracket'>[</span><span class='id identifier rubyid_k'>k</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_v'>v</span>
-  <span class='rbrace'>}</span>
-
-  <span class='kw'>if</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_key?'>key?</span><span class='lparen'>(</span><span class='symbol'>:&#39;aggregator&#39;</span><span class='rparen'>)</span>
-    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_aggregator'>aggregator</span> <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:&#39;aggregator&#39;</span><span class='rbracket'>]</span>
-  <span class='kw'>end</span>
-
-  <span class='kw'>if</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_key?'>key?</span><span class='lparen'>(</span><span class='symbol'>:&#39;apm_query&#39;</span><span class='rparen'>)</span>
-    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_apm_query'>apm_query</span> <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:&#39;apm_query&#39;</span><span class='rbracket'>]</span>
-  <span class='kw'>end</span>
-
-  <span class='kw'>if</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_key?'>key?</span><span class='lparen'>(</span><span class='symbol'>:&#39;audit_query&#39;</span><span class='rparen'>)</span>
-    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_audit_query'>audit_query</span> <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:&#39;audit_query&#39;</span><span class='rbracket'>]</span>
-  <span class='kw'>end</span>
-
-  <span class='kw'>if</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_key?'>key?</span><span class='lparen'>(</span><span class='symbol'>:&#39;conditional_formats&#39;</span><span class='rparen'>)</span>
-    <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:&#39;conditional_formats&#39;</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Array</span><span class='rparen'>)</span>
-      <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_conditional_formats'>conditional_formats</span> <span class='op'>=</span> <span class='id identifier rubyid_value'>value</span>
-    <span class='kw'>end</span>
-  <span class='kw'>end</span>
-
-  <span class='kw'>if</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_key?'>key?</span><span class='lparen'>(</span><span class='symbol'>:&#39;event_query&#39;</span><span class='rparen'>)</span>
-    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_event_query'>event_query</span> <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:&#39;event_query&#39;</span><span class='rbracket'>]</span>
-  <span class='kw'>end</span>
-
-  <span class='kw'>if</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_key?'>key?</span><span class='lparen'>(</span><span class='symbol'>:&#39;formulas&#39;</span><span class='rparen'>)</span>
-    <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:&#39;formulas&#39;</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Array</span><span class='rparen'>)</span>
-      <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_formulas'>formulas</span> <span class='op'>=</span> <span class='id identifier rubyid_value'>value</span>
-    <span class='kw'>end</span>
-  <span class='kw'>end</span>
-
-  <span class='kw'>if</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_key?'>key?</span><span class='lparen'>(</span><span class='symbol'>:&#39;log_query&#39;</span><span class='rparen'>)</span>
-    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_log_query'>log_query</span> <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:&#39;log_query&#39;</span><span class='rbracket'>]</span>
-  <span class='kw'>end</span>
-
-  <span class='kw'>if</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_key?'>key?</span><span class='lparen'>(</span><span class='symbol'>:&#39;network_query&#39;</span><span class='rparen'>)</span>
-    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_network_query'>network_query</span> <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:&#39;network_query&#39;</span><span class='rbracket'>]</span>
-  <span class='kw'>end</span>
-
-  <span class='kw'>if</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_key?'>key?</span><span class='lparen'>(</span><span class='symbol'>:&#39;process_query&#39;</span><span class='rparen'>)</span>
-    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_process_query'>process_query</span> <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:&#39;process_query&#39;</span><span class='rbracket'>]</span>
-  <span class='kw'>end</span>
-
-  <span class='kw'>if</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_key?'>key?</span><span class='lparen'>(</span><span class='symbol'>:&#39;profile_metrics_query&#39;</span><span class='rparen'>)</span>
-    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_profile_metrics_query'>profile_metrics_query</span> <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:&#39;profile_metrics_query&#39;</span><span class='rbracket'>]</span>
-  <span class='kw'>end</span>
-
-  <span class='kw'>if</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_key?'>key?</span><span class='lparen'>(</span><span class='symbol'>:&#39;q&#39;</span><span class='rparen'>)</span>
-    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_q'>q</span> <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:&#39;q&#39;</span><span class='rbracket'>]</span>
-  <span class='kw'>end</span>
-
-  <span class='kw'>if</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_key?'>key?</span><span class='lparen'>(</span><span class='symbol'>:&#39;queries&#39;</span><span class='rparen'>)</span>
-    <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:&#39;queries&#39;</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Array</span><span class='rparen'>)</span>
-      <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_queries'>queries</span> <span class='op'>=</span> <span class='id identifier rubyid_value'>value</span>
-    <span class='kw'>end</span>
-  <span class='kw'>end</span>
-
-  <span class='kw'>if</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_key?'>key?</span><span class='lparen'>(</span><span class='symbol'>:&#39;response_format&#39;</span><span class='rparen'>)</span>
-    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_response_format'>response_format</span> <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:&#39;response_format&#39;</span><span class='rbracket'>]</span>
-  <span class='kw'>end</span>
-
-  <span class='kw'>if</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_key?'>key?</span><span class='lparen'>(</span><span class='symbol'>:&#39;rum_query&#39;</span><span class='rparen'>)</span>
-    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_rum_query'>rum_query</span> <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:&#39;rum_query&#39;</span><span class='rbracket'>]</span>
-  <span class='kw'>end</span>
-
-  <span class='kw'>if</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_key?'>key?</span><span class='lparen'>(</span><span class='symbol'>:&#39;security_query&#39;</span><span class='rparen'>)</span>
-    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_security_query'>security_query</span> <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:&#39;security_query&#39;</span><span class='rbracket'>]</span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-  
-</div>
 
   <div id="instance_attr_details" class="attr_details">
     <h2>Instance Attribute Details</h2>
@@ -781,7 +528,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Returns the value of attribute aggregator.</p>
+    <p>Aggregator used for the request.</p>
 
 
   </div>
@@ -795,12 +542,12 @@
       <pre class="lines">
 
 
-25
-26
-27</pre>
+27
+28
+29</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 25</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 27</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_aggregator'>aggregator</span>
   <span class='ivar'>@aggregator</span>
@@ -823,7 +570,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Returns the value of attribute apm_query.</p>
+    <p>The log query.</p>
 
 
   </div>
@@ -837,12 +584,12 @@
       <pre class="lines">
 
 
-27
-28
-29</pre>
+30
+31
+32</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 27</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 30</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_apm_query'>apm_query</span>
   <span class='ivar'>@apm_query</span>
@@ -865,7 +612,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Returns the value of attribute audit_query.</p>
+    <p>The log query.</p>
 
 
   </div>
@@ -879,12 +626,12 @@
       <pre class="lines">
 
 
-29
-30
-31</pre>
+33
+34
+35</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 29</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 33</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_audit_query'>audit_query</span>
   <span class='ivar'>@audit_query</span>
@@ -949,7 +696,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Returns the value of attribute event_query.</p>
+    <p>The log query.</p>
 
 
   </div>
@@ -963,12 +710,12 @@
       <pre class="lines">
 
 
-34
-35
-36</pre>
+39
+40
+41</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 34</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 39</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_event_query'>event_query</span>
   <span class='ivar'>@event_query</span>
@@ -1033,7 +780,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Returns the value of attribute log_query.</p>
+    <p>The log query.</p>
 
 
   </div>
@@ -1047,12 +794,12 @@
       <pre class="lines">
 
 
-39
-40
-41</pre>
+45
+46
+47</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 39</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 45</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_log_query'>log_query</span>
   <span class='ivar'>@log_query</span>
@@ -1075,7 +822,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Returns the value of attribute network_query.</p>
+    <p>The log query.</p>
 
 
   </div>
@@ -1089,12 +836,12 @@
       <pre class="lines">
 
 
-41
-42
-43</pre>
+48
+49
+50</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 41</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 48</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_network_query'>network_query</span>
   <span class='ivar'>@network_query</span>
@@ -1117,7 +864,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Returns the value of attribute process_query.</p>
+    <p>The process query to use in the widget.</p>
 
 
   </div>
@@ -1131,12 +878,12 @@
       <pre class="lines">
 
 
-43
-44
-45</pre>
+51
+52
+53</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 43</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 51</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_process_query'>process_query</span>
   <span class='ivar'>@process_query</span>
@@ -1159,7 +906,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Returns the value of attribute profile_metrics_query.</p>
+    <p>The log query.</p>
 
 
   </div>
@@ -1173,12 +920,12 @@
       <pre class="lines">
 
 
-45
-46
-47</pre>
+54
+55
+56</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 45</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 54</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_profile_metrics_query'>profile_metrics_query</span>
   <span class='ivar'>@profile_metrics_query</span>
@@ -1285,7 +1032,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Returns the value of attribute response_format.</p>
+    <p>Timeseries or Scalar response. <strong>This feature is currently in beta.</strong></p>
 
 
   </div>
@@ -1299,12 +1046,12 @@
       <pre class="lines">
 
 
-53
-54
-55</pre>
+63
+64
+65</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 53</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 63</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_response_format'>response_format</span>
   <span class='ivar'>@response_format</span>
@@ -1327,7 +1074,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Returns the value of attribute rum_query.</p>
+    <p>The log query.</p>
 
 
   </div>
@@ -1341,12 +1088,12 @@
       <pre class="lines">
 
 
-55
-56
-57</pre>
+66
+67
+68</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 55</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 66</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_rum_query'>rum_query</span>
   <span class='ivar'>@rum_query</span>
@@ -1369,7 +1116,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Returns the value of attribute security_query.</p>
+    <p>The log query.</p>
 
 
   </div>
@@ -1383,12 +1130,12 @@
       <pre class="lines">
 
 
-57
-58
-59</pre>
+69
+70
+71</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 57</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/query_value_widget_request.rb', line 69</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_security_query'>security_query</span>
   <span class='ivar'>@security_query</span>
@@ -1404,7 +1151,7 @@
 </div>
 
       <div id="footer">
-  Generated on Mon Feb 21 09:44:50 2022 by
+  Generated on Mon Feb 21 18:15:59 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.5).
 </div>

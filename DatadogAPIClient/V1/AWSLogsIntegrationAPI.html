@@ -6,7 +6,7 @@
 <title>
   Class: DatadogAPIClient::V1::AWSLogsIntegrationAPI
   
-    &mdash; datadog-api-client 1.6.1.dev.1 documentation
+    &mdash; datadog-api-client 1.7.0.dev.1 documentation
   
 </title>
 
@@ -604,7 +604,16 @@
 </h3><div class="docstring">
   <div class="discussion">
     <p>Check that an AWS Lambda Function exists
-Test if permissions are present to add a log-forwarding triggers for the given services and AWS account. The input is the same as for Enable an AWS service log collection. Subsequent requests will always repeat the above, so this endpoint can be polled intermittently instead of blocking.  - Returns a status of &#39;created&#39; when it&#39;s checking if the Lambda exists in the account. - Returns a status of &#39;waiting&#39; while checking. - Returns a status of &#39;checked and ok&#39; if the Lambda exists. - Returns a status of &#39;error&#39; if the Lambda does not exist.</p>
+Test if permissions are present to add a log-forwarding triggers for the given services and AWS account. The input
+is the same as for Enable an AWS service log collection. Subsequent requests will always repeat the above, so this
+endpoint can be polled intermittently instead of blocking.</p>
+
+<ul>
+<li>Returns a status of &#39;created&#39; when it&#39;s checking if the Lambda exists in the account.</li>
+<li>Returns a status of &#39;waiting&#39; while checking.</li>
+<li>Returns a status of &#39;checked and ok&#39; if the Lambda exists.</li>
+<li>Returns a status of &#39;error&#39; if the Lambda does not exist.</li>
+</ul>
 
 
   </div>
@@ -696,7 +705,16 @@ Test if permissions are present to add a log-forwarding triggers for the given s
 </h3><div class="docstring">
   <div class="discussion">
     <p>Check that an AWS Lambda Function exists
-Test if permissions are present to add a log-forwarding triggers for the given services and AWS account. The input is the same as for Enable an AWS service log collection. Subsequent requests will always repeat the above, so this endpoint can be polled intermittently instead of blocking.  - Returns a status of &#39;created&#39; when it&#39;s checking if the Lambda exists in the account. - Returns a status of &#39;waiting&#39; while checking. - Returns a status of &#39;checked and ok&#39; if the Lambda exists. - Returns a status of &#39;error&#39; if the Lambda does not exist.</p>
+Test if permissions are present to add a log-forwarding triggers for the given services and AWS account. The input
+is the same as for Enable an AWS service log collection. Subsequent requests will always repeat the above, so this
+endpoint can be polled intermittently instead of blocking.</p>
+
+<ul>
+<li>Returns a status of &#39;created&#39; when it&#39;s checking if the Lambda exists in the account.</li>
+<li>Returns a status of &#39;waiting&#39; while checking.</li>
+<li>Returns a status of &#39;checked and ok&#39; if the Lambda exists.</li>
+<li>Returns a status of &#39;error&#39; if the Lambda does not exist.</li>
+</ul>
 
 
   </div>
@@ -902,7 +920,18 @@ Test if permissions are present to add a log-forwarding triggers for the given s
 </h3><div class="docstring">
   <div class="discussion">
     <p>Check permissions for log services
-Test if permissions are present to add log-forwarding triggers for the given services and AWS account. Input is the same as for <code>EnableAWSLogServices</code>. Done async, so can be repeatedly polled in a non-blocking fashion until the async request completes.  - Returns a status of <code>created</code> when it&#39;s checking if the permissions exists   in the AWS account. - Returns a status of <code>waiting</code> while checking. - Returns a status of <code>checked and ok</code> if the Lambda exists. - Returns a status of <code>error</code> if the Lambda does not exist.</p>
+Test if permissions are present to add log-forwarding triggers for the
+given services and AWS account. Input is the same as for <code>EnableAWSLogServices</code>.
+Done async, so can be repeatedly polled in a non-blocking fashion until
+the async request completes.</p>
+
+<ul>
+<li>Returns a status of <code>created</code> when it&#39;s checking if the permissions exists
+in the AWS account.</li>
+<li>Returns a status of <code>waiting</code> while checking.</li>
+<li>Returns a status of <code>checked and ok</code> if the Lambda exists.</li>
+<li>Returns a status of <code>error</code> if the Lambda does not exist.</li>
+</ul>
 
 
   </div>
@@ -994,7 +1023,18 @@ Test if permissions are present to add log-forwarding triggers for the given ser
 </h3><div class="docstring">
   <div class="discussion">
     <p>Check permissions for log services
-Test if permissions are present to add log-forwarding triggers for the given services and AWS account. Input is the same as for &#x60;EnableAWSLogServices&#x60;. Done async, so can be repeatedly polled in a non-blocking fashion until the async request completes.  - Returns a status of &#x60;created&#x60; when it&#39;s checking if the permissions exists   in the AWS account. - Returns a status of &#x60;waiting&#x60; while checking. - Returns a status of &#x60;checked and ok&#x60; if the Lambda exists. - Returns a status of &#x60;error&#x60; if the Lambda does not exist.</p>
+Test if permissions are present to add log-forwarding triggers for the
+given services and AWS account. Input is the same as for <code>EnableAWSLogServices</code>.
+Done async, so can be repeatedly polled in a non-blocking fashion until
+the async request completes.</p>
+
+<ul>
+<li>Returns a status of <code>created</code> when it&#39;s checking if the permissions exists
+in the AWS account.</li>
+<li>Returns a status of <code>waiting</code> while checking.</li>
+<li>Returns a status of <code>checked and ok</code> if the Lambda exists.</li>
+<li>Returns a status of <code>error</code> if the Lambda does not exist.</li>
+</ul>
 
 
   </div>
@@ -1888,7 +1928,7 @@ Enable automatic log collection for a list of services. This should be run after
 </h3><div class="docstring">
   <div class="discussion">
     <p>Enable an AWS Logs integration
-Enable automatic log collection for a list of services. This should be run after running &#x60;CreateAWSLambdaARN&#x60; to save the configuration.</p>
+Enable automatic log collection for a list of services. This should be run after running <code>CreateAWSLambdaARN</code> to save the configuration.</p>
 
 
   </div>
@@ -2599,7 +2639,7 @@ Get the list of current AWS services that Datadog offers automatic log collectio
 </div>
 
       <div id="footer">
-  Generated on Wed Feb  2 20:36:51 2022 by
+  Generated on Mon Feb 21 18:15:54 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.5).
 </div>

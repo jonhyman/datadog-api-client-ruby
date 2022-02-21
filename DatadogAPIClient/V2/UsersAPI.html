@@ -6,7 +6,7 @@
 <title>
   Class: DatadogAPIClient::V2::UsersAPI
   
-    &mdash; datadog-api-client 1.6.1.dev.1 documentation
+    &mdash; datadog-api-client 1.7.0.dev.1 documentation
   
 </title>
 
@@ -369,7 +369,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Get user details Get a user in the organization specified by the user’s &#x60;user_id&#x60;.</p>
+    <span class="summary_desc"><div class='inline'><p>Get user details Get a user in the organization specified by the user’s <code>user_id</code>.</p>
 </div></span>
   
 </li>
@@ -1322,7 +1322,8 @@ Create a user for your organization.</p>
 </h3><div class="docstring">
   <div class="discussion">
     <p>Disable a user
-Disable a user. Can only be used with an application key belonging to an administrator user.</p>
+Disable a user. Can only be used with an application key belonging
+to an administrator user.</p>
 
 
   </div>
@@ -1414,7 +1415,8 @@ Disable a user. Can only be used with an application key belonging to an adminis
 </h3><div class="docstring">
   <div class="discussion">
     <p>Disable a user
-Disable a user. Can only be used with an application key belonging to an administrator user.</p>
+Disable a user. Can only be used with an application key belonging
+to an administrator user.</p>
 
 
   </div>
@@ -2002,7 +2004,7 @@ Get a user in the organization specified by the user’s <code>user_id</code>.</
 </h3><div class="docstring">
   <div class="discussion">
     <p>Get user details
-Get a user in the organization specified by the user’s &#x60;user_id&#x60;.</p>
+Get a user in the organization specified by the user’s <code>user_id</code>.</p>
 
 
   </div>
@@ -2204,7 +2206,8 @@ Get a user in the organization specified by the user’s &#x60;user_id&#x60;.</p
 </h3><div class="docstring">
   <div class="discussion">
     <p>Get a user organization
-Get a user organization. Returns the user information and all organizations joined by this user.</p>
+Get a user organization. Returns the user information and all organizations
+joined by this user.</p>
 
 
   </div>
@@ -2296,7 +2299,8 @@ Get a user organization. Returns the user information and all organizations join
 </h3><div class="docstring">
   <div class="discussion">
     <p>Get a user organization
-Get a user organization. Returns the user information and all organizations joined by this user.</p>
+Get a user organization. Returns the user information and all organizations
+joined by this user.</p>
 
 
   </div>
@@ -2498,7 +2502,8 @@ Get a user organization. Returns the user information and all organizations join
 </h3><div class="docstring">
   <div class="discussion">
     <p>Get a user permissions
-Get a user permission set. Returns a list of the user’s permissions granted by the associated user&#39;s roles.</p>
+Get a user permission set. Returns a list of the user’s permissions
+granted by the associated user&#39;s roles.</p>
 
 
   </div>
@@ -2590,7 +2595,8 @@ Get a user permission set. Returns a list of the user’s permissions granted by
 </h3><div class="docstring">
   <div class="discussion">
     <p>Get a user permissions
-Get a user permission set. Returns a list of the user’s permissions granted by the associated user&#39;s roles.</p>
+Get a user permission set. Returns a list of the user’s permissions
+granted by the associated user&#39;s roles.</p>
 
 
   </div>
@@ -2792,165 +2798,8 @@ Get a user permission set. Returns a list of the user’s permissions granted by
 </h3><div class="docstring">
   <div class="discussion">
     <p>List all users
-Get the list of all users in the organization. This list includes all users even if they are deactivated or unverified.</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  <p class="tag_title">Parameters:</p>
-<ul class="param">
-  
-    <li>
-      
-        <span class='name'>opts</span>
-      
-      
-        <span class='type'>(<tt>Hash</tt>)</span>
-      
-      
-        <em class="default">(defaults to: <tt>{}</tt>)</em>
-      
-      
-        &mdash;
-        <div class='inline'><p>the optional parameters</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-  
-    
-    
-    <p class="tag_title">Options Hash (<tt>opts</tt>):</p>
-    <ul class="option">
-      
-        <li>
-          <span class="name">:page_size</span>
-          <span class="type">(<tt>Integer</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>Size for a given page. (default to 10)</p>
-</div>
-          
-        </li>
-      
-        <li>
-          <span class="name">:page_number</span>
-          <span class="type">(<tt>Integer</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>Specific page number to return. (default to 0)</p>
-</div>
-          
-        </li>
-      
-        <li>
-          <span class="name">:sort</span>
-          <span class="type">(<tt>String</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>User attribute to order results by. Sort order is ascending by default. Sort order is descending if the field is prefixed by a negative sign, for example &#x60;sort&#x3D;-name&#x60;. Options: &#x60;name&#x60;, &#x60;modified_at&#x60;, &#x60;user_count&#x60;. (default to &#39;name&#39;)</p>
-</div>
-          
-        </li>
-      
-        <li>
-          <span class="name">:sort_dir</span>
-          <span class="type">(<tt><span class='object_link'><a href="QuerySortOrder.html" title="DatadogAPIClient::V2::QuerySortOrder (class)">QuerySortOrder</a></span></tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>Direction of sort. Options: &#x60;asc&#x60;, &#x60;desc&#x60;. (default to &#39;desc&#39;)</p>
-</div>
-          
-        </li>
-      
-        <li>
-          <span class="name">:filter</span>
-          <span class="type">(<tt>String</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>Filter all users by the given string. Defaults to no filtering.</p>
-</div>
-          
-        </li>
-      
-        <li>
-          <span class="name">:filter_status</span>
-          <span class="type">(<tt>String</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>Filter on status attribute. Comma separated list, with possible values &#x60;Active&#x60;, &#x60;Pending&#x60;, and &#x60;Disabled&#x60;. Defaults to no filtering.</p>
-</div>
-          
-        </li>
-      
-    </ul>
-  
-
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt><span class='object_link'><a href="UsersResponse.html" title="DatadogAPIClient::V2::UsersResponse (class)">UsersResponse</a></span></tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-550
-551
-552
-553</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/users_api.rb', line 550</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_list_users'>list_users</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_list_users_with_http_info'>list_users_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_data'>data</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="list_users_with_http_info-instance_method">
-  
-    #<strong>list_users_with_http_info</strong>(opts = {})  &#x21d2; <tt>Array&lt;(<span class='object_link'><a href="UsersResponse.html" title="DatadogAPIClient::V2::UsersResponse (class)">UsersResponse</a></span>, Integer, Hash)&gt;</tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    <p>List all users
-Get the list of all users in the organization. This list includes all users even if they are deactivated or unverified.</p>
+Get the list of all users in the organization. This list includes
+all users even if they are deactivated or unverified.</p>
 
 
   </div>
@@ -3015,7 +2864,7 @@ Get the list of all users in the organization. This list includes all users even
             
           </span>
           
-            &mdash; <div class='inline'><p>User attribute to order results by. Sort order is ascending by default. Sort order is descending if the field is prefixed by a negative sign, for example &#x60;sort&#x3D;-name&#x60;. Options: &#x60;name&#x60;, &#x60;modified_at&#x60;, &#x60;user_count&#x60;.</p>
+            &mdash; <div class='inline'><p>User attribute to order results by. Sort order is ascending by default. Sort order is descending if the field is prefixed by a negative sign, for example <code>sort=-name</code>. Options: <code>name</code>, <code>modified_at</code>, <code>user_count</code>.</p>
 </div>
           
         </li>
@@ -3027,7 +2876,7 @@ Get the list of all users in the organization. This list includes all users even
             
           </span>
           
-            &mdash; <div class='inline'><p>Direction of sort. Options: &#x60;asc&#x60;, &#x60;desc&#x60;.</p>
+            &mdash; <div class='inline'><p>Direction of sort. Options: <code>asc</code>, <code>desc</code>.</p>
 </div>
           
         </li>
@@ -3051,7 +2900,166 @@ Get the list of all users in the organization. This list includes all users even
             
           </span>
           
-            &mdash; <div class='inline'><p>Filter on status attribute. Comma separated list, with possible values &#x60;Active&#x60;, &#x60;Pending&#x60;, and &#x60;Disabled&#x60;. Defaults to no filtering.</p>
+            &mdash; <div class='inline'><p>Filter on status attribute. Comma separated list, with possible values <code>Active</code>, <code>Pending</code>, and <code>Disabled</code>. Defaults to no filtering.</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="UsersResponse.html" title="DatadogAPIClient::V2::UsersResponse (class)">UsersResponse</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+550
+551
+552
+553</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/users_api.rb', line 550</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_list_users'>list_users</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_list_users_with_http_info'>list_users_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="list_users_with_http_info-instance_method">
+  
+    #<strong>list_users_with_http_info</strong>(opts = {})  &#x21d2; <tt>Array&lt;(<span class='object_link'><a href="UsersResponse.html" title="DatadogAPIClient::V2::UsersResponse (class)">UsersResponse</a></span>, Integer, Hash)&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>List all users
+Get the list of all users in the organization. This list includes
+all users even if they are deactivated or unverified.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>opts</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>the optional parameters</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>opts</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:page_size</span>
+          <span class="type">(<tt>Integer</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'><p>Size for a given page.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:page_number</span>
+          <span class="type">(<tt>Integer</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'><p>Specific page number to return.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:sort</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'><p>User attribute to order results by. Sort order is ascending by default. Sort order is descending if the field is prefixed by a negative sign, for example <code>sort=-name</code>. Options: <code>name</code>, <code>modified_at</code>, <code>user_count</code>.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:sort_dir</span>
+          <span class="type">(<tt><span class='object_link'><a href="QuerySortOrder.html" title="DatadogAPIClient::V2::QuerySortOrder (class)">QuerySortOrder</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'><p>Direction of sort. Options: <code>asc</code>, <code>desc</code>.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:filter</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'><p>Filter all users by the given string. Defaults to no filtering.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:filter_status</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'><p>Filter on status attribute. Comma separated list, with possible values <code>Active</code>, <code>Pending</code>, and <code>Disabled</code>. Defaults to no filtering.</p>
 </div>
           
         </li>
@@ -3512,7 +3520,8 @@ Sends emails to one or more users inviting them to join the organization.</p>
 </h3><div class="docstring">
   <div class="discussion">
     <p>Update a user
-Edit a user. Can only be used with an application key belonging to an administrator user.</p>
+Edit a user. Can only be used with an application key belonging
+to an administrator user.</p>
 
 
   </div>
@@ -3615,7 +3624,8 @@ Edit a user. Can only be used with an application key belonging to an administra
 </h3><div class="docstring">
   <div class="discussion">
     <p>Update a user
-Edit a user. Can only be used with an application key belonging to an administrator user.</p>
+Edit a user. Can only be used with an application key belonging
+to an administrator user.</p>
 
 
   </div>
@@ -3833,7 +3843,7 @@ Edit a user. Can only be used with an application key belonging to an administra
 </div>
 
       <div id="footer">
-  Generated on Wed Feb  2 20:36:20 2022 by
+  Generated on Mon Feb 21 18:15:43 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.5).
 </div>
