@@ -197,6 +197,32 @@
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#check_certificate_revocation-instance_method" title="#check_certificate_revocation (instance method)">#<strong>check_certificate_revocation</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>For SSL test, whether or not the test should fail on revoked certificate in stapled OCSP.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#device_ids-instance_method" title="#device_ids (instance method)">#<strong>device_ids</strong>  &#x21d2; Object </a>
     
 
@@ -494,12 +520,12 @@
       <pre class="lines">
 
 
-63
-64
-65</pre>
+66
+67
+68</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_options.rb', line 63</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_options.rb', line 66</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid__retry'>_retry</span>
   <span class='ivar'>@_retry</span>
@@ -588,6 +614,48 @@ certificates.</p>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_allow_insecure'>allow_insecure</span>
   <span class='ivar'>@allow_insecure</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="check_certificate_revocation=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="check_certificate_revocation-instance_method">
+  
+    #<strong>check_certificate_revocation</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>For SSL test, whether or not the test should fail on revoked certificate in stapled OCSP.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+34
+35
+36</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_options.rb', line 34</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_check_certificate_revocation'>check_certificate_revocation</span>
+  <span class='ivar'>@check_certificate_revocation</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -875,12 +943,12 @@ an alert.</p>
       <pre class="lines">
 
 
-54
-55
-56</pre>
+57
+58
+59</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_options.rb', line 54</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_options.rb', line 57</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_monitor_options'>monitor_options</span>
   <span class='ivar'>@monitor_options</span>
@@ -1022,7 +1090,7 @@ an alert.</p>
 </div>
 
       <div id="footer">
-  Generated on Wed Feb 23 10:07:07 2022 by
+  Generated on Thu Feb 24 09:45:09 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.5).
 </div>
