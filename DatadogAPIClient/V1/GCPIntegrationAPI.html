@@ -529,13 +529,13 @@ Create a Datadog-GCP integration.</p>
       <pre class="lines">
 
 
-30
 31
 32
-33</pre>
+33
+34</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 31</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_gcp_integration'>create_gcp_integration</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_create_gcp_integration_with_http_info'>create_gcp_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -625,7 +625,6 @@ Create a Datadog-GCP integration.</p>
       <pre class="lines">
 
 
-40
 41
 42
 43
@@ -683,10 +682,11 @@ Create a Datadog-GCP integration.</p>
 95
 96
 97
-98</pre>
+98
+99</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 40</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 41</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_gcp_integration_with_http_info'>create_gcp_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -827,13 +827,13 @@ Delete a given Datadog-GCP integration.</p>
       <pre class="lines">
 
 
-105
 106
 107
-108</pre>
+108
+109</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 105</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 106</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_gcp_integration'>delete_gcp_integration</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_delete_gcp_integration_with_http_info'>delete_gcp_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -923,7 +923,6 @@ Delete a given Datadog-GCP integration.</p>
       <pre class="lines">
 
 
-115
 116
 117
 118
@@ -981,10 +980,11 @@ Delete a given Datadog-GCP integration.</p>
 170
 171
 172
-173</pre>
+173
+174</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 115</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 116</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_gcp_integration_with_http_info'>delete_gcp_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1110,13 +1110,13 @@ List all Datadog-GCP integrations configured in your Datadog account.</p>
       <pre class="lines">
 
 
-179
 180
 181
-182</pre>
+182
+183</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 179</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 180</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_gcp_integration'>list_gcp_integration</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_list_gcp_integration_with_http_info'>list_gcp_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1191,7 +1191,6 @@ List all Datadog-GCP integrations configured in your Datadog account.</p>
       <pre class="lines">
 
 
-188
 189
 190
 191
@@ -1243,10 +1242,11 @@ List all Datadog-GCP integrations configured in your Datadog account.</p>
 237
 238
 239
-240</pre>
+240
+241</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 188</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 189</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_gcp_integration_with_http_info'>list_gcp_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1384,13 +1384,13 @@ The unspecified fields will keep their original values.</p>
       <pre class="lines">
 
 
-247
-248
-249
-250</pre>
+251
+252
+253
+254</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 247</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 251</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_gcp_integration'>update_gcp_integration</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_update_gcp_integration_with_http_info'>update_gcp_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1483,13 +1483,6 @@ The unspecified fields will keep their original values.</p>
       <pre class="lines">
 
 
-257
-258
-259
-260
-261
-262
-263
 264
 265
 266
@@ -1541,10 +1534,17 @@ The unspecified fields will keep their original values.</p>
 312
 313
 314
-315</pre>
+315
+316
+317
+318
+319
+320
+321
+322</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 257</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 264</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_gcp_integration_with_http_info'>update_gcp_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1615,7 +1615,7 @@ The unspecified fields will keep their original values.</p>
 </div>
 
       <div id="footer">
-  Generated on Thu Mar  3 16:34:11 2022 by
+  Generated on Fri Mar  4 17:35:44 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.5).
 </div>

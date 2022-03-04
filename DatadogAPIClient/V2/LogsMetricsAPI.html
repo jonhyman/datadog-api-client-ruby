@@ -576,13 +576,13 @@ Returns the log-based metric object from the request body when the request is su
       <pre class="lines">
 
 
-30
-31
 32
-33</pre>
+33
+34
+35</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_metrics_api.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_metrics_api.rb', line 32</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_logs_metric'>create_logs_metric</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_create_logs_metric_with_http_info'>create_logs_metric_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -673,9 +673,6 @@ Returns the log-based metric object from the request body when the request is su
       <pre class="lines">
 
 
-40
-41
-42
 43
 44
 45
@@ -731,10 +728,13 @@ Returns the log-based metric object from the request body when the request is su
 95
 96
 97
-98</pre>
+98
+99
+100
+101</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_metrics_api.rb', line 40</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_metrics_api.rb', line 43</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_logs_metric_with_http_info'>create_logs_metric_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -875,13 +875,13 @@ Delete a specific log-based metric from your organization.</p>
       <pre class="lines">
 
 
-105
-106
-107
-108</pre>
+108
+109
+110
+111</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_metrics_api.rb', line 105</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_metrics_api.rb', line 108</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_logs_metric'>delete_logs_metric</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_id'>metric_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_delete_logs_metric_with_http_info'>delete_logs_metric_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_id'>metric_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -971,9 +971,6 @@ Delete a specific log-based metric from your organization.</p>
       <pre class="lines">
 
 
-115
-116
-117
 118
 119
 120
@@ -1027,10 +1024,13 @@ Delete a specific log-based metric from your organization.</p>
 168
 169
 170
-171</pre>
+171
+172
+173
+174</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_metrics_api.rb', line 115</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_metrics_api.rb', line 118</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_logs_metric_with_http_info'>delete_logs_metric_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_id'>metric_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1051,7 +1051,7 @@ Delete a specific log-based metric from your organization.</p>
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;metric_id&#39; when calling LogsMetricsAPI.delete_logs_metric</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/logs/config/metrics/{metric_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>metric_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_id'>metric_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/logs/config/metrics/{metric_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{metric_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_id'>metric_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -1059,7 +1059,7 @@ Delete a specific log-based metric from your organization.</p>
   <span class='comment'># header parameters
 </span>  <span class='id identifier rubyid_header_params'>header_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:header_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
   <span class='comment'># HTTP header &#39;Accept&#39; (if needed)
-</span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_accept'>select_header_accept</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>application/json</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_accept'>select_header_accept</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>*/*</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
 
   <span class='comment'># form parameters
 </span>  <span class='id identifier rubyid_form_params'>form_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:form_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -1169,13 +1169,13 @@ Get a specific log-based metric from your organization.</p>
       <pre class="lines">
 
 
-178
-179
-180
-181</pre>
+181
+182
+183
+184</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_metrics_api.rb', line 178</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_metrics_api.rb', line 181</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_logs_metric'>get_logs_metric</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_id'>metric_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_get_logs_metric_with_http_info'>get_logs_metric_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_id'>metric_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1265,9 +1265,6 @@ Get a specific log-based metric from your organization.</p>
       <pre class="lines">
 
 
-188
-189
-190
 191
 192
 193
@@ -1321,10 +1318,13 @@ Get a specific log-based metric from your organization.</p>
 241
 242
 243
-244</pre>
+244
+245
+246
+247</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_metrics_api.rb', line 188</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_metrics_api.rb', line 191</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_logs_metric_with_http_info'>get_logs_metric_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_id'>metric_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1345,7 +1345,7 @@ Get a specific log-based metric from your organization.</p>
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;metric_id&#39; when calling LogsMetricsAPI.get_logs_metric</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/logs/config/metrics/{metric_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>metric_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_id'>metric_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/logs/config/metrics/{metric_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{metric_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_id'>metric_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -1365,7 +1365,7 @@ Get a specific log-based metric from your organization.</p>
 </span>  <span class='id identifier rubyid_return_type'>return_type</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_return_type</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>LogsMetricResponse</span><span class='tstring_end'>&#39;</span></span>
 
   <span class='comment'># auth_names
-</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:AuthZ</span><span class='comma'>,</span> <span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='rbracket'>]</span>
+</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:AuthZ</span><span class='rbracket'>]</span>
 
   <span class='id identifier rubyid_new_options'>new_options</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span>
     <span class='symbol'>:operation</span> <span class='op'>=&gt;</span> <span class='symbol'>:get_logs_metric</span><span class='comma'>,</span>
@@ -1448,13 +1448,13 @@ Get the list of configured log-based metrics with their definitions.</p>
       <pre class="lines">
 
 
-250
-251
-252
-253</pre>
+253
+254
+255
+256</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_metrics_api.rb', line 250</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_metrics_api.rb', line 253</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_logs_metrics'>list_logs_metrics</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_list_logs_metrics_with_http_info'>list_logs_metrics_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1529,9 +1529,6 @@ Get the list of configured log-based metrics with their definitions.</p>
       <pre class="lines">
 
 
-259
-260
-261
 262
 263
 264
@@ -1581,10 +1578,13 @@ Get the list of configured log-based metrics with their definitions.</p>
 308
 309
 310
-311</pre>
+311
+312
+313
+314</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_metrics_api.rb', line 259</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_metrics_api.rb', line 262</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_logs_metrics_with_http_info'>list_logs_metrics_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1621,7 +1621,7 @@ Get the list of configured log-based metrics with their definitions.</p>
 </span>  <span class='id identifier rubyid_return_type'>return_type</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_return_type</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>LogsMetricsResponse</span><span class='tstring_end'>&#39;</span></span>
 
   <span class='comment'># auth_names
-</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:AuthZ</span><span class='comma'>,</span> <span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='rbracket'>]</span>
+</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:AuthZ</span><span class='rbracket'>]</span>
 
   <span class='id identifier rubyid_new_options'>new_options</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span>
     <span class='symbol'>:operation</span> <span class='op'>=&gt;</span> <span class='symbol'>:list_logs_metrics</span><span class='comma'>,</span>
@@ -1735,13 +1735,13 @@ Returns the log-based metric object from the request body when the request is su
       <pre class="lines">
 
 
-319
-320
-321
-322</pre>
+323
+324
+325
+326</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_metrics_api.rb', line 319</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_metrics_api.rb', line 323</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_logs_metric'>update_logs_metric</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_id'>metric_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_update_logs_metric_with_http_info'>update_logs_metric_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_id'>metric_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1847,11 +1847,6 @@ Returns the log-based metric object from the request body when the request is su
       <pre class="lines">
 
 
-330
-331
-332
-333
-334
 335
 336
 337
@@ -1909,10 +1904,15 @@ Returns the log-based metric object from the request body when the request is su
 389
 390
 391
-392</pre>
+392
+393
+394
+395
+396
+397</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_metrics_api.rb', line 330</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_metrics_api.rb', line 335</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_logs_metric_with_http_info'>update_logs_metric_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_id'>metric_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1937,7 +1937,7 @@ Returns the log-based metric object from the request body when the request is su
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;body&#39; when calling LogsMetricsAPI.update_logs_metric</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/logs/config/metrics/{metric_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>metric_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_id'>metric_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/logs/config/metrics/{metric_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{metric_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_id'>metric_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -1987,7 +1987,7 @@ Returns the log-based metric object from the request body when the request is su
 </div>
 
       <div id="footer">
-  Generated on Thu Mar  3 16:34:04 2022 by
+  Generated on Fri Mar  4 17:35:40 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.5).
 </div>

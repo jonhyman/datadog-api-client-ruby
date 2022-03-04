@@ -762,13 +762,13 @@ A unique AWS Account ID for role based authentication.</p>
       <pre class="lines">
 
 
-30
-31
-32
-33</pre>
+34
+35
+36
+37</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 34</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_aws_account'>create_aws_account</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_create_aws_account_with_http_info'>create_aws_account_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -861,13 +861,6 @@ A unique AWS Account ID for role based authentication.</p>
       <pre class="lines">
 
 
-40
-41
-42
-43
-44
-45
-46
 47
 48
 49
@@ -919,10 +912,17 @@ A unique AWS Account ID for role based authentication.</p>
 95
 96
 97
-98</pre>
+98
+99
+100
+101
+102
+103
+104
+105</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 40</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 47</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_aws_account_with_http_info'>create_aws_account_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1063,13 +1063,13 @@ Set an AWS tag filter.</p>
       <pre class="lines">
 
 
-105
-106
-107
-108</pre>
+112
+113
+114
+115</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 105</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 112</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_aws_tag_filter'>create_aws_tag_filter</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_create_aws_tag_filter_with_http_info'>create_aws_tag_filter_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1159,13 +1159,6 @@ Set an AWS tag filter.</p>
       <pre class="lines">
 
 
-115
-116
-117
-118
-119
-120
-121
 122
 123
 124
@@ -1217,10 +1210,17 @@ Set an AWS tag filter.</p>
 170
 171
 172
-173</pre>
+173
+174
+175
+176
+177
+178
+179
+180</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 115</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 122</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_aws_tag_filter_with_http_info'>create_aws_tag_filter_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1361,13 +1361,13 @@ Generate a new AWS external ID for a given AWS account ID and role name pair.</p
       <pre class="lines">
 
 
-180
-181
-182
-183</pre>
+187
+188
+189
+190</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 180</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 187</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_new_aws_external_id'>create_new_aws_external_id</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_create_new_aws_external_id_with_http_info'>create_new_aws_external_id_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1457,13 +1457,6 @@ Generate a new AWS external ID for a given AWS account ID and role name pair.</p
       <pre class="lines">
 
 
-190
-191
-192
-193
-194
-195
-196
 197
 198
 199
@@ -1515,10 +1508,17 @@ Generate a new AWS external ID for a given AWS account ID and role name pair.</p
 245
 246
 247
-248</pre>
+248
+249
+250
+251
+252
+253
+254
+255</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 190</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 197</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_new_aws_external_id_with_http_info'>create_new_aws_external_id_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1659,13 +1659,13 @@ Delete a Datadog-AWS integration matching the specified <code>account_id</code> 
       <pre class="lines">
 
 
-255
-256
-257
-258</pre>
+262
+263
+264
+265</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 255</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 262</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_aws_account'>delete_aws_account</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_delete_aws_account_with_http_info'>delete_aws_account_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1755,13 +1755,6 @@ Delete a Datadog-AWS integration matching the specified <code>account_id</code> 
       <pre class="lines">
 
 
-265
-266
-267
-268
-269
-270
-271
 272
 273
 274
@@ -1813,10 +1806,17 @@ Delete a Datadog-AWS integration matching the specified <code>account_id</code> 
 320
 321
 322
-323</pre>
+323
+324
+325
+326
+327
+328
+329
+330</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 265</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 272</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_aws_account_with_http_info'>delete_aws_account_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1957,13 +1957,13 @@ Delete a tag filtering entry.</p>
       <pre class="lines">
 
 
-330
-331
-332
-333</pre>
+337
+338
+339
+340</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 330</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 337</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_aws_tag_filter'>delete_aws_tag_filter</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_delete_aws_tag_filter_with_http_info'>delete_aws_tag_filter_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2053,13 +2053,6 @@ Delete a tag filtering entry.</p>
       <pre class="lines">
 
 
-340
-341
-342
-343
-344
-345
-346
 347
 348
 349
@@ -2111,10 +2104,17 @@ Delete a tag filtering entry.</p>
 395
 396
 397
-398</pre>
+398
+399
+400
+401
+402
+403
+404
+405</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 340</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 347</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_aws_tag_filter_with_http_info'>delete_aws_tag_filter_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2240,13 +2240,13 @@ List all namespace rules for a given Datadog-AWS integration. This endpoint take
       <pre class="lines">
 
 
-404
-405
-406
-407</pre>
+411
+412
+413
+414</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 404</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 411</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_available_aws_namespaces'>list_available_aws_namespaces</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_list_available_aws_namespaces_with_http_info'>list_available_aws_namespaces_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2321,13 +2321,6 @@ List all namespace rules for a given Datadog-AWS integration. This endpoint take
       <pre class="lines">
 
 
-413
-414
-415
-416
-417
-418
-419
 420
 421
 422
@@ -2373,10 +2366,17 @@ List all namespace rules for a given Datadog-AWS integration. This endpoint take
 462
 463
 464
-465</pre>
+465
+466
+467
+468
+469
+470
+471
+472</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 413</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 420</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_available_aws_namespaces_with_http_info'>list_available_aws_namespaces_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2541,13 +2541,13 @@ List all Datadog-AWS integrations available in your Datadog organization.</p>
       <pre class="lines">
 
 
-474
-475
-476
-477</pre>
+481
+482
+483
+484</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 474</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 481</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_aws_accounts'>list_aws_accounts</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_list_aws_accounts_with_http_info'>list_aws_accounts_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2667,13 +2667,6 @@ List all Datadog-AWS integrations available in your Datadog organization.</p>
       <pre class="lines">
 
 
-486
-487
-488
-489
-490
-491
-492
 493
 494
 495
@@ -2722,10 +2715,17 @@ List all Datadog-AWS integrations available in your Datadog organization.</p>
 538
 539
 540
-541</pre>
+541
+542
+543
+544
+545
+546
+547
+548</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 486</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 493</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_aws_accounts_with_http_info'>list_aws_accounts_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2863,13 +2863,13 @@ Get all AWS tag filters.</p>
       <pre class="lines">
 
 
-548
-549
-550
-551</pre>
+555
+556
+557
+558</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 548</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 555</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_aws_tag_filters'>list_aws_tag_filters</span><span class='lparen'>(</span><span class='id identifier rubyid_account_id'>account_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_list_aws_tag_filters_with_http_info'>list_aws_tag_filters_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_account_id'>account_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2959,13 +2959,6 @@ Get all AWS tag filters.</p>
       <pre class="lines">
 
 
-558
-559
-560
-561
-562
-563
-564
 565
 566
 567
@@ -3016,10 +3009,17 @@ Get all AWS tag filters.</p>
 612
 613
 614
-615</pre>
+615
+616
+617
+618
+619
+620
+621
+622</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 558</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 565</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_aws_tag_filters_with_http_info'>list_aws_tag_filters_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_account_id'>account_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -3206,13 +3206,13 @@ Update a Datadog-Amazon Web Services integration.</p>
       <pre class="lines">
 
 
-625
-626
-627
-628</pre>
+632
+633
+634
+635</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 625</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 632</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_aws_account'>update_aws_account</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_update_aws_account_with_http_info'>update_aws_account_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -3349,13 +3349,6 @@ Update a Datadog-Amazon Web Services integration.</p>
       <pre class="lines">
 
 
-638
-639
-640
-641
-642
-643
-644
 645
 646
 647
@@ -3410,10 +3403,17 @@ Update a Datadog-Amazon Web Services integration.</p>
 696
 697
 698
-699</pre>
+699
+700
+701
+702
+703
+704
+705
+706</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 638</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 645</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_aws_account_with_http_info'>update_aws_account_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -3487,7 +3487,7 @@ Update a Datadog-Amazon Web Services integration.</p>
 </div>
 
       <div id="footer">
-  Generated on Thu Mar  3 16:34:10 2022 by
+  Generated on Fri Mar  4 17:35:44 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.5).
 </div>

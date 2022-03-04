@@ -713,13 +713,13 @@ Creates an endpoint with the name <code>&lt;WEBHOOK_NAME&gt;</code>.</p>
       <pre class="lines">
 
 
-30
 31
 32
-33</pre>
+33
+34</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 31</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_webhooks_integration'>create_webhooks_integration</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_create_webhooks_integration_with_http_info'>create_webhooks_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -805,13 +805,13 @@ Creates an endpoint with the name <code>&lt;CUSTOM_VARIABLE_NAME&gt;</code>.</p>
       <pre class="lines">
 
 
-105
 106
 107
-108</pre>
+108
+109</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 105</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 106</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_webhooks_integration_custom_variable'>create_webhooks_integration_custom_variable</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_create_webhooks_integration_custom_variable_with_http_info'>create_webhooks_integration_custom_variable_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -901,7 +901,6 @@ Creates an endpoint with the name <code>&lt;CUSTOM_VARIABLE_NAME&gt;</code>.</p>
       <pre class="lines">
 
 
-115
 116
 117
 118
@@ -959,10 +958,11 @@ Creates an endpoint with the name <code>&lt;CUSTOM_VARIABLE_NAME&gt;</code>.</p>
 170
 171
 172
-173</pre>
+173
+174</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 115</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 116</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_webhooks_integration_custom_variable_with_http_info'>create_webhooks_integration_custom_variable_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1107,7 +1107,6 @@ Creates an endpoint with the name <code>&lt;WEBHOOK_NAME&gt;</code>.</p>
       <pre class="lines">
 
 
-40
 41
 42
 43
@@ -1165,10 +1164,11 @@ Creates an endpoint with the name <code>&lt;WEBHOOK_NAME&gt;</code>.</p>
 95
 96
 97
-98</pre>
+98
+99</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 40</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 41</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_webhooks_integration_with_http_info'>create_webhooks_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1309,13 +1309,13 @@ Deletes the endpoint with the name <code>&lt;WEBHOOK NAME&gt;</code>.</p>
       <pre class="lines">
 
 
-180
 181
 182
-183</pre>
+183
+184</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 180</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 181</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_webhooks_integration'>delete_webhooks_integration</span><span class='lparen'>(</span><span class='id identifier rubyid_webhook_name'>webhook_name</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_delete_webhooks_integration_with_http_info'>delete_webhooks_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_webhook_name'>webhook_name</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1401,13 +1401,13 @@ Deletes the endpoint with the name <code>&lt;CUSTOM_VARIABLE_NAME&gt;</code>.</p
       <pre class="lines">
 
 
-253
 254
 255
-256</pre>
+256
+257</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 253</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 254</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_webhooks_integration_custom_variable'>delete_webhooks_integration_custom_variable</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_variable_name'>custom_variable_name</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_delete_webhooks_integration_custom_variable_with_http_info'>delete_webhooks_integration_custom_variable_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_variable_name'>custom_variable_name</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1497,7 +1497,6 @@ Deletes the endpoint with the name <code>&lt;CUSTOM_VARIABLE_NAME&gt;</code>.</p
       <pre class="lines">
 
 
-263
 264
 265
 266
@@ -1553,10 +1552,11 @@ Deletes the endpoint with the name <code>&lt;CUSTOM_VARIABLE_NAME&gt;</code>.</p
 316
 317
 318
-319</pre>
+319
+320</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 263</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 264</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_webhooks_integration_custom_variable_with_http_info'>delete_webhooks_integration_custom_variable_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_variable_name'>custom_variable_name</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1577,7 +1577,7 @@ Deletes the endpoint with the name <code>&lt;CUSTOM_VARIABLE_NAME&gt;</code>.</p
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;custom_variable_name&#39; when calling WebhooksIntegrationAPI.delete_webhooks_integration_custom_variable</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/integration/webhooks/configuration/custom-variables/{custom_variable_name}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>custom_variable_name</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_variable_name'>custom_variable_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/integration/webhooks/configuration/custom-variables/{custom_variable_name}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{custom_variable_name}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_variable_name'>custom_variable_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -1585,7 +1585,7 @@ Deletes the endpoint with the name <code>&lt;CUSTOM_VARIABLE_NAME&gt;</code>.</p
   <span class='comment'># header parameters
 </span>  <span class='id identifier rubyid_header_params'>header_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:header_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
   <span class='comment'># HTTP header &#39;Accept&#39; (if needed)
-</span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_accept'>select_header_accept</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>application/json</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_accept'>select_header_accept</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>*/*</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
 
   <span class='comment'># form parameters
 </span>  <span class='id identifier rubyid_form_params'>form_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:form_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -1699,7 +1699,6 @@ Deletes the endpoint with the name <code>&lt;WEBHOOK NAME&gt;</code>.</p>
       <pre class="lines">
 
 
-190
 191
 192
 193
@@ -1755,10 +1754,11 @@ Deletes the endpoint with the name <code>&lt;WEBHOOK NAME&gt;</code>.</p>
 243
 244
 245
-246</pre>
+246
+247</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 190</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 191</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_webhooks_integration_with_http_info'>delete_webhooks_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_webhook_name'>webhook_name</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1779,7 +1779,7 @@ Deletes the endpoint with the name <code>&lt;WEBHOOK NAME&gt;</code>.</p>
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;webhook_name&#39; when calling WebhooksIntegrationAPI.delete_webhooks_integration</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/integration/webhooks/configuration/webhooks/{webhook_name}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>webhook_name</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_webhook_name'>webhook_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/integration/webhooks/configuration/webhooks/{webhook_name}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{webhook_name}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_webhook_name'>webhook_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -1787,7 +1787,7 @@ Deletes the endpoint with the name <code>&lt;WEBHOOK NAME&gt;</code>.</p>
   <span class='comment'># header parameters
 </span>  <span class='id identifier rubyid_header_params'>header_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:header_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
   <span class='comment'># HTTP header &#39;Accept&#39; (if needed)
-</span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_accept'>select_header_accept</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>application/json</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_accept'>select_header_accept</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>*/*</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
 
   <span class='comment'># form parameters
 </span>  <span class='id identifier rubyid_form_params'>form_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:form_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -1897,13 +1897,13 @@ Gets the content of the webhook with the name <code>&lt;WEBHOOK_NAME&gt;</code>.
       <pre class="lines">
 
 
-326
 327
 328
-329</pre>
+329
+330</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 326</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 327</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_webhooks_integration'>get_webhooks_integration</span><span class='lparen'>(</span><span class='id identifier rubyid_webhook_name'>webhook_name</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_get_webhooks_integration_with_http_info'>get_webhooks_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_webhook_name'>webhook_name</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1992,13 +1992,13 @@ response payload.</p>
       <pre class="lines">
 
 
-399
-400
-401
-402</pre>
+403
+404
+405
+406</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 399</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 403</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_webhooks_integration_custom_variable'>get_webhooks_integration_custom_variable</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_variable_name'>custom_variable_name</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_get_webhooks_integration_custom_variable_with_http_info'>get_webhooks_integration_custom_variable_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_variable_name'>custom_variable_name</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2091,13 +2091,6 @@ response payload.</p>
       <pre class="lines">
 
 
-409
-410
-411
-412
-413
-414
-415
 416
 417
 418
@@ -2147,10 +2140,17 @@ response payload.</p>
 462
 463
 464
-465</pre>
+465
+466
+467
+468
+469
+470
+471
+472</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 409</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 416</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_webhooks_integration_custom_variable_with_http_info'>get_webhooks_integration_custom_variable_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_variable_name'>custom_variable_name</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2171,7 +2171,7 @@ response payload.</p>
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;custom_variable_name&#39; when calling WebhooksIntegrationAPI.get_webhooks_integration_custom_variable</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/integration/webhooks/configuration/custom-variables/{custom_variable_name}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>custom_variable_name</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_variable_name'>custom_variable_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/integration/webhooks/configuration/custom-variables/{custom_variable_name}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{custom_variable_name}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_variable_name'>custom_variable_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -2293,7 +2293,6 @@ Gets the content of the webhook with the name <code>&lt;WEBHOOK_NAME&gt;</code>.
       <pre class="lines">
 
 
-336
 337
 338
 339
@@ -2349,10 +2348,11 @@ Gets the content of the webhook with the name <code>&lt;WEBHOOK_NAME&gt;</code>.
 389
 390
 391
-392</pre>
+392
+393</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 336</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 337</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_webhooks_integration_with_http_info'>get_webhooks_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_webhook_name'>webhook_name</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2373,7 +2373,7 @@ Gets the content of the webhook with the name <code>&lt;WEBHOOK_NAME&gt;</code>.
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;webhook_name&#39; when calling WebhooksIntegrationAPI.get_webhooks_integration</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/integration/webhooks/configuration/webhooks/{webhook_name}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>webhook_name</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_webhook_name'>webhook_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/integration/webhooks/configuration/webhooks/{webhook_name}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{webhook_name}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_webhook_name'>webhook_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -2506,13 +2506,13 @@ Updates the endpoint with the name <code>&lt;WEBHOOK_NAME&gt;</code>.</p>
       <pre class="lines">
 
 
-473
-474
-475
-476</pre>
+480
+481
+482
+483</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 473</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 480</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_webhooks_integration'>update_webhooks_integration</span><span class='lparen'>(</span><span class='id identifier rubyid_webhook_name'>webhook_name</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_update_webhooks_integration_with_http_info'>update_webhooks_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_webhook_name'>webhook_name</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2613,13 +2613,13 @@ Updates the endpoint with the name <code>&lt;CUSTOM_VARIABLE_NAME&gt;</code>.</p
       <pre class="lines">
 
 
-554
-555
-556
-557</pre>
+561
+562
+563
+564</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 554</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 561</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_webhooks_integration_custom_variable'>update_webhooks_integration_custom_variable</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_variable_name'>custom_variable_name</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_update_webhooks_integration_custom_variable_with_http_info'>update_webhooks_integration_custom_variable_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_variable_name'>custom_variable_name</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2724,13 +2724,6 @@ Updates the endpoint with the name <code>&lt;CUSTOM_VARIABLE_NAME&gt;</code>.</p
       <pre class="lines">
 
 
-565
-566
-567
-568
-569
-570
-571
 572
 573
 574
@@ -2786,10 +2779,17 @@ Updates the endpoint with the name <code>&lt;CUSTOM_VARIABLE_NAME&gt;</code>.</p
 624
 625
 626
-627</pre>
+627
+628
+629
+630
+631
+632
+633
+634</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 565</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 572</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_webhooks_integration_custom_variable_with_http_info'>update_webhooks_integration_custom_variable_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_variable_name'>custom_variable_name</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2814,7 +2814,7 @@ Updates the endpoint with the name <code>&lt;CUSTOM_VARIABLE_NAME&gt;</code>.</p
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;body&#39; when calling WebhooksIntegrationAPI.update_webhooks_integration_custom_variable</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/integration/webhooks/configuration/custom-variables/{custom_variable_name}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>custom_variable_name</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_variable_name'>custom_variable_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/integration/webhooks/configuration/custom-variables/{custom_variable_name}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{custom_variable_name}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_custom_variable_name'>custom_variable_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -2953,13 +2953,6 @@ Updates the endpoint with the name <code>&lt;WEBHOOK_NAME&gt;</code>.</p>
       <pre class="lines">
 
 
-484
-485
-486
-487
-488
-489
-490
 491
 492
 493
@@ -3015,10 +3008,17 @@ Updates the endpoint with the name <code>&lt;WEBHOOK_NAME&gt;</code>.</p>
 543
 544
 545
-546</pre>
+546
+547
+548
+549
+550
+551
+552
+553</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 484</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/webhooks_integration_api.rb', line 491</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_webhooks_integration_with_http_info'>update_webhooks_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_webhook_name'>webhook_name</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -3043,7 +3043,7 @@ Updates the endpoint with the name <code>&lt;WEBHOOK_NAME&gt;</code>.</p>
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;body&#39; when calling WebhooksIntegrationAPI.update_webhooks_integration</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/integration/webhooks/configuration/webhooks/{webhook_name}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>webhook_name</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_webhook_name'>webhook_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/integration/webhooks/configuration/webhooks/{webhook_name}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{webhook_name}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_webhook_name'>webhook_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -3093,7 +3093,7 @@ Updates the endpoint with the name <code>&lt;WEBHOOK_NAME&gt;</code>.</p>
 </div>
 
       <div id="footer">
-  Generated on Thu Mar  3 16:34:20 2022 by
+  Generated on Fri Mar  4 17:35:48 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.5).
 </div>

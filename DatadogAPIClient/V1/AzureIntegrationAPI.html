@@ -581,13 +581,13 @@ current configuration with the new one sent to your Datadog organization.</p>
       <pre class="lines">
 
 
-30
-31
-32
-33</pre>
+37
+38
+39
+40</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/azure_integration_api.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/azure_integration_api.rb', line 37</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_azure_integration'>create_azure_integration</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_create_azure_integration_with_http_info'>create_azure_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -683,19 +683,6 @@ current configuration with the new one sent to your Datadog organization.</p>
       <pre class="lines">
 
 
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
 53
 54
 55
@@ -741,10 +728,23 @@ current configuration with the new one sent to your Datadog organization.</p>
 95
 96
 97
-98</pre>
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/azure_integration_api.rb', line 40</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/azure_integration_api.rb', line 53</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_azure_integration_with_http_info'>create_azure_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -885,13 +885,13 @@ Delete a given Datadog-Azure integration from your Datadog account.</p>
       <pre class="lines">
 
 
-105
-106
-107
-108</pre>
+118
+119
+120
+121</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/azure_integration_api.rb', line 105</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/azure_integration_api.rb', line 118</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_azure_integration'>delete_azure_integration</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_delete_azure_integration_with_http_info'>delete_azure_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -981,19 +981,6 @@ Delete a given Datadog-Azure integration from your Datadog account.</p>
       <pre class="lines">
 
 
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
 128
 129
 130
@@ -1039,10 +1026,23 @@ Delete a given Datadog-Azure integration from your Datadog account.</p>
 170
 171
 172
-173</pre>
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/azure_integration_api.rb', line 115</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/azure_integration_api.rb', line 128</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_azure_integration_with_http_info'>delete_azure_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1168,13 +1168,13 @@ List all Datadog-Azure integrations configured in your Datadog account.</p>
       <pre class="lines">
 
 
-179
-180
-181
-182</pre>
+192
+193
+194
+195</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/azure_integration_api.rb', line 179</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/azure_integration_api.rb', line 192</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_azure_integration'>list_azure_integration</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_list_azure_integration_with_http_info'>list_azure_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1249,19 +1249,6 @@ List all Datadog-Azure integrations configured in your Datadog account.</p>
       <pre class="lines">
 
 
-188
-189
-190
-191
-192
-193
-194
-195
-196
-197
-198
-199
-200
 201
 202
 203
@@ -1301,10 +1288,23 @@ List all Datadog-Azure integrations configured in your Datadog account.</p>
 237
 238
 239
-240</pre>
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/azure_integration_api.rb', line 188</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/azure_integration_api.rb', line 201</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_azure_integration_with_http_info'>list_azure_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1439,13 +1439,13 @@ Update the defined list of host filters for a given Datadog-Azure integration.</
       <pre class="lines">
 
 
-247
-248
-249
-250</pre>
+260
+261
+262
+263</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/azure_integration_api.rb', line 247</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/azure_integration_api.rb', line 260</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_azure_host_filters'>update_azure_host_filters</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_update_azure_host_filters_with_http_info'>update_azure_host_filters_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1535,19 +1535,6 @@ Update the defined list of host filters for a given Datadog-Azure integration.</
       <pre class="lines">
 
 
-257
-258
-259
-260
-261
-262
-263
-264
-265
-266
-267
-268
-269
 270
 271
 272
@@ -1593,10 +1580,23 @@ Update the defined list of host filters for a given Datadog-Azure integration.</
 312
 313
 314
-315</pre>
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/azure_integration_api.rb', line 257</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/azure_integration_api.rb', line 270</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_azure_host_filters_with_http_info'>update_azure_host_filters_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1739,13 +1739,13 @@ use <code>new_tenant_name</code> and <code>new_client_id</code>. To leave a fiel
       <pre class="lines">
 
 
-322
-323
-324
-325</pre>
+337
+338
+339
+340</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/azure_integration_api.rb', line 322</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/azure_integration_api.rb', line 337</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_azure_integration'>update_azure_integration</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_update_azure_integration_with_http_info'>update_azure_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1837,23 +1837,6 @@ use <code>new_tenant_name</code> and <code>new_client_id</code>. To leave a fiel
       <pre class="lines">
 
 
-332
-333
-334
-335
-336
-337
-338
-339
-340
-341
-342
-343
-344
-345
-346
-347
-348
 349
 350
 351
@@ -1895,10 +1878,27 @@ use <code>new_tenant_name</code> and <code>new_client_id</code>. To leave a fiel
 387
 388
 389
-390</pre>
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402
+403
+404
+405
+406
+407</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/azure_integration_api.rb', line 332</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/azure_integration_api.rb', line 349</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_azure_integration_with_http_info'>update_azure_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1969,7 +1969,7 @@ use <code>new_tenant_name</code> and <code>new_client_id</code>. To leave a fiel
 </div>
 
       <div id="footer">
-  Generated on Thu Mar  3 16:34:13 2022 by
+  Generated on Fri Mar  4 17:35:45 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.5).
 </div>

@@ -525,13 +525,13 @@ The API endpoint to aggregate events into buckets and compute metrics and timese
       <pre class="lines">
 
 
-30
 31
 32
-33</pre>
+33
+34</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_api.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_api.rb', line 31</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_aggregate_logs'>aggregate_logs</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_aggregate_logs_with_http_info'>aggregate_logs_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -617,7 +617,6 @@ The API endpoint to aggregate events into buckets and compute metrics and timese
       <pre class="lines">
 
 
-40
 41
 42
 43
@@ -675,10 +674,11 @@ The API endpoint to aggregate events into buckets and compute metrics and timese
 95
 96
 97
-98</pre>
+98
+99</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_api.rb', line 40</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_api.rb', line 41</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_aggregate_logs_with_http_info'>aggregate_logs_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -829,13 +829,13 @@ See <a href="https://docs.datadoghq.com/logs/archives">Datadog Logs Archive docu
       <pre class="lines">
 
 
-105
-106
-107
-108</pre>
+116
+117
+118
+119</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_api.rb', line 105</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_api.rb', line 116</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_logs'>list_logs</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_list_logs_with_http_info'>list_logs_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1006,13 +1006,13 @@ See <a href="https://docs.datadoghq.com/logs/archives">Datadog Logs Archive docu
       <pre class="lines">
 
 
-182
-183
-184
-185</pre>
+213
+214
+215
+216</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_api.rb', line 182</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_api.rb', line 213</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_logs_get'>list_logs_get</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_list_logs_get_with_http_info'>list_logs_get_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1187,47 +1187,6 @@ See <a href="https://docs.datadoghq.com/logs/archives">Datadog Logs Archive docu
       <pre class="lines">
 
 
-198
-199
-200
-201
-202
-203
-204
-205
-206
-207
-208
-209
-210
-211
-212
-213
-214
-215
-216
-217
-218
-219
-220
-221
-222
-223
-224
-225
-226
-227
-228
-229
-230
-231
-232
-233
-234
-235
-236
-237
-238
 239
 240
 241
@@ -1250,10 +1209,54 @@ See <a href="https://docs.datadoghq.com/logs/archives">Datadog Logs Archive docu
 258
 259
 260
-261</pre>
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_api.rb', line 198</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_api.rb', line 239</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_logs_get_with_http_info'>list_logs_get_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1269,10 +1272,13 @@ See <a href="https://docs.datadoghq.com/logs/archives">Datadog Logs Archive docu
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Calling API: LogsAPI.list_logs_get ...</span><span class='tstring_end'>&#39;</span></span>
   <span class='kw'>end</span>
+  <span class='id identifier rubyid_allowable_values'>allowable_values</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>timestamp</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-timestamp</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_client_side_validation'>client_side_validation</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;sort&#39;</span><span class='rbracket'>]</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_allowable_values'>allowable_values</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;sort&#39;</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>invalid value for \&quot;sort\&quot;, must be one of </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_allowable_values'>allowable_values</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_client_side_validation'>client_side_validation</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;page_limit&#39;</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;page_limit&#39;</span><span class='rbracket'>]</span> <span class='op'>&gt;</span> <span class='int'>1000</span>
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>invalid value for &quot;opts[:&quot;page_limit&quot;]&quot; when calling LogsAPI.list_logs_get, must be smaller than or equal to 1000.</span><span class='tstring_end'>&#39;</span></span>
   <span class='kw'>end</span>
-
   <span class='comment'># resource path
 </span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/logs/events</span><span class='tstring_end'>&#39;</span></span>
 
@@ -1413,27 +1419,6 @@ See <a href="https://docs.datadoghq.com/logs/archives">Datadog Logs Archive docu
       <pre class="lines">
 
 
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128
-129
-130
-131
-132
-133
-134
-135
 136
 137
 138
@@ -1467,10 +1452,31 @@ See <a href="https://docs.datadoghq.com/logs/archives">Datadog Logs Archive docu
 166
 167
 168
-169</pre>
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_api.rb', line 115</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_api.rb', line 136</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_logs_with_http_info'>list_logs_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1672,13 +1678,13 @@ Add the <code>Content-Encoding: gzip</code> header to the request when sending c
       <pre class="lines">
 
 
-270
-271
-272
-273</pre>
+336
+337
+338
+339</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_api.rb', line 270</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_api.rb', line 336</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_submit_log'>submit_log</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_submit_log_with_http_info'>submit_log_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1833,70 +1839,74 @@ Add the <code>Content-Encoding: gzip</code> header to the request when sending c
       <pre class="lines">
 
 
-282
-283
-284
-285
-286
-287
-288
-289
-290
-291
-292
-293
-294
-295
-296
-297
-298
-299
-300
-301
-302
-303
-304
-305
-306
-307
-308
-309
-310
-311
-312
-313
-314
-315
-316
-317
-318
-319
-320
-321
-322
-323
-324
-325
-326
-327
-328
-329
-330
-331
-332
-333
-334
-335
-336
-337
-338
-339
-340
-341
-342</pre>
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402
+403
+404
+405
+406
+407
+408
+409
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433
+434</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_api.rb', line 282</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_api.rb', line 370</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_submit_log_with_http_info'>submit_log_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1911,6 +1921,10 @@ Add the <code>Content-Encoding: gzip</code> header to the request when sending c
 
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Calling API: LogsAPI.submit_log ...</span><span class='tstring_end'>&#39;</span></span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_allowable_values'>allowable_values</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>gzip</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>deflate</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_client_side_validation'>client_side_validation</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;content_encoding&#39;</span><span class='rbracket'>]</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_allowable_values'>allowable_values</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;content_encoding&#39;</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>invalid value for \&quot;content_encoding\&quot;, must be one of </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_allowable_values'>allowable_values</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># verify the required parameter &#39;body&#39; is set
 </span>  <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_client_side_validation'>client_side_validation</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_body'>body</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
@@ -1969,7 +1983,7 @@ Add the <code>Content-Encoding: gzip</code> header to the request when sending c
 </div>
 
       <div id="footer">
-  Generated on Thu Mar  3 16:33:57 2022 by
+  Generated on Fri Mar  4 17:35:35 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.5).
 </div>

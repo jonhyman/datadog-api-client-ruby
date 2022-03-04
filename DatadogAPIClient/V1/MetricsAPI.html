@@ -621,13 +621,13 @@ Get metadata about a specific metric.</p>
       <pre class="lines">
 
 
-30
 31
 32
-33</pre>
+33
+34</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 31</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_metric_metadata'>get_metric_metadata</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_name'>metric_name</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_get_metric_metadata_with_http_info'>get_metric_metadata_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_name'>metric_name</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -717,7 +717,6 @@ Get metadata about a specific metric.</p>
       <pre class="lines">
 
 
-40
 41
 42
 43
@@ -773,10 +772,11 @@ Get metadata about a specific metric.</p>
 93
 94
 95
-96</pre>
+96
+97</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 40</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 41</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_metric_metadata_with_http_info'>get_metric_metadata_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_name'>metric_name</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -797,7 +797,7 @@ Get metadata about a specific metric.</p>
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;metric_name&#39; when calling MetricsAPI.get_metric_metadata</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/metrics/{metric_name}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>metric_name</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_name'>metric_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/metrics/{metric_name}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{metric_name}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_name'>metric_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -817,7 +817,7 @@ Get metadata about a specific metric.</p>
 </span>  <span class='id identifier rubyid_return_type'>return_type</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_return_type</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>MetricMetadata</span><span class='tstring_end'>&#39;</span></span>
 
   <span class='comment'># auth_names
-</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:AuthZ</span><span class='comma'>,</span> <span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='rbracket'>]</span>
+</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:AuthZ</span><span class='rbracket'>]</span>
 
   <span class='id identifier rubyid_new_options'>new_options</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span>
     <span class='symbol'>:operation</span> <span class='op'>=&gt;</span> <span class='symbol'>:get_metric_metadata</span><span class='comma'>,</span>
@@ -950,13 +950,13 @@ Get the list of actively reporting metrics from a given time until now.</p>
       <pre class="lines">
 
 
-105
 106
 107
-108</pre>
+108
+109</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 105</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 106</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_active_metrics'>list_active_metrics</span><span class='lparen'>(</span><span class='id identifier rubyid_from'>from</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_list_active_metrics_with_http_info'>list_active_metrics_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_from'>from</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1081,7 +1081,6 @@ Get the list of actively reporting metrics from a given time until now.</p>
       <pre class="lines">
 
 
-117
 118
 119
 120
@@ -1140,10 +1139,11 @@ Get the list of actively reporting metrics from a given time until now.</p>
 173
 174
 175
-176</pre>
+176
+177</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 117</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 118</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_active_metrics_with_http_info'>list_active_metrics_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_from'>from</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1187,7 +1187,7 @@ Get the list of actively reporting metrics from a given time until now.</p>
 </span>  <span class='id identifier rubyid_return_type'>return_type</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_return_type</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>MetricsListResponse</span><span class='tstring_end'>&#39;</span></span>
 
   <span class='comment'># auth_names
-</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:AuthZ</span><span class='comma'>,</span> <span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='rbracket'>]</span>
+</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:AuthZ</span><span class='rbracket'>]</span>
 
   <span class='id identifier rubyid_new_options'>new_options</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span>
     <span class='symbol'>:operation</span> <span class='op'>=&gt;</span> <span class='symbol'>:list_active_metrics</span><span class='comma'>,</span>
@@ -1285,13 +1285,13 @@ Search for metrics from the last 24 hours in Datadog.</p>
       <pre class="lines">
 
 
-183
 184
 185
-186</pre>
+186
+187</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 183</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 184</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_metrics'>list_metrics</span><span class='lparen'>(</span><span class='id identifier rubyid_q'>q</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_list_metrics_with_http_info'>list_metrics_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_q'>q</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1381,7 +1381,6 @@ Search for metrics from the last 24 hours in Datadog.</p>
       <pre class="lines">
 
 
-193
 194
 195
 196
@@ -1438,10 +1437,11 @@ Search for metrics from the last 24 hours in Datadog.</p>
 247
 248
 249
-250</pre>
+250
+251</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 193</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 194</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_metrics_with_http_info'>list_metrics_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_q'>q</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1483,7 +1483,7 @@ Search for metrics from the last 24 hours in Datadog.</p>
 </span>  <span class='id identifier rubyid_return_type'>return_type</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_return_type</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>MetricSearchResponse</span><span class='tstring_end'>&#39;</span></span>
 
   <span class='comment'># auth_names
-</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:AuthZ</span><span class='comma'>,</span> <span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='rbracket'>]</span>
+</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:AuthZ</span><span class='rbracket'>]</span>
 
   <span class='id identifier rubyid_new_options'>new_options</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span>
     <span class='symbol'>:operation</span> <span class='op'>=&gt;</span> <span class='symbol'>:list_metrics</span><span class='comma'>,</span>
@@ -1611,13 +1611,13 @@ Query timeseries points.</p>
       <pre class="lines">
 
 
-259
 260
 261
-262</pre>
+262
+263</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 259</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 260</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_query_metrics'>query_metrics</span><span class='lparen'>(</span><span class='id identifier rubyid_from'>from</span><span class='comma'>,</span> <span class='id identifier rubyid_to'>to</span><span class='comma'>,</span> <span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_query_metrics_with_http_info'>query_metrics_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_from'>from</span><span class='comma'>,</span> <span class='id identifier rubyid_to'>to</span><span class='comma'>,</span> <span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1737,7 +1737,6 @@ Query timeseries points.</p>
       <pre class="lines">
 
 
-271
 272
 273
 274
@@ -1804,10 +1803,11 @@ Query timeseries points.</p>
 335
 336
 337
-338</pre>
+338
+339</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 271</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 272</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_query_metrics_with_http_info'>query_metrics_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_from'>from</span><span class='comma'>,</span> <span class='id identifier rubyid_to'>to</span><span class='comma'>,</span> <span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1859,7 +1859,7 @@ Query timeseries points.</p>
 </span>  <span class='id identifier rubyid_return_type'>return_type</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_return_type</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>MetricsQueryResponse</span><span class='tstring_end'>&#39;</span></span>
 
   <span class='comment'># auth_names
-</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:AuthZ</span><span class='comma'>,</span> <span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='rbracket'>]</span>
+</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:AuthZ</span><span class='rbracket'>]</span>
 
   <span class='id identifier rubyid_new_options'>new_options</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span>
     <span class='symbol'>:operation</span> <span class='op'>=&gt;</span> <span class='symbol'>:query_metrics</span><span class='comma'>,</span>
@@ -1988,13 +1988,13 @@ compression is applied, which reduces the payload size.</li>
       <pre class="lines">
 
 
-346
-347
-348
-349</pre>
+357
+358
+359
+360</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 346</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 357</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_submit_metrics'>submit_metrics</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_submit_metrics_with_http_info'>submit_metrics_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2115,27 +2115,6 @@ compression is applied, which reduces the payload size.</li>
       <pre class="lines">
 
 
-357
-358
-359
-360
-361
-362
-363
-364
-365
-366
-367
-368
-369
-370
-371
-372
-373
-374
-375
-376
-377
 378
 379
 380
@@ -2174,10 +2153,35 @@ compression is applied, which reduces the payload size.</li>
 413
 414
 415
-416</pre>
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 357</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 378</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_submit_metrics_with_http_info'>submit_metrics_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2192,6 +2196,10 @@ compression is applied, which reduces the payload size.</li>
 
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Calling API: MetricsAPI.submit_metrics ...</span><span class='tstring_end'>&#39;</span></span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_allowable_values'>allowable_values</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>deflate</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_client_side_validation'>client_side_validation</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;content_encoding&#39;</span><span class='rbracket'>]</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_allowable_values'>allowable_values</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;content_encoding&#39;</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>invalid value for \&quot;content_encoding\&quot;, must be one of </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_allowable_values'>allowable_values</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># verify the required parameter &#39;body&#39; is set
 </span>  <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_client_side_validation'>client_side_validation</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_body'>body</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
@@ -2334,13 +2342,13 @@ Edit metadata of a specific metric. Find out more about <a href="https://docs.da
       <pre class="lines">
 
 
-424
-425
-426
-427</pre>
+449
+450
+451
+452</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 424</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 449</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_metric_metadata'>update_metric_metadata</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_name'>metric_name</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_update_metric_metadata_with_http_info'>update_metric_metadata_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_name'>metric_name</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2445,31 +2453,6 @@ Edit metadata of a specific metric. Find out more about <a href="https://docs.da
       <pre class="lines">
 
 
-435
-436
-437
-438
-439
-440
-441
-442
-443
-444
-445
-446
-447
-448
-449
-450
-451
-452
-453
-454
-455
-456
-457
-458
-459
 460
 461
 462
@@ -2507,10 +2490,35 @@ Edit metadata of a specific metric. Find out more about <a href="https://docs.da
 494
 495
 496
-497</pre>
+497
+498
+499
+500
+501
+502
+503
+504
+505
+506
+507
+508
+509
+510
+511
+512
+513
+514
+515
+516
+517
+518
+519
+520
+521
+522</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 435</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/metrics_api.rb', line 460</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_metric_metadata_with_http_info'>update_metric_metadata_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_name'>metric_name</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2535,7 +2543,7 @@ Edit metadata of a specific metric. Find out more about <a href="https://docs.da
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;body&#39; when calling MetricsAPI.update_metric_metadata</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/metrics/{metric_name}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>metric_name</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_name'>metric_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/metrics/{metric_name}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{metric_name}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_metric_name'>metric_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -2585,7 +2593,7 @@ Edit metadata of a specific metric. Find out more about <a href="https://docs.da
 </div>
 
       <div id="footer">
-  Generated on Thu Mar  3 16:33:59 2022 by
+  Generated on Fri Mar  4 17:35:37 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.5).
 </div>

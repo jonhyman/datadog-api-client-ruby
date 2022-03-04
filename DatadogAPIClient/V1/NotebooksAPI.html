@@ -575,13 +575,13 @@ Create a notebook using the specified options.</p>
       <pre class="lines">
 
 
-30
 31
 32
-33</pre>
+33
+34</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/notebooks_api.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/notebooks_api.rb', line 31</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_notebook'>create_notebook</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_create_notebook_with_http_info'>create_notebook_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -671,7 +671,6 @@ Create a notebook using the specified options.</p>
       <pre class="lines">
 
 
-40
 41
 42
 43
@@ -729,10 +728,11 @@ Create a notebook using the specified options.</p>
 95
 96
 97
-98</pre>
+98
+99</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/notebooks_api.rb', line 40</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/notebooks_api.rb', line 41</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_notebook_with_http_info'>create_notebook_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -873,13 +873,13 @@ Delete a notebook using the specified ID.</p>
       <pre class="lines">
 
 
-105
 106
 107
-108</pre>
+108
+109</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/notebooks_api.rb', line 105</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/notebooks_api.rb', line 106</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_notebook'>delete_notebook</span><span class='lparen'>(</span><span class='id identifier rubyid_notebook_id'>notebook_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_delete_notebook_with_http_info'>delete_notebook_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_notebook_id'>notebook_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -969,7 +969,6 @@ Delete a notebook using the specified ID.</p>
       <pre class="lines">
 
 
-115
 116
 117
 118
@@ -1025,10 +1024,11 @@ Delete a notebook using the specified ID.</p>
 168
 169
 170
-171</pre>
+171
+172</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/notebooks_api.rb', line 115</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/notebooks_api.rb', line 116</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_notebook_with_http_info'>delete_notebook_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_notebook_id'>notebook_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1049,7 +1049,7 @@ Delete a notebook using the specified ID.</p>
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;notebook_id&#39; when calling NotebooksAPI.delete_notebook</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/notebooks/{notebook_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>notebook_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_notebook_id'>notebook_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/notebooks/{notebook_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{notebook_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_notebook_id'>notebook_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -1057,7 +1057,7 @@ Delete a notebook using the specified ID.</p>
   <span class='comment'># header parameters
 </span>  <span class='id identifier rubyid_header_params'>header_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:header_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
   <span class='comment'># HTTP header &#39;Accept&#39; (if needed)
-</span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_accept'>select_header_accept</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>application/json</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_accept'>select_header_accept</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>*/*</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
 
   <span class='comment'># form parameters
 </span>  <span class='id identifier rubyid_form_params'>form_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:form_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -1167,13 +1167,13 @@ Get a notebook using the specified notebook ID.</p>
       <pre class="lines">
 
 
-178
 179
 180
-181</pre>
+181
+182</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/notebooks_api.rb', line 178</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/notebooks_api.rb', line 179</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_notebook'>get_notebook</span><span class='lparen'>(</span><span class='id identifier rubyid_notebook_id'>notebook_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_get_notebook_with_http_info'>get_notebook_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_notebook_id'>notebook_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1263,7 +1263,6 @@ Get a notebook using the specified notebook ID.</p>
       <pre class="lines">
 
 
-188
 189
 190
 191
@@ -1319,10 +1318,11 @@ Get a notebook using the specified notebook ID.</p>
 241
 242
 243
-244</pre>
+244
+245</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/notebooks_api.rb', line 188</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/notebooks_api.rb', line 189</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_notebook_with_http_info'>get_notebook_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_notebook_id'>notebook_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1343,7 +1343,7 @@ Get a notebook using the specified notebook ID.</p>
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;notebook_id&#39; when calling NotebooksAPI.get_notebook</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/notebooks/{notebook_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>notebook_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_notebook_id'>notebook_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/notebooks/{notebook_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{notebook_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_notebook_id'>notebook_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -1363,7 +1363,7 @@ Get a notebook using the specified notebook ID.</p>
 </span>  <span class='id identifier rubyid_return_type'>return_type</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_return_type</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>NotebookResponse</span><span class='tstring_end'>&#39;</span></span>
 
   <span class='comment'># auth_names
-</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:AuthZ</span><span class='comma'>,</span> <span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='rbracket'>]</span>
+</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='rbracket'>]</span>
 
   <span class='id identifier rubyid_new_options'>new_options</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span>
     <span class='symbol'>:operation</span> <span class='op'>=&gt;</span> <span class='symbol'>:get_notebook</span><span class='comma'>,</span>
@@ -1576,13 +1576,13 @@ Get all notebooks. This can also be used to search for notebooks with a particul
       <pre class="lines">
 
 
-260
-261
 262
-263</pre>
+263
+264
+265</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/notebooks_api.rb', line 260</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/notebooks_api.rb', line 262</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_notebooks'>list_notebooks</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_list_notebooks_with_http_info'>list_notebooks_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1787,9 +1787,6 @@ Get all notebooks. This can also be used to search for notebooks with a particul
       <pre class="lines">
 
 
-279
-280
-281
 282
 283
 284
@@ -1849,10 +1846,13 @@ Get all notebooks. This can also be used to search for notebooks with a particul
 338
 339
 340
-341</pre>
+341
+342
+343
+344</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/notebooks_api.rb', line 279</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/notebooks_api.rb', line 282</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_notebooks_with_http_info'>list_notebooks_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1899,7 +1899,7 @@ Get all notebooks. This can also be used to search for notebooks with a particul
 </span>  <span class='id identifier rubyid_return_type'>return_type</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_return_type</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>NotebooksResponse</span><span class='tstring_end'>&#39;</span></span>
 
   <span class='comment'># auth_names
-</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:AuthZ</span><span class='comma'>,</span> <span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='rbracket'>]</span>
+</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='rbracket'>]</span>
 
   <span class='id identifier rubyid_new_options'>new_options</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span>
     <span class='symbol'>:operation</span> <span class='op'>=&gt;</span> <span class='symbol'>:list_notebooks</span><span class='comma'>,</span>
@@ -2012,13 +2012,13 @@ Update a notebook using the specified ID.</p>
       <pre class="lines">
 
 
-349
-350
-351
-352</pre>
+352
+353
+354
+355</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/notebooks_api.rb', line 349</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/notebooks_api.rb', line 352</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_notebook'>update_notebook</span><span class='lparen'>(</span><span class='id identifier rubyid_notebook_id'>notebook_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_update_notebook_with_http_info'>update_notebook_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_notebook_id'>notebook_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2123,9 +2123,6 @@ Update a notebook using the specified ID.</p>
       <pre class="lines">
 
 
-360
-361
-362
 363
 364
 365
@@ -2185,10 +2182,13 @@ Update a notebook using the specified ID.</p>
 419
 420
 421
-422</pre>
+422
+423
+424
+425</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/notebooks_api.rb', line 360</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/notebooks_api.rb', line 363</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_notebook_with_http_info'>update_notebook_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_notebook_id'>notebook_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2213,7 +2213,7 @@ Update a notebook using the specified ID.</p>
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;body&#39; when calling NotebooksAPI.update_notebook</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/notebooks/{notebook_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>notebook_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_notebook_id'>notebook_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v1/notebooks/{notebook_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{notebook_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_notebook_id'>notebook_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -2263,7 +2263,7 @@ Update a notebook using the specified ID.</p>
 </div>
 
       <div id="footer">
-  Generated on Thu Mar  3 16:34:00 2022 by
+  Generated on Fri Mar  4 17:35:38 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.5).
 </div>
