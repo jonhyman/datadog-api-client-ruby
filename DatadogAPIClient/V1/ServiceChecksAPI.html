@@ -398,13 +398,13 @@ Submit a list of Service Checks.</p>
       <pre class="lines">
 
 
-35
-36
-37
-38</pre>
+30
+31
+32
+33</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/service_checks_api.rb', line 35</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/service_checks_api.rb', line 30</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_submit_service_check'>submit_service_check</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_submit_service_check_with_http_info'>submit_service_check_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -501,6 +501,15 @@ Submit a list of Service Checks.</p>
       <pre class="lines">
 
 
+40
+41
+42
+43
+44
+45
+46
+47
+48
 49
 50
 51
@@ -550,19 +559,10 @@ Submit a list of Service Checks.</p>
 95
 96
 97
-98
-99
-100
-101
-102
-103
-104
-105
-106
-107</pre>
+98</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/service_checks_api.rb', line 49</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/service_checks_api.rb', line 40</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_submit_service_check_with_http_info'>submit_service_check_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -633,7 +633,7 @@ Submit a list of Service Checks.</p>
 </div>
 
       <div id="footer">
-  Generated on Fri Mar  4 17:35:41 2022 by
+  Generated on Tue Mar  8 09:48:46 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.5).
 </div>
