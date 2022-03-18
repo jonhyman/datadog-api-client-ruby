@@ -1018,6 +1018,7 @@ Create a monitor using the specified options.</p>
 <li>watchdog: <code>event alert</code></li>
 <li>event-v2: <code>event-v2 alert</code></li>
 <li>audit: <code>audit alert</code></li>
+<li>error-tracking: <code>error-tracking alert</code></li>
 </ul>
 
 <h4 id="query-types">Query Types</h4>
@@ -1175,6 +1176,20 @@ It is only available via the API and isn&#39;t visible or editable in the Datado
 </ul>
 
 <p><strong>NOTE</strong> Only available in closed beta on US1, EU, US3 and US5.</p>
+
+<p><strong>Error Tracking Alert Query</strong></p>
+
+<p>Example(RUM): <code>error-tracking-rum(query).rollup(rollup_method[, measure]).last(time_window) operator #</code>
+Example(APM Traces): <code>error-tracking-traces(query).rollup(rollup_method[, measure]).last(time_window) operator #</code></p>
+
+<ul>
+<li><strong><code>query</code></strong> The search query - following the <a href="https://docs.datadoghq.com/logs/search_syntax/">Log search syntax</a>.</li>
+<li><strong><code>rollup_method</code></strong> The stats roll-up method - supports <code>count</code>, <code>avg</code>, and <code>cardinality</code>.</li>
+<li><strong><code>measure</code></strong> For <code>avg</code> and cardinality <code>rollup_method</code> - specify the measure or the facet name you want to use.</li>
+<li><strong><code>time_window</code></strong> #m (between 1 and 2880), #h (between 1 and 48).</li>
+<li><strong><code>operator</code></strong> <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>==</code>, or <code>!=</code>.</li>
+<li><strong><code>#</code></strong> an integer or decimal number used to set the threshold.</li>
+</ul>
 
 
   </div>
@@ -1292,6 +1307,7 @@ Create a monitor using the specified options.</p>
 <li>watchdog: <code>event alert</code></li>
 <li>event-v2: <code>event-v2 alert</code></li>
 <li>audit: <code>audit alert</code></li>
+<li>error-tracking: <code>error-tracking alert</code></li>
 </ul>
 
 <h4 id="query-types">Query Types</h4>
@@ -1449,6 +1465,20 @@ It is only available via the API and isn&#39;t visible or editable in the Datado
 </ul>
 
 <p><strong>NOTE</strong> Only available in closed beta on US1, EU, US3 and US5.</p>
+
+<p><strong>Error Tracking Alert Query</strong></p>
+
+<p>Example(RUM): <code>error-tracking-rum(query).rollup(rollup_method[, measure]).last(time_window) operator #</code>
+Example(APM Traces): <code>error-tracking-traces(query).rollup(rollup_method[, measure]).last(time_window) operator #</code></p>
+
+<ul>
+<li><strong><code>query</code></strong> The search query - following the <a href="https://docs.datadoghq.com/logs/search_syntax/">Log search syntax</a>.</li>
+<li><strong><code>rollup_method</code></strong> The stats roll-up method - supports <code>count</code>, <code>avg</code>, and <code>cardinality</code>.</li>
+<li><strong><code>measure</code></strong> For <code>avg</code> and cardinality <code>rollup_method</code> - specify the measure or the facet name you want to use.</li>
+<li><strong><code>time_window</code></strong> #m (between 1 and 2880), #h (between 1 and 48).</li>
+<li><strong><code>operator</code></strong> <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>==</code>, or <code>!=</code>.</li>
+<li><strong><code>#</code></strong> an integer or decimal number used to set the threshold.</li>
+</ul>
 
 
   </div>
@@ -4211,7 +4241,7 @@ Validate the monitor provided in the request.</p>
 </div>
 
       <div id="footer">
-  Generated on Thu Mar 17 18:14:03 2022 by
+  Generated on Fri Mar 18 07:41:33 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.5).
 </div>
