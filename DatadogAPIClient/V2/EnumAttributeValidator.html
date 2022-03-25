@@ -253,7 +253,6 @@
       <pre class="lines">
 
 
-475
 476
 477
 478
@@ -264,10 +263,11 @@
 483
 484
 485
-486</pre>
+486
+487</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2.rb', line 475</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2.rb', line 476</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_datatype'>datatype</span><span class='comma'>,</span> <span class='id identifier rubyid_allowable_values'>allowable_values</span><span class='rparen'>)</span>
   <span class='ivar'>@allowable_values</span> <span class='op'>=</span> <span class='id identifier rubyid_allowable_values'>allowable_values</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_value'>value</span><span class='op'>|</span>
@@ -318,12 +318,12 @@
       <pre class="lines">
 
 
-473
 474
-475</pre>
+475
+476</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2.rb', line 473</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2.rb', line 474</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_allowable_values'>allowable_values</span>
   <span class='ivar'>@allowable_values</span>
@@ -360,12 +360,12 @@
       <pre class="lines">
 
 
-472
 473
-474</pre>
+474
+475</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2.rb', line 472</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2.rb', line 473</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_datatype'>datatype</span>
   <span class='ivar'>@datatype</span>
@@ -419,12 +419,12 @@
       <pre class="lines">
 
 
-488
 489
-490</pre>
+490
+491</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2.rb', line 488</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2.rb', line 489</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_valid?'>valid?</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
   <span class='op'>!</span><span class='id identifier rubyid_value'>value</span> <span class='op'>||</span> <span class='id identifier rubyid_allowable_values'>allowable_values</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
@@ -439,7 +439,7 @@
 </div>
 
       <div id="footer">
-  Generated on Wed Mar 23 14:08:04 2022 by
+  Generated on Fri Mar 25 08:28:59 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.5).
 </div>
