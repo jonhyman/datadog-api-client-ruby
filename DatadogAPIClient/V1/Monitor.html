@@ -1261,7 +1261,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>A list of unique role identifiers to define which roles are allowed to edit the monitor. Editing a monitor includes any updates to the monitor configuration, monitor deletion, and muting of the monitor for any amount of time. Roles unique identifiers can be pulled from the <a href="https://docs.datadoghq.com/api/latest/roles/#list-roles">Roles API</a> in the <code>data.id</code> field.</p>
+    <p>A list of unique role identifiers to define which roles are allowed to edit the monitor. The unique identifiers for all roles can be pulled from the <a href="https://docs.datadoghq.com/api/latest/roles/#list-roles">Roles API</a> and are located in the <code>data.id</code> field. Editing a monitor includes any updates to the monitor configuration, monitor deletion, and muting of the monitor for any amount of time. <code>restricted_roles</code> is the successor of <code>locked</code>. For more information about <code>locked</code> and <code>restricted_roles</code>, see the <a href="https://docs.datadoghq.com/monitors/guide/monitor_api_options/#permissions-options">monitor options docs</a>.</p>
 
 
   </div>
@@ -2079,7 +2079,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Wed Mar 30 19:42:49 2022 by
+  Generated on Wed Mar 30 20:55:32 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.5).
 </div>
