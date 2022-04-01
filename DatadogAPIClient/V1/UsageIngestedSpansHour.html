@@ -167,33 +167,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Use <code>ingested_spans_billable_bytes</code> as of 2022-03-01.</p>
-</div></span>
-  
-</li>
-
-    
-      <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#ingested_spans_billable_bytes-instance_method" title="#ingested_spans_billable_bytes (instance method)">#<strong>ingested_spans_billable_bytes</strong>  &#x21d2; Object </a>
-    
-
-    
-  </span>
-  
-  
-  
-    
-    
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'><p>Contains the total number of bytes ingested during a given hour.</p>
+    <span class="summary_desc"><div class='inline'><p>Contains the total number of bytes ingested for APM spans during a given hour.</p>
 </div></span>
   
 </li>
@@ -507,7 +481,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Use <code>ingested_spans_billable_bytes</code> as of 2022-03-01. Contains the total number of bytes ingested during a given hour using an old method of calculating span volume.</p>
+    <p>Contains the total number of bytes ingested for APM spans during a given hour.</p>
 
 
   </div>
@@ -530,48 +504,6 @@
 
 <span class='kw'>def</span> <span class='id identifier rubyid_ingested_events_bytes'>ingested_events_bytes</span>
   <span class='ivar'>@ingested_events_bytes</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      
-      <span id="ingested_spans_billable_bytes=-instance_method"></span>
-      <div class="method_details ">
-  <h3 class="signature " id="ingested_spans_billable_bytes-instance_method">
-  
-    #<strong>ingested_spans_billable_bytes</strong>  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    <p>Contains the total number of bytes ingested during a given hour.</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-35
-36
-37</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_ingested_spans_hour.rb', line 35</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_ingested_spans_billable_bytes'>ingested_spans_billable_bytes</span>
-  <span class='ivar'>@ingested_spans_billable_bytes</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1325,7 +1257,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Wed Mar 30 21:09:23 2022 by
+  Generated on Fri Apr  1 16:15:07 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.5).
 </div>
