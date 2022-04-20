@@ -148,7 +148,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#aggregate_logs-instance_method" title="#aggregate_logs (instance method)">#<strong>aggregate_logs</strong>(body, opts = {})  &#x21d2; LogsAggregateResponse </a>
+      <a href="#aggregate_logs-instance_method" title="#aggregate_logs (instance method)">#<strong>aggregate_logs</strong>(body, opts = {})  &#x21d2; Object </a>
     
 
     
@@ -162,7 +162,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Aggregate events The API endpoint to aggregate events into buckets and compute metrics and timeseries.</p>
+    <span class="summary_desc"><div class='inline'><p>Aggregate events.</p>
 </div></span>
   
 </li>
@@ -185,7 +185,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Aggregate events The API endpoint to aggregate events into buckets and compute metrics and timeseries.</p>
+    <span class="summary_desc"><div class='inline'><p>Aggregate events.</p>
 </div></span>
   
 </li>
@@ -219,7 +219,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#list_logs-instance_method" title="#list_logs (instance method)">#<strong>list_logs</strong>(opts = {})  &#x21d2; LogsListResponse </a>
+      <a href="#list_logs-instance_method" title="#list_logs (instance method)">#<strong>list_logs</strong>(opts = {})  &#x21d2; Object </a>
     
 
     
@@ -233,7 +233,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Search logs List endpoint returns logs that match a log search query.</p>
+    <span class="summary_desc"><div class='inline'><p>Search logs.</p>
 </div></span>
   
 </li>
@@ -242,7 +242,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#list_logs_get-instance_method" title="#list_logs_get (instance method)">#<strong>list_logs_get</strong>(opts = {})  &#x21d2; LogsListResponse </a>
+      <a href="#list_logs_get-instance_method" title="#list_logs_get (instance method)">#<strong>list_logs_get</strong>(opts = {})  &#x21d2; Object </a>
     
 
     
@@ -256,7 +256,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Get a list of logs List endpoint returns logs that match a log search query.</p>
+    <span class="summary_desc"><div class='inline'><p>Get a list of logs.</p>
 </div></span>
   
 </li>
@@ -279,7 +279,30 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Get a list of logs List endpoint returns logs that match a log search query.</p>
+    <span class="summary_desc"><div class='inline'><p>Get a list of logs.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#list_logs_get_with_pagination-instance_method" title="#list_logs_get_with_pagination (instance method)">#<strong>list_logs_get_with_pagination</strong>(opts = {}) {|Log| ... } &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Get a list of logs.</p>
 </div></span>
   
 </li>
@@ -302,7 +325,30 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Search logs List endpoint returns logs that match a log search query.</p>
+    <span class="summary_desc"><div class='inline'><p>Search logs.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#list_logs_with_pagination-instance_method" title="#list_logs_with_pagination (instance method)">#<strong>list_logs_with_pagination</strong>(opts = {}) {|Log| ... } &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Search logs.</p>
 </div></span>
   
 </li>
@@ -325,7 +371,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Send logs Send your logs to your Datadog platform over HTTP.</p>
+    <span class="summary_desc"><div class='inline'><p>Send logs.</p>
 </div></span>
   
 </li>
@@ -348,7 +394,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Send logs Send your logs to your Datadog platform over HTTP.</p>
+    <span class="summary_desc"><div class='inline'><p>Send logs.</p>
 </div></span>
   
 </li>
@@ -457,7 +503,7 @@
       <div class="method_details first">
   <h3 class="signature first" id="aggregate_logs-instance_method">
   
-    #<strong>aggregate_logs</strong>(body, opts = {})  &#x21d2; <tt><span class='object_link'><a href="LogsAggregateResponse.html" title="DatadogAPIClient::V2::LogsAggregateResponse (class)">LogsAggregateResponse</a></span></tt> 
+    #<strong>aggregate_logs</strong>(body, opts = {})  &#x21d2; <tt>Object</tt> 
   
 
   
@@ -465,59 +511,20 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Aggregate events
-The API endpoint to aggregate events into buckets and compute metrics and timeseries.</p>
+    <p>Aggregate events.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <p class="tag_title">Parameters:</p>
-<ul class="param">
   
-    <li>
-      
-        <span class='name'>body</span>
-      
-      
-        <span class='type'>(<tt><span class='object_link'><a href="LogsAggregateRequest.html" title="DatadogAPIClient::V2::LogsAggregateRequest (class)">LogsAggregateRequest</a></span></tt>)</span>
-      
-      
-      
-    </li>
-  
-    <li>
-      
-        <span class='name'>opts</span>
-      
-      
-        <span class='type'>(<tt>Hash</tt>)</span>
-      
-      
-        <em class="default">(defaults to: <tt>{}</tt>)</em>
-      
-      
-        &mdash;
-        <div class='inline'><p>the optional parameters</p>
-</div>
-      
-    </li>
-  
-</ul>
 
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt><span class='object_link'><a href="LogsAggregateResponse.html" title="DatadogAPIClient::V2::LogsAggregateResponse (class)">LogsAggregateResponse</a></span></tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#aggregate_logs_with_http_info-instance_method" title="DatadogAPIClient::V2::LogsAPI#aggregate_logs_with_http_info (method)">#aggregate_logs_with_http_info</a></span></li>
+    
+  </ul>
 
 </div><table class="source_code">
   <tr>
@@ -553,8 +560,9 @@ The API endpoint to aggregate events into buckets and compute metrics and timese
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Aggregate events
-The API endpoint to aggregate events into buckets and compute metrics and timeseries.</p>
+    <p>Aggregate events.</p>
+
+<p>The API endpoint to aggregate events into buckets and compute metrics and timeseries.</p>
 
 
   </div>
@@ -747,7 +755,7 @@ The API endpoint to aggregate events into buckets and compute metrics and timese
       <div class="method_details ">
   <h3 class="signature " id="list_logs-instance_method">
   
-    #<strong>list_logs</strong>(opts = {})  &#x21d2; <tt><span class='object_link'><a href="LogsListResponse.html" title="DatadogAPIClient::V2::LogsListResponse (class)">LogsListResponse</a></span></tt> 
+    #<strong>list_logs</strong>(opts = {})  &#x21d2; <tt>Object</tt> 
   
 
   
@@ -755,73 +763,20 @@ The API endpoint to aggregate events into buckets and compute metrics and timese
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Search logs
-List endpoint returns logs that match a log search query.
-<a href="/logs/guide/collect-multiple-logs-with-pagination">Results are paginated</a>.</p>
-
-<p>Use this endpoint to build complex logs filtering and search.</p>
-
-<p><strong>If you are considering archiving logs for your organization,
-consider use of the Datadog archive capabilities instead of the log list API.
-See <a href="https://docs.datadoghq.com/logs/archives">Datadog Logs Archive documentation</a>.</strong></p>
+    <p>Search logs.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <p class="tag_title">Parameters:</p>
-<ul class="param">
-  
-    <li>
-      
-        <span class='name'>opts</span>
-      
-      
-        <span class='type'>(<tt>Hash</tt>)</span>
-      
-      
-        <em class="default">(defaults to: <tt>{}</tt>)</em>
-      
-      
-        &mdash;
-        <div class='inline'><p>the optional parameters</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-  
-    
-    
-    <p class="tag_title">Options Hash (<tt>opts</tt>):</p>
-    <ul class="option">
-      
-        <li>
-          <span class="name">:body</span>
-          <span class="type">(<tt><span class='object_link'><a href="LogsListRequest.html" title="DatadogAPIClient::V2::LogsListRequest (class)">LogsListRequest</a></span></tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-        </li>
-      
-    </ul>
   
 
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt><span class='object_link'><a href="LogsListResponse.html" title="DatadogAPIClient::V2::LogsListResponse (class)">LogsListResponse</a></span></tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#list_logs_with_http_info-instance_method" title="DatadogAPIClient::V2::LogsAPI#list_logs_with_http_info (method)">#list_logs_with_http_info</a></span></li>
+    
+  </ul>
 
 </div><table class="source_code">
   <tr>
@@ -849,7 +804,7 @@ See <a href="https://docs.datadoghq.com/logs/archives">Datadog Logs Archive docu
       <div class="method_details ">
   <h3 class="signature " id="list_logs_get-instance_method">
   
-    #<strong>list_logs_get</strong>(opts = {})  &#x21d2; <tt><span class='object_link'><a href="LogsListResponse.html" title="DatadogAPIClient::V2::LogsListResponse (class)">LogsListResponse</a></span></tt> 
+    #<strong>list_logs_get</strong>(opts = {})  &#x21d2; <tt>Object</tt> 
   
 
   
@@ -857,148 +812,20 @@ See <a href="https://docs.datadoghq.com/logs/archives">Datadog Logs Archive docu
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Get a list of logs
-List endpoint returns logs that match a log search query.
-<a href="/logs/guide/collect-multiple-logs-with-pagination">Results are paginated</a>.</p>
-
-<p>Use this endpoint to see your latest logs.</p>
-
-<p><strong>If you are considering archiving logs for your organization,
-consider use of the Datadog archive capabilities instead of the log list API.
-See <a href="https://docs.datadoghq.com/logs/archives">Datadog Logs Archive documentation</a>.</strong></p>
+    <p>Get a list of logs.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <p class="tag_title">Parameters:</p>
-<ul class="param">
-  
-    <li>
-      
-        <span class='name'>opts</span>
-      
-      
-        <span class='type'>(<tt>Hash</tt>)</span>
-      
-      
-        <em class="default">(defaults to: <tt>{}</tt>)</em>
-      
-      
-        &mdash;
-        <div class='inline'><p>the optional parameters</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-  
-    
-    
-    <p class="tag_title">Options Hash (<tt>opts</tt>):</p>
-    <ul class="option">
-      
-        <li>
-          <span class="name">:filter_query</span>
-          <span class="type">(<tt>String</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>Search query following logs syntax.</p>
-</div>
-          
-        </li>
-      
-        <li>
-          <span class="name">:filter_index</span>
-          <span class="type">(<tt>String</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>For customers with multiple indexes, the indexes to search Defaults to &#39;*&#39; which means all indexes</p>
-</div>
-          
-        </li>
-      
-        <li>
-          <span class="name">:filter_from</span>
-          <span class="type">(<tt>Time</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>Minimum timestamp for requested logs.</p>
-</div>
-          
-        </li>
-      
-        <li>
-          <span class="name">:filter_to</span>
-          <span class="type">(<tt>Time</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>Maximum timestamp for requested logs.</p>
-</div>
-          
-        </li>
-      
-        <li>
-          <span class="name">:sort</span>
-          <span class="type">(<tt><span class='object_link'><a href="LogsSort.html" title="DatadogAPIClient::V2::LogsSort (class)">LogsSort</a></span></tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>Order of logs in results.</p>
-</div>
-          
-        </li>
-      
-        <li>
-          <span class="name">:page_cursor</span>
-          <span class="type">(<tt>String</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>List following results with a cursor provided in the previous query.</p>
-</div>
-          
-        </li>
-      
-        <li>
-          <span class="name">:page_limit</span>
-          <span class="type">(<tt>Integer</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>Maximum number of logs in the response.</p>
-</div>
-          
-        </li>
-      
-    </ul>
   
 
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt><span class='object_link'><a href="LogsListResponse.html" title="DatadogAPIClient::V2::LogsListResponse (class)">LogsListResponse</a></span></tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#list_logs_get_with_http_info-instance_method" title="DatadogAPIClient::V2::LogsAPI#list_logs_get_with_http_info (method)">#list_logs_get_with_http_info</a></span></li>
+    
+  </ul>
 
 </div><table class="source_code">
   <tr>
@@ -1034,8 +861,9 @@ See <a href="https://docs.datadoghq.com/logs/archives">Datadog Logs Archive docu
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Get a list of logs
-List endpoint returns logs that match a log search query.
+    <p>Get a list of logs.</p>
+
+<p>List endpoint returns logs that match a log search query.
 <a href="/logs/guide/collect-multiple-logs-with-pagination">Results are paginated</a>.</p>
 
 <p>Use this endpoint to see your latest logs.</p>
@@ -1325,6 +1153,85 @@ See <a href="https://docs.datadoghq.com/logs/archives">Datadog Logs Archive docu
 </div>
     
       <div class="method_details ">
+  <h3 class="signature " id="list_logs_get_with_pagination-instance_method">
+  
+    #<strong>list_logs_get_with_pagination</strong>(opts = {}) {|Log| ... } &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Get a list of logs.</p>
+
+<p>Provide a paginated version of <span class='object_link'><a href="#list_logs_get-instance_method" title="DatadogAPIClient::V2::LogsAPI#list_logs_get (method)">#list_logs_get</a></span>, returning all items.</p>
+
+<p>To use it you need to use a block: list_logs_get_with_pagination { |item| p item }</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Log.html" title="DatadogAPIClient::V2::Log (class)">Log</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Paginated items</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_api.rb', line 308</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_list_logs_get_with_pagination'>list_logs_get_with_pagination</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_page_size'>page_size</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_get_attribute_from_path'>get_attribute_from_path</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>page_limit</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='int'>10</span><span class='rparen'>)</span>
+    <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_set_attribute_from_path'>set_attribute_from_path</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>page_limit</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='const'>Integer</span><span class='comma'>,</span> <span class='id identifier rubyid_page_size'>page_size</span><span class='rparen'>)</span>
+    <span class='kw'>while</span> <span class='kw'>true</span> <span class='kw'>do</span>
+        <span class='id identifier rubyid_response'>response</span> <span class='op'>=</span> <span class='id identifier rubyid_list_logs_get'>list_logs_get</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
+        <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_get_attribute_from_path'>get_attribute_from_path</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_item'>item</span><span class='op'>|</span> <span class='kw'>yield</span><span class='lparen'>(</span><span class='id identifier rubyid_item'>item</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
+        <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_get_attribute_from_path'>get_attribute_from_path</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_page_size'>page_size</span>
+          <span class='kw'>break</span>
+        <span class='kw'>end</span>
+        <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_set_attribute_from_path'>set_attribute_from_path</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>page_cursor</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='const'>Integer</span><span class='comma'>,</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_get_attribute_from_path'>get_attribute_from_path</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>meta.page.after</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
   <h3 class="signature " id="list_logs_with_http_info-instance_method">
   
     #<strong>list_logs_with_http_info</strong>(opts = {})  &#x21d2; <tt>Array&lt;(<span class='object_link'><a href="LogsListResponse.html" title="DatadogAPIClient::V2::LogsListResponse (class)">LogsListResponse</a></span>, Integer, Hash)&gt;</tt> 
@@ -1335,8 +1242,9 @@ See <a href="https://docs.datadoghq.com/logs/archives">Datadog Logs Archive docu
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Search logs
-List endpoint returns logs that match a log search query.
+    <p>Search logs.</p>
+
+<p>List endpoint returns logs that match a log search query.
 <a href="/logs/guide/collect-multiple-logs-with-pagination">Results are paginated</a>.</p>
 
 <p>Use this endpoint to build complex logs filtering and search.</p>
@@ -1533,6 +1441,85 @@ See <a href="https://docs.datadoghq.com/logs/archives">Datadog Logs Archive docu
 </div>
     
       <div class="method_details ">
+  <h3 class="signature " id="list_logs_with_pagination-instance_method">
+  
+    #<strong>list_logs_with_pagination</strong>(opts = {}) {|Log| ... } &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Search logs.</p>
+
+<p>Provide a paginated version of <span class='object_link'><a href="#list_logs-instance_method" title="DatadogAPIClient::V2::LogsAPI#list_logs (method)">#list_logs</a></span>, returning all items.</p>
+
+<p>To use it you need to use a block: list_logs_with_pagination { |item| p item }</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Log.html" title="DatadogAPIClient::V2::Log (class)">Log</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Paginated items</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_api.rb', line 189</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_list_logs_with_pagination'>list_logs_with_pagination</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_page_size'>page_size</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_get_attribute_from_path'>get_attribute_from_path</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>body.page.limit</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='int'>10</span><span class='rparen'>)</span>
+    <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_set_attribute_from_path'>set_attribute_from_path</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>body.page.limit</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="LogsListRequest.html" title="DatadogAPIClient::V2::LogsListRequest (class)">LogsListRequest</a></span></span><span class='comma'>,</span> <span class='id identifier rubyid_page_size'>page_size</span><span class='rparen'>)</span>
+    <span class='kw'>while</span> <span class='kw'>true</span> <span class='kw'>do</span>
+        <span class='id identifier rubyid_response'>response</span> <span class='op'>=</span> <span class='id identifier rubyid_list_logs'>list_logs</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
+        <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_get_attribute_from_path'>get_attribute_from_path</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_item'>item</span><span class='op'>|</span> <span class='kw'>yield</span><span class='lparen'>(</span><span class='id identifier rubyid_item'>item</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
+        <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_get_attribute_from_path'>get_attribute_from_path</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_page_size'>page_size</span>
+          <span class='kw'>break</span>
+        <span class='kw'>end</span>
+        <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_set_attribute_from_path'>set_attribute_from_path</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>body.page.cursor</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="LogsListRequest.html" title="DatadogAPIClient::V2::LogsListRequest (class)">LogsListRequest</a></span></span><span class='comma'>,</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_get_attribute_from_path'>get_attribute_from_path</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>meta.page.after</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
   <h3 class="signature " id="submit_log-instance_method">
   
     #<strong>submit_log</strong>(body, opts = {})  &#x21d2; <tt>Object</tt> 
@@ -1543,128 +1530,20 @@ See <a href="https://docs.datadoghq.com/logs/archives">Datadog Logs Archive docu
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Send logs
-Send your logs to your Datadog platform over HTTP. Limits per HTTP request are:</p>
-
-<ul>
-<li>Maximum content size per payload (uncompressed): 5MB</li>
-<li>Maximum size for a single log: 1MB</li>
-<li>Maximum array size if sending multiple logs in an array: 1000 entries</li>
-</ul>
-
-<p>Any log exceeding 1MB is accepted and truncated by Datadog:</p>
-
-<ul>
-<li>For a single log request, the API truncates the log at 1MB and returns a 2xx.</li>
-<li>For a multi-logs request, the API processes all logs, truncates only logs larger than 1MB, and returns a 2xx.</li>
-</ul>
-
-<p>Datadog recommends sending your logs compressed.
-Add the <code>Content-Encoding: gzip</code> header to the request when sending compressed logs.</p>
-
-<p>The status codes answered by the HTTP API are:</p>
-
-<ul>
-<li>202: Accepted: the request has been accepted for processing</li>
-<li>400: Bad request (likely an issue in the payload formatting)</li>
-<li>401: Unauthorized (likely a missing API Key)</li>
-<li>403: Permission issue (likely using an invalid API Key)</li>
-<li>408: Request Timeout, request should be retried after some time</li>
-<li>413: Payload too large (batch is above 5MB uncompressed)</li>
-<li>429: Too Many Requests, request should be retried after some time</li>
-<li>500: Internal Server Error, the server encountered an unexpected condition that prevented it from fulfilling the request, request should be retried after some time</li>
-<li>503: Service Unavailable, the server is not ready to handle the request probably because it is overloaded, request should be retried after some time</li>
-</ul>
+    <p>Send logs.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <p class="tag_title">Parameters:</p>
-<ul class="param">
-  
-    <li>
-      
-        <span class='name'>body</span>
-      
-      
-        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="HTTPLogItem.html" title="DatadogAPIClient::V2::HTTPLogItem (class)">HTTPLogItem</a></span>&gt;</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'><p>Log to send (JSON format).</p>
-</div>
-      
-    </li>
-  
-    <li>
-      
-        <span class='name'>opts</span>
-      
-      
-        <span class='type'>(<tt>Hash</tt>)</span>
-      
-      
-        <em class="default">(defaults to: <tt>{}</tt>)</em>
-      
-      
-        &mdash;
-        <div class='inline'><p>the optional parameters</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-  
-    
-    
-    
-    
-    <p class="tag_title">Options Hash (<tt>opts</tt>):</p>
-    <ul class="option">
-      
-        <li>
-          <span class="name">:content_encoding</span>
-          <span class="type">(<tt><span class='object_link'><a href="ContentEncoding.html" title="DatadogAPIClient::V2::ContentEncoding (class)">ContentEncoding</a></span></tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>HTTP header used to compress the media-type.</p>
-</div>
-          
-        </li>
-      
-        <li>
-          <span class="name">:ddtags</span>
-          <span class="type">(<tt>String</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>Log tags can be passed as query parameters with <code>text/plain</code> content type.</p>
-</div>
-          
-        </li>
-      
-    </ul>
   
 
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>Object</tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#submit_log_with_http_info-instance_method" title="DatadogAPIClient::V2::LogsAPI#submit_log_with_http_info (method)">#submit_log_with_http_info</a></span></li>
+    
+  </ul>
 
 </div><table class="source_code">
   <tr>
@@ -1700,8 +1579,9 @@ Add the <code>Content-Encoding: gzip</code> header to the request when sending c
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Send logs
-Send your logs to your Datadog platform over HTTP. Limits per HTTP request are:</p>
+    <p>Send logs.</p>
+
+<p>Send your logs to your Datadog platform over HTTP. Limits per HTTP request are:</p>
 
 <ul>
 <li>Maximum content size per payload (uncompressed): 5MB</li>
@@ -1969,7 +1849,7 @@ Add the <code>Content-Encoding: gzip</code> header to the request when sending c
 </div>
 
       <div id="footer">
-  Generated on Wed Apr 20 07:27:21 2022 by
+  Generated on Wed Apr 20 14:46:52 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.6).
 </div>

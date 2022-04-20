@@ -148,7 +148,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#get_host_totals-instance_method" title="#get_host_totals (instance method)">#<strong>get_host_totals</strong>(opts = {})  &#x21d2; HostTotals </a>
+      <a href="#get_host_totals-instance_method" title="#get_host_totals (instance method)">#<strong>get_host_totals</strong>(opts = {})  &#x21d2; Object </a>
     
 
     
@@ -162,7 +162,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Get the total number of active hosts This endpoint returns the total number of active and up hosts in your Datadog account.</p>
+    <span class="summary_desc"><div class='inline'><p>Get the total number of active hosts.</p>
 </div></span>
   
 </li>
@@ -185,7 +185,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Get the total number of active hosts This endpoint returns the total number of active and up hosts in your Datadog account.</p>
+    <span class="summary_desc"><div class='inline'><p>Get the total number of active hosts.</p>
 </div></span>
   
 </li>
@@ -219,7 +219,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#list_hosts-instance_method" title="#list_hosts (instance method)">#<strong>list_hosts</strong>(opts = {})  &#x21d2; HostListResponse </a>
+      <a href="#list_hosts-instance_method" title="#list_hosts (instance method)">#<strong>list_hosts</strong>(opts = {})  &#x21d2; Object </a>
     
 
     
@@ -233,7 +233,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Get all hosts for your organization This endpoint allows searching for hosts by name, alias, or tag.</p>
+    <span class="summary_desc"><div class='inline'><p>Get all hosts for your organization.</p>
 </div></span>
   
 </li>
@@ -256,7 +256,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Get all hosts for your organization This endpoint allows searching for hosts by name, alias, or tag.</p>
+    <span class="summary_desc"><div class='inline'><p>Get all hosts for your organization.</p>
 </div></span>
   
 </li>
@@ -265,7 +265,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#mute_host-instance_method" title="#mute_host (instance method)">#<strong>mute_host</strong>(host_name, body, opts = {})  &#x21d2; HostMuteResponse </a>
+      <a href="#mute_host-instance_method" title="#mute_host (instance method)">#<strong>mute_host</strong>(host_name, body, opts = {})  &#x21d2; Object </a>
     
 
     
@@ -279,7 +279,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Mute a host Mute a host.</p>
+    <span class="summary_desc"><div class='inline'><p>Mute a host.</p>
 </div></span>
   
 </li>
@@ -302,7 +302,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Mute a host Mute a host.</p>
+    <span class="summary_desc"><div class='inline'><p>Mute a host.</p>
 </div></span>
   
 </li>
@@ -311,7 +311,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#unmute_host-instance_method" title="#unmute_host (instance method)">#<strong>unmute_host</strong>(host_name, opts = {})  &#x21d2; HostMuteResponse </a>
+      <a href="#unmute_host-instance_method" title="#unmute_host (instance method)">#<strong>unmute_host</strong>(host_name, opts = {})  &#x21d2; Object </a>
     
 
     
@@ -325,7 +325,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Unmute a host Unmutes a host.</p>
+    <span class="summary_desc"><div class='inline'><p>Unmute a host.</p>
 </div></span>
   
 </li>
@@ -348,7 +348,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Unmute a host Unmutes a host.</p>
+    <span class="summary_desc"><div class='inline'><p>Unmute a host.</p>
 </div></span>
   
 </li>
@@ -457,7 +457,7 @@
       <div class="method_details first">
   <h3 class="signature first" id="get_host_totals-instance_method">
   
-    #<strong>get_host_totals</strong>(opts = {})  &#x21d2; <tt><span class='object_link'><a href="HostTotals.html" title="DatadogAPIClient::V1::HostTotals (class)">HostTotals</a></span></tt> 
+    #<strong>get_host_totals</strong>(opts = {})  &#x21d2; <tt>Object</tt> 
   
 
   
@@ -465,70 +465,20 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Get the total number of active hosts
-This endpoint returns the total number of active and up hosts in your Datadog account.
-Active means the host has reported in the past hour, and up means it has reported in the past two hours.</p>
+    <p>Get the total number of active hosts.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <p class="tag_title">Parameters:</p>
-<ul class="param">
-  
-    <li>
-      
-        <span class='name'>opts</span>
-      
-      
-        <span class='type'>(<tt>Hash</tt>)</span>
-      
-      
-        <em class="default">(defaults to: <tt>{}</tt>)</em>
-      
-      
-        &mdash;
-        <div class='inline'><p>the optional parameters</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-  
-    
-    
-    <p class="tag_title">Options Hash (<tt>opts</tt>):</p>
-    <ul class="option">
-      
-        <li>
-          <span class="name">:from</span>
-          <span class="type">(<tt>Integer</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>Number of seconds from which you want to get total number of active hosts.</p>
-</div>
-          
-        </li>
-      
-    </ul>
   
 
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt><span class='object_link'><a href="HostTotals.html" title="DatadogAPIClient::V1::HostTotals (class)">HostTotals</a></span></tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#get_host_totals_with_http_info-instance_method" title="DatadogAPIClient::V1::HostsAPI#get_host_totals_with_http_info (method)">#get_host_totals_with_http_info</a></span></li>
+    
+  </ul>
 
 </div><table class="source_code">
   <tr>
@@ -564,8 +514,9 @@ Active means the host has reported in the past hour, and up means it has reporte
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Get the total number of active hosts
-This endpoint returns the total number of active and up hosts in your Datadog account.
+    <p>Get the total number of active hosts.</p>
+
+<p>This endpoint returns the total number of active and up hosts in your Datadog account.
 Active means the host has reported in the past hour, and up means it has reported in the past two hours.</p>
 
 
@@ -759,7 +710,7 @@ Active means the host has reported in the past hour, and up means it has reporte
       <div class="method_details ">
   <h3 class="signature " id="list_hosts-instance_method">
   
-    #<strong>list_hosts</strong>(opts = {})  &#x21d2; <tt><span class='object_link'><a href="HostListResponse.html" title="DatadogAPIClient::V1::HostListResponse (class)">HostListResponse</a></span></tt> 
+    #<strong>list_hosts</strong>(opts = {})  &#x21d2; <tt>Object</tt> 
   
 
   
@@ -767,156 +718,20 @@ Active means the host has reported in the past hour, and up means it has reporte
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Get all hosts for your organization
-This endpoint allows searching for hosts by name, alias, or tag.
-Hosts live within the past 3 hours are included by default.
-Retention is 7 days.
-Results are paginated with a max of 1000 results at a time.</p>
+    <p>Get all hosts for your organization.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <p class="tag_title">Parameters:</p>
-<ul class="param">
-  
-    <li>
-      
-        <span class='name'>opts</span>
-      
-      
-        <span class='type'>(<tt>Hash</tt>)</span>
-      
-      
-        <em class="default">(defaults to: <tt>{}</tt>)</em>
-      
-      
-        &mdash;
-        <div class='inline'><p>the optional parameters</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-  
-    
-    
-    <p class="tag_title">Options Hash (<tt>opts</tt>):</p>
-    <ul class="option">
-      
-        <li>
-          <span class="name">:filter</span>
-          <span class="type">(<tt>String</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>String to filter search results.</p>
-</div>
-          
-        </li>
-      
-        <li>
-          <span class="name">:sort_field</span>
-          <span class="type">(<tt>String</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>Sort hosts by this field.</p>
-</div>
-          
-        </li>
-      
-        <li>
-          <span class="name">:sort_dir</span>
-          <span class="type">(<tt>String</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>Direction of sort. Options include <code>asc</code> and <code>desc</code>.</p>
-</div>
-          
-        </li>
-      
-        <li>
-          <span class="name">:start</span>
-          <span class="type">(<tt>Integer</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>Host result to start search from.</p>
-</div>
-          
-        </li>
-      
-        <li>
-          <span class="name">:count</span>
-          <span class="type">(<tt>Integer</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>Number of hosts to return. Max 1000.</p>
-</div>
-          
-        </li>
-      
-        <li>
-          <span class="name">:from</span>
-          <span class="type">(<tt>Integer</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>Number of seconds since UNIX epoch from which you want to search your hosts.</p>
-</div>
-          
-        </li>
-      
-        <li>
-          <span class="name">:include_muted_hosts_data</span>
-          <span class="type">(<tt>Boolean</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>Include information on the muted status of hosts and when the mute expires.</p>
-</div>
-          
-        </li>
-      
-        <li>
-          <span class="name">:include_hosts_metadata</span>
-          <span class="type">(<tt>Boolean</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>Include additional metadata about the hosts (agent_version, machine, platform, processor, etc.).</p>
-</div>
-          
-        </li>
-      
-    </ul>
   
 
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt><span class='object_link'><a href="HostListResponse.html" title="DatadogAPIClient::V1::HostListResponse (class)">HostListResponse</a></span></tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#list_hosts_with_http_info-instance_method" title="DatadogAPIClient::V1::HostsAPI#list_hosts_with_http_info (method)">#list_hosts_with_http_info</a></span></li>
+    
+  </ul>
 
 </div><table class="source_code">
   <tr>
@@ -952,8 +767,9 @@ Results are paginated with a max of 1000 results at a time.</p>
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Get all hosts for your organization
-This endpoint allows searching for hosts by name, alias, or tag.
+    <p>Get all hosts for your organization.</p>
+
+<p>This endpoint allows searching for hosts by name, alias, or tag.
 Hosts live within the past 3 hours are included by default.
 Retention is 7 days.
 Results are paginated with a max of 1000 results at a time.</p>
@@ -1247,7 +1063,7 @@ Results are paginated with a max of 1000 results at a time.</p>
       <div class="method_details ">
   <h3 class="signature " id="mute_host-instance_method">
   
-    #<strong>mute_host</strong>(host_name, body, opts = {})  &#x21d2; <tt><span class='object_link'><a href="HostMuteResponse.html" title="DatadogAPIClient::V1::HostMuteResponse (class)">HostMuteResponse</a></span></tt> 
+    #<strong>mute_host</strong>(host_name, body, opts = {})  &#x21d2; <tt>Object</tt> 
   
 
   
@@ -1255,78 +1071,20 @@ Results are paginated with a max of 1000 results at a time.</p>
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Mute a host
-Mute a host.</p>
+    <p>Mute a host.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <p class="tag_title">Parameters:</p>
-<ul class="param">
   
-    <li>
-      
-        <span class='name'>host_name</span>
-      
-      
-        <span class='type'>(<tt>String</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'><p>Name of the host to mute.</p>
-</div>
-      
-    </li>
-  
-    <li>
-      
-        <span class='name'>body</span>
-      
-      
-        <span class='type'>(<tt><span class='object_link'><a href="HostMuteSettings.html" title="DatadogAPIClient::V1::HostMuteSettings (class)">HostMuteSettings</a></span></tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'><p>Mute a host request body.</p>
-</div>
-      
-    </li>
-  
-    <li>
-      
-        <span class='name'>opts</span>
-      
-      
-        <span class='type'>(<tt>Hash</tt>)</span>
-      
-      
-        <em class="default">(defaults to: <tt>{}</tt>)</em>
-      
-      
-        &mdash;
-        <div class='inline'><p>the optional parameters</p>
-</div>
-      
-    </li>
-  
-</ul>
 
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt><span class='object_link'><a href="HostMuteResponse.html" title="DatadogAPIClient::V1::HostMuteResponse (class)">HostMuteResponse</a></span></tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#mute_host_with_http_info-instance_method" title="DatadogAPIClient::V1::HostsAPI#mute_host_with_http_info (method)">#mute_host_with_http_info</a></span></li>
+    
+  </ul>
 
 </div><table class="source_code">
   <tr>
@@ -1362,8 +1120,9 @@ Mute a host.</p>
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Mute a host
-Mute a host.</p>
+    <p>Mute a host.</p>
+
+<p>Mute a host.</p>
 
 
   </div>
@@ -1583,7 +1342,7 @@ Mute a host.</p>
       <div class="method_details ">
   <h3 class="signature " id="unmute_host-instance_method">
   
-    #<strong>unmute_host</strong>(host_name, opts = {})  &#x21d2; <tt><span class='object_link'><a href="HostMuteResponse.html" title="DatadogAPIClient::V1::HostMuteResponse (class)">HostMuteResponse</a></span></tt> 
+    #<strong>unmute_host</strong>(host_name, opts = {})  &#x21d2; <tt>Object</tt> 
   
 
   
@@ -1591,63 +1350,20 @@ Mute a host.</p>
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Unmute a host
-Unmutes a host. This endpoint takes no JSON arguments.</p>
+    <p>Unmute a host.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <p class="tag_title">Parameters:</p>
-<ul class="param">
   
-    <li>
-      
-        <span class='name'>host_name</span>
-      
-      
-        <span class='type'>(<tt>String</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'><p>Name of the host to unmute.</p>
-</div>
-      
-    </li>
-  
-    <li>
-      
-        <span class='name'>opts</span>
-      
-      
-        <span class='type'>(<tt>Hash</tt>)</span>
-      
-      
-        <em class="default">(defaults to: <tt>{}</tt>)</em>
-      
-      
-        &mdash;
-        <div class='inline'><p>the optional parameters</p>
-</div>
-      
-    </li>
-  
-</ul>
 
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt><span class='object_link'><a href="HostMuteResponse.html" title="DatadogAPIClient::V1::HostMuteResponse (class)">HostMuteResponse</a></span></tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#unmute_host_with_http_info-instance_method" title="DatadogAPIClient::V1::HostsAPI#unmute_host_with_http_info (method)">#unmute_host_with_http_info</a></span></li>
+    
+  </ul>
 
 </div><table class="source_code">
   <tr>
@@ -1683,8 +1399,9 @@ Unmutes a host. This endpoint takes no JSON arguments.</p>
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Unmute a host
-Unmutes a host. This endpoint takes no JSON arguments.</p>
+    <p>Unmute a host.</p>
+
+<p>Unmutes a host. This endpoint takes no JSON arguments.</p>
 
 
   </div>
@@ -1879,7 +1596,7 @@ Unmutes a host. This endpoint takes no JSON arguments.</p>
 </div>
 
       <div id="footer">
-  Generated on Wed Apr 20 07:27:21 2022 by
+  Generated on Wed Apr 20 14:46:52 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.6).
 </div>
