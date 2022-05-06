@@ -419,6 +419,32 @@ prevent all alerting related to specified Datadog tags.</p>
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#mute_first_recovery_notification-instance_method" title="#mute_first_recovery_notification (instance method)">#<strong>mute_first_recovery_notification</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>If the first recovery notification during a downtime should be muted.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#parent_id-instance_method" title="#parent_id (instance method)">#<strong>parent_id</strong>  &#x21d2; Object </a>
     
 
@@ -1270,6 +1296,48 @@ For example, <code>service:postgres</code> <strong>AND</strong> <code>team:front
 </div>
     
       
+      <span id="mute_first_recovery_notification=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="mute_first_recovery_notification-instance_method">
+  
+    #<strong>mute_first_recovery_notification</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>If the first recovery notification during a downtime should be muted.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+74
+75
+76</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/downtime.rb', line 74</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_mute_first_recovery_notification'>mute_first_recovery_notification</span>
+  <span class='ivar'>@mute_first_recovery_notification</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
       <span id="parent_id=-instance_method"></span>
       <div class="method_details ">
   <h3 class="signature " id="parent_id-instance_method">
@@ -1338,12 +1406,12 @@ For example, <code>service:postgres</code> <strong>AND</strong> <code>team:front
       <pre class="lines">
 
 
-77
-78
-79</pre>
+80
+81
+82</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/downtime.rb', line 77</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/downtime.rb', line 80</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_recurrence'>recurrence</span>
   <span class='ivar'>@recurrence</span>
@@ -2270,7 +2338,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Thu May  5 07:48:58 2022 by
+  Generated on Fri May  6 09:59:54 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.6).
 </div>
