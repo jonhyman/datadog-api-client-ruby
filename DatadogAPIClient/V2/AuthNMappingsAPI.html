@@ -1389,18 +1389,6 @@
         </li>
       
         <li>
-          <span class="name">:include</span>
-          <span class="type">(<tt>Array&lt;String&gt;</tt>)</span>
-          <span class="default">
-            
-          </span>
-          
-            &mdash; <div class='inline'><p>Include additional information in the response.</p>
-</div>
-          
-        </li>
-      
-        <li>
           <span class="name">:filter</span>
           <span class="type">(<tt>String</tt>)</span>
           <span class="default">
@@ -1439,6 +1427,7 @@
       <pre class="lines">
 
 
+265
 266
 267
 268
@@ -1498,12 +1487,10 @@
 322
 323
 324
-325
-326
-327</pre>
+325</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/authn_mappings_api.rb', line 266</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/authn_mappings_api.rb', line 265</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_authn_mappings_with_http_info'>list_authn_mappings_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1531,7 +1518,6 @@
   <span class='id identifier rubyid_query_params'>query_params</span><span class='lbracket'>[</span><span class='symbol'>:&#39;page[size]&#39;</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;page_size&#39;</span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;page_size&#39;</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
   <span class='id identifier rubyid_query_params'>query_params</span><span class='lbracket'>[</span><span class='symbol'>:&#39;page[number]&#39;</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;page_number&#39;</span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;page_number&#39;</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
   <span class='id identifier rubyid_query_params'>query_params</span><span class='lbracket'>[</span><span class='symbol'>:&#39;sort&#39;</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;sort&#39;</span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;sort&#39;</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
-  <span class='id identifier rubyid_query_params'>query_params</span><span class='lbracket'>[</span><span class='symbol'>:&#39;include&#39;</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_build_collection_param'>build_collection_param</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;include&#39;</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='symbol'>:multi</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;include&#39;</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
   <span class='id identifier rubyid_query_params'>query_params</span><span class='lbracket'>[</span><span class='symbol'>:&#39;filter&#39;</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;filter&#39;</span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;filter&#39;</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
 
   <span class='comment'># header parameters
@@ -1604,13 +1590,13 @@
       <pre class="lines">
 
 
+330
+331
 332
-333
-334
-335</pre>
+333</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/authn_mappings_api.rb', line 332</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/authn_mappings_api.rb', line 330</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_authn_mapping'>update_authn_mapping</span><span class='lparen'>(</span><span class='id identifier rubyid_authn_mapping_id'>authn_mapping_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_update_authn_mapping_with_http_info'>update_authn_mapping_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_authn_mapping_id'>authn_mapping_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1712,6 +1698,8 @@
       <pre class="lines">
 
 
+343
+344
 345
 346
 347
@@ -1772,12 +1760,10 @@
 402
 403
 404
-405
-406
-407</pre>
+405</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/authn_mappings_api.rb', line 345</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/authn_mappings_api.rb', line 343</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_authn_mapping_with_http_info'>update_authn_mapping_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_authn_mapping_id'>authn_mapping_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1852,7 +1838,7 @@
 </div>
 
       <div id="footer">
-  Generated on Tue May 10 16:27:07 2022 by
+  Generated on Tue May 10 16:57:50 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.6).
 </div>
