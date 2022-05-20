@@ -490,6 +490,32 @@
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#rum_settings-instance_method" title="#rum_settings (instance method)">#<strong>rum_settings</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The RUM data collection settings for the Synthetic browser test.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#tick_every-instance_method" title="#tick_every (instance method)">#<strong>tick_every</strong>  &#x21d2; Object </a>
     
 
@@ -1331,6 +1357,58 @@ an alert.</p>
 </div>
     
       
+      <span id="rum_settings=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="rum_settings-instance_method">
+  
+    #<strong>rum_settings</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>The RUM data collection settings for the Synthetic browser test.
+<strong>Note:</strong> There are 3 ways to format RUM settings:</p>
+
+<p><code>{ isEnabled: false }</code>
+RUM data is not collected.</p>
+
+<p><code>{ isEnabled: true }</code>
+RUM data is collected from the Synthetic test&#39;s default application.</p>
+
+<p><code>{ isEnabled: true, applicationId: &quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&quot;, clientTokenId: 12345 }</code>
+RUM data is collected using the specified application.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+84
+85
+86</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_options.rb', line 84</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_rum_settings'>rum_settings</span>
+  <span class='ivar'>@rum_settings</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
       <span id="tick_every=-instance_method"></span>
       <div class="method_details ">
   <h3 class="signature " id="tick_every-instance_method">
@@ -2126,7 +2204,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Thu May 19 15:03:12 2022 by
+  Generated on Fri May 20 16:55:15 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.6).
 </div>
