@@ -199,6 +199,21 @@ on your configuration object:</p>
 <span class='id identifier rubyid_client'>client</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="DatadogAPIClient.html" title="DatadogAPIClient (module)">DatadogAPIClient</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="DatadogAPIClient/V1.html" title="DatadogAPIClient::V1 (module)">V1</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="DatadogAPIClient/V1/APIClient.html" title="DatadogAPIClient::V1::APIClient (class)">APIClient</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="DatadogAPIClient/V1/APIClient.html#initialize-instance_method" title="DatadogAPIClient::V1::APIClient#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_config'>config</span><span class='rparen'>)</span>
 </code></pre>
 
+<h3 id="pagination">Pagination</h3>
+
+<p>Several listing operations have a pagination method to help consume all the items available.
+For example, to retrieve all your incidents:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>datadog_api_client</span><span class='tstring_end'>&quot;</span></span>
+<span class='const'><span class='object_link'><a href="DatadogAPIClient.html" title="DatadogAPIClient (module)">DatadogAPIClient</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="DatadogAPIClient/V2.html" title="DatadogAPIClient::V2 (module)">V2</a></span></span><span class='period'>.</span><span class='id identifier rubyid_configure'><span class='object_link'><a href="DatadogAPIClient/V2.html#configure-class_method" title="DatadogAPIClient::V2.configure (method)">configure</a></span></span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_config'>config</span><span class='op'>|</span>
+  <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_unstable_operations'>unstable_operations</span><span class='lbracket'>[</span><span class='symbol'>:list_incidents</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='kw'>true</span>
+<span class='kw'>end</span>
+<span class='id identifier rubyid_api_instance'>api_instance</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="DatadogAPIClient.html" title="DatadogAPIClient (module)">DatadogAPIClient</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="DatadogAPIClient/V2.html" title="DatadogAPIClient::V2 (module)">V2</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="DatadogAPIClient/V2/IncidentsAPI.html" title="DatadogAPIClient::V2::IncidentsAPI (class)">IncidentsAPI</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="DatadogAPIClient/V2/IncidentsAPI.html#initialize-instance_method" title="DatadogAPIClient::V2::IncidentsAPI#initialize (method)">new</a></span></span>
+<span class='id identifier rubyid_api_instance'>api_instance</span><span class='period'>.</span><span class='id identifier rubyid_list_incidents_with_pagination'>list_incidents_with_pagination</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_incident'>incident</span><span class='op'>|</span>
+  <span class='id identifier rubyid_p'>p</span> <span class='id identifier rubyid_incident'>incident</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span>
+<span class='kw'>end</span>
+</code></pre>
+
 <h2 id="documentation">Documentation</h2>
 
 <p>If you are interested in general documentation for all public Datadog API endpoints, checkout the <a href="https://docs.datadoghq.com/api/">general documentation site</a>.</p>
@@ -213,7 +228,7 @@ on your configuration object:</p>
 </div></div>
 
       <div id="footer">
-  Generated on Fri May 27 10:06:24 2022 by
+  Generated on Mon May 30 09:42:55 2022 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.6).
 </div>
