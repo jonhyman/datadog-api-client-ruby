@@ -2491,6 +2491,18 @@ END
           
         </li>
       
+        <li>
+          <span class="name">:include_descendants</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'><p>Include child org usage in the response. Defaults to <code>true</code>.</p>
+</div>
+          
+        </li>
+      
     </ul>
   
 
@@ -3710,6 +3722,18 @@ END
           </span>
           
             &mdash; <div class='inline'><p>List following results with a next_record_id provided in the previous query.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:include_descendants</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'><p>Include child org usage in the response. Defaults to <code>true</code>.</p>
 </div>
           
         </li>
@@ -5608,13 +5632,13 @@ END
       <pre class="lines">
 
 
-1044
-1045
-1046
-1047</pre>
+1048
+1049
+1050
+1051</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/usage_metering_api.rb', line 1044</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/usage_metering_api.rb', line 1048</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_usage_ci_app'>get_usage_ci_app</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_get_usage_ci_app_with_http_info'>get_usage_ci_app_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -5728,10 +5752,6 @@ END
       <pre class="lines">
 
 
-1057
-1058
-1059
-1060
 1061
 1062
 1063
@@ -5786,10 +5806,14 @@ END
 1112
 1113
 1114
-1115</pre>
+1115
+1116
+1117
+1118
+1119</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/usage_metering_api.rb', line 1057</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/usage_metering_api.rb', line 1061</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_usage_ci_app_with_http_info'>get_usage_ci_app_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -9528,13 +9552,13 @@ END
       <pre class="lines">
 
 
-2110
-2111
-2112
-2113</pre>
+2114
+2115
+2116
+2117</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/usage_metering_api.rb', line 2110</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/usage_metering_api.rb', line 2114</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_usage_online_archive'>get_usage_online_archive</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_get_usage_online_archive_with_http_info'>get_usage_online_archive_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -9648,10 +9672,6 @@ END
       <pre class="lines">
 
 
-2123
-2124
-2125
-2126
 2127
 2128
 2129
@@ -9706,10 +9726,14 @@ END
 2178
 2179
 2180
-2181</pre>
+2181
+2182
+2183
+2184
+2185</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/usage_metering_api.rb', line 2123</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/usage_metering_api.rb', line 2127</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_usage_online_archive_with_http_info'>get_usage_online_archive_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -12922,7 +12946,7 @@ END
 </div>
 
       <div id="footer">
-  Generated on Mon Jun  6 19:24:15 2022 by
+  Generated on Tue Jun  7 12:33:56 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>
