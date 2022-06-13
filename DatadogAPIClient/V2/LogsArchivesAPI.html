@@ -762,13 +762,13 @@
       <pre class="lines">
 
 
+29
+30
 31
-32
-33
-34</pre>
+32</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 31</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 29</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add_read_role_to_archive'>add_read_role_to_archive</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_add_read_role_to_archive_with_http_info'>add_read_role_to_archive_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -960,7 +960,7 @@
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;body&#39; when calling LogsArchivesAPI.add_read_role_to_archive</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/logs/config/archives/{archive_id}/readers</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>archive_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/logs/config/archives/{archive_id}/readers</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{archive_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -968,7 +968,7 @@
   <span class='comment'># header parameters
 </span>  <span class='id identifier rubyid_header_params'>header_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:header_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
   <span class='comment'># HTTP header &#39;Accept&#39; (if needed)
-</span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_accept'>select_header_accept</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>application/json</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_accept'>select_header_accept</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>*/*</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
   <span class='comment'># HTTP header &#39;Content-Type&#39;
 </span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Content-Type</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_content_type'>select_header_content_type</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>application/json</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
 
@@ -994,7 +994,7 @@
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:POST</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Post</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: LogsArchivesAPI#add_read_role_to_archive\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -1037,13 +1037,13 @@
       <pre class="lines">
 
 
+109
+110
 111
-112
-113
-114</pre>
+112</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 111</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 109</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_logs_archive'>create_logs_archive</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_create_logs_archive_with_http_info'>create_logs_archive_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1250,7 +1250,7 @@
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:POST</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Post</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: LogsArchivesAPI#create_logs_archive\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -1293,13 +1293,13 @@
       <pre class="lines">
 
 
+184
+185
 186
-187
-188
-189</pre>
+187</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 186</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 184</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_logs_archive'>delete_logs_archive</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_delete_logs_archive_with_http_info'>delete_logs_archive_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1470,7 +1470,7 @@
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;archive_id&#39; when calling LogsArchivesAPI.delete_logs_archive</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/logs/config/archives/{archive_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>archive_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/logs/config/archives/{archive_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{archive_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -1478,7 +1478,7 @@
   <span class='comment'># header parameters
 </span>  <span class='id identifier rubyid_header_params'>header_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:header_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
   <span class='comment'># HTTP header &#39;Accept&#39; (if needed)
-</span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_accept'>select_header_accept</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>application/json</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_accept'>select_header_accept</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>*/*</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
 
   <span class='comment'># form parameters
 </span>  <span class='id identifier rubyid_form_params'>form_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:form_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -1502,7 +1502,7 @@
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:DELETE</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Delete</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: LogsArchivesAPI#delete_logs_archive\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -1545,13 +1545,13 @@
       <pre class="lines">
 
 
+257
+258
 259
-260
-261
-262</pre>
+260</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 259</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 257</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_logs_archive'>get_logs_archive</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_get_logs_archive_with_http_info'>get_logs_archive_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1594,13 +1594,13 @@
       <pre class="lines">
 
 
+330
 331
 332
-333
-334</pre>
+333</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 331</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 330</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_logs_archive_order'>get_logs_archive_order</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_get_logs_archive_order_with_http_info'>get_logs_archive_order_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1677,8 +1677,6 @@ This endpoint takes no JSON arguments.</p>
       <pre class="lines">
 
 
-340
-341
 342
 343
 344
@@ -1729,10 +1727,12 @@ This endpoint takes no JSON arguments.</p>
 389
 390
 391
-392</pre>
+392
+393
+394</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 340</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 342</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_logs_archive_order_with_http_info'>get_logs_archive_order_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1769,7 +1769,7 @@ This endpoint takes no JSON arguments.</p>
 </span>  <span class='id identifier rubyid_return_type'>return_type</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_return_type</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>LogsArchiveOrder</span><span class='tstring_end'>&#39;</span></span>
 
   <span class='comment'># auth_names
-</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:AuthZ</span><span class='comma'>,</span> <span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='rbracket'>]</span>
+</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:AuthZ</span><span class='rbracket'>]</span>
 
   <span class='id identifier rubyid_new_options'>new_options</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span>
     <span class='symbol'>:operation</span> <span class='op'>=&gt;</span> <span class='symbol'>:get_logs_archive_order</span><span class='comma'>,</span>
@@ -1781,7 +1781,7 @@ This endpoint takes no JSON arguments.</p>
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:GET</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Get</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: LogsArchivesAPI#get_logs_archive_order\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -1952,7 +1952,7 @@ This endpoint takes no JSON arguments.</p>
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;archive_id&#39; when calling LogsArchivesAPI.get_logs_archive</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/logs/config/archives/{archive_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>archive_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/logs/config/archives/{archive_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{archive_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -1972,7 +1972,7 @@ This endpoint takes no JSON arguments.</p>
 </span>  <span class='id identifier rubyid_return_type'>return_type</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_return_type</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>LogsArchive</span><span class='tstring_end'>&#39;</span></span>
 
   <span class='comment'># auth_names
-</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:AuthZ</span><span class='comma'>,</span> <span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='rbracket'>]</span>
+</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:AuthZ</span><span class='rbracket'>]</span>
 
   <span class='id identifier rubyid_new_options'>new_options</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span>
     <span class='symbol'>:operation</span> <span class='op'>=&gt;</span> <span class='symbol'>:get_logs_archive</span><span class='comma'>,</span>
@@ -1984,7 +1984,7 @@ This endpoint takes no JSON arguments.</p>
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:GET</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Get</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: LogsArchivesAPI#get_logs_archive\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -2124,8 +2124,6 @@ This endpoint takes no JSON arguments.</p>
       <pre class="lines">
 
 
-409
-410
 411
 412
 413
@@ -2180,10 +2178,12 @@ This endpoint takes no JSON arguments.</p>
 462
 463
 464
-465</pre>
+465
+466
+467</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 409</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 411</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_archive_read_roles_with_http_info'>list_archive_read_roles_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2204,7 +2204,7 @@ This endpoint takes no JSON arguments.</p>
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;archive_id&#39; when calling LogsArchivesAPI.list_archive_read_roles</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/logs/config/archives/{archive_id}/readers</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>archive_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/logs/config/archives/{archive_id}/readers</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{archive_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -2224,7 +2224,7 @@ This endpoint takes no JSON arguments.</p>
 </span>  <span class='id identifier rubyid_return_type'>return_type</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_return_type</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>RolesResponse</span><span class='tstring_end'>&#39;</span></span>
 
   <span class='comment'># auth_names
-</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:AuthZ</span><span class='comma'>,</span> <span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='rbracket'>]</span>
+</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:AuthZ</span><span class='rbracket'>]</span>
 
   <span class='id identifier rubyid_new_options'>new_options</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span>
     <span class='symbol'>:operation</span> <span class='op'>=&gt;</span> <span class='symbol'>:list_archive_read_roles</span><span class='comma'>,</span>
@@ -2236,7 +2236,7 @@ This endpoint takes no JSON arguments.</p>
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:GET</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Get</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: LogsArchivesAPI#list_archive_read_roles\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -2279,13 +2279,13 @@ This endpoint takes no JSON arguments.</p>
       <pre class="lines">
 
 
-471
 472
 473
-474</pre>
+474
+475</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 471</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 472</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_logs_archives'>list_logs_archives</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_list_logs_archives_with_http_info'>list_logs_archives_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2361,9 +2361,6 @@ This endpoint takes no JSON arguments.</p>
       <pre class="lines">
 
 
-480
-481
-482
 483
 484
 485
@@ -2413,10 +2410,13 @@ This endpoint takes no JSON arguments.</p>
 529
 530
 531
-532</pre>
+532
+533
+534
+535</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 480</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 483</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_logs_archives_with_http_info'>list_logs_archives_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2453,7 +2453,7 @@ This endpoint takes no JSON arguments.</p>
 </span>  <span class='id identifier rubyid_return_type'>return_type</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_return_type</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>LogsArchives</span><span class='tstring_end'>&#39;</span></span>
 
   <span class='comment'># auth_names
-</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:AuthZ</span><span class='comma'>,</span> <span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='rbracket'>]</span>
+</span>  <span class='id identifier rubyid_auth_names'>auth_names</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:debug_auth_names</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:apiKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:appKeyAuth</span><span class='comma'>,</span> <span class='symbol'>:AuthZ</span><span class='rbracket'>]</span>
 
   <span class='id identifier rubyid_new_options'>new_options</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span>
     <span class='symbol'>:operation</span> <span class='op'>=&gt;</span> <span class='symbol'>:list_logs_archives</span><span class='comma'>,</span>
@@ -2465,7 +2465,7 @@ This endpoint takes no JSON arguments.</p>
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:GET</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Get</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: LogsArchivesAPI#list_logs_archives\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -2616,8 +2616,6 @@ This endpoint takes no JSON arguments.</p>
       <pre class="lines">
 
 
-551
-552
 553
 554
 555
@@ -2678,10 +2676,12 @@ This endpoint takes no JSON arguments.</p>
 610
 611
 612
-613</pre>
+613
+614
+615</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 551</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 553</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_remove_role_from_archive_with_http_info'>remove_role_from_archive_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2706,7 +2706,7 @@ This endpoint takes no JSON arguments.</p>
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;body&#39; when calling LogsArchivesAPI.remove_role_from_archive</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/logs/config/archives/{archive_id}/readers</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>archive_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/logs/config/archives/{archive_id}/readers</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{archive_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -2714,7 +2714,7 @@ This endpoint takes no JSON arguments.</p>
   <span class='comment'># header parameters
 </span>  <span class='id identifier rubyid_header_params'>header_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:header_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
   <span class='comment'># HTTP header &#39;Accept&#39; (if needed)
-</span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_accept'>select_header_accept</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>application/json</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_accept'>select_header_accept</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>*/*</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
   <span class='comment'># HTTP header &#39;Content-Type&#39;
 </span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Content-Type</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_content_type'>select_header_content_type</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>application/json</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
 
@@ -2740,7 +2740,7 @@ This endpoint takes no JSON arguments.</p>
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:DELETE</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Delete</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: LogsArchivesAPI#remove_role_from_archive\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -2783,13 +2783,13 @@ This endpoint takes no JSON arguments.</p>
       <pre class="lines">
 
 
+620
 621
 622
-623
-624</pre>
+623</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 621</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 620</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_logs_archive'>update_logs_archive</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_update_logs_archive_with_http_info'>update_logs_archive_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2832,13 +2832,13 @@ This endpoint takes no JSON arguments.</p>
       <pre class="lines">
 
 
-701
-702
 703
-704</pre>
+704
+705
+706</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 701</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 703</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_logs_archive_order'>update_logs_archive_order</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_update_logs_archive_order_with_http_info'>update_logs_archive_order_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2933,14 +2933,6 @@ with the new one.</p>
       <pre class="lines">
 
 
-711
-712
-713
-714
-715
-716
-717
-718
 719
 720
 721
@@ -2991,10 +2983,18 @@ with the new one.</p>
 766
 767
 768
-769</pre>
+769
+770
+771
+772
+773
+774
+775
+776
+777</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 711</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 719</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_logs_archive_order_with_http_info'>update_logs_archive_order_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -3049,7 +3049,7 @@ with the new one.</p>
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:PUT</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Put</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: LogsArchivesAPI#update_logs_archive_order\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -3158,10 +3158,6 @@ your current configuration with the new one sent to your Datadog organization.</
       <pre class="lines">
 
 
-632
-633
-634
-635
 636
 637
 638
@@ -3220,10 +3216,14 @@ your current configuration with the new one sent to your Datadog organization.</
 691
 692
 693
-694</pre>
+694
+695
+696
+697
+698</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 632</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/logs_archives_api.rb', line 636</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_logs_archive_with_http_info'>update_logs_archive_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -3248,7 +3248,7 @@ your current configuration with the new one sent to your Datadog organization.</
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;body&#39; when calling LogsArchivesAPI.update_logs_archive</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/logs/config/archives/{archive_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>archive_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/logs/config/archives/{archive_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{archive_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_archive_id'>archive_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -3282,7 +3282,7 @@ your current configuration with the new one sent to your Datadog organization.</
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:PUT</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Put</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: LogsArchivesAPI#update_logs_archive\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -3298,7 +3298,7 @@ your current configuration with the new one sent to your Datadog organization.</
 </div>
 
       <div id="footer">
-  Generated on Mon Jun 13 08:20:52 2022 by
+  Generated on Mon Jun 13 08:30:35 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>

@@ -486,13 +486,13 @@
       <pre class="lines">
 
 
+29
 30
 31
-32
-33</pre>
+32</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 29</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_gcp_integration'>create_gcp_integration</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_create_gcp_integration_with_http_info'>create_gcp_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -583,7 +583,6 @@
       <pre class="lines">
 
 
-40
 41
 42
 43
@@ -641,10 +640,11 @@
 95
 96
 97
-98</pre>
+98
+99</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 40</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 41</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_gcp_integration_with_http_info'>create_gcp_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -699,7 +699,7 @@
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:POST</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Post</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: GCPIntegrationAPI#create_gcp_integration\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -742,13 +742,13 @@
       <pre class="lines">
 
 
+104
 105
 106
-107
-108</pre>
+107</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 105</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 104</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_gcp_integration'>delete_gcp_integration</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_delete_gcp_integration_with_http_info'>delete_gcp_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -839,7 +839,6 @@
       <pre class="lines">
 
 
-115
 116
 117
 118
@@ -897,10 +896,11 @@
 170
 171
 172
-173</pre>
+173
+174</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 115</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 116</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_gcp_integration_with_http_info'>delete_gcp_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -955,7 +955,7 @@
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:DELETE</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Delete</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: GCPIntegrationAPI#delete_gcp_integration\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -1080,8 +1080,6 @@
       <pre class="lines">
 
 
-188
-189
 190
 191
 192
@@ -1132,10 +1130,12 @@
 237
 238
 239
-240</pre>
+240
+241
+242</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 188</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 190</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_gcp_integration_with_http_info'>list_gcp_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1184,7 +1184,7 @@
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:GET</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Get</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: GCPIntegrationAPI#list_gcp_integration\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -1327,11 +1327,6 @@ The unspecified fields will keep their original values.</p>
       <pre class="lines">
 
 
-257
-258
-259
-260
-261
 262
 263
 264
@@ -1385,10 +1380,15 @@ The unspecified fields will keep their original values.</p>
 312
 313
 314
-315</pre>
+315
+316
+317
+318
+319
+320</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 257</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/gcp_integration_api.rb', line 262</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_gcp_integration_with_http_info'>update_gcp_integration_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1443,7 +1443,7 @@ The unspecified fields will keep their original values.</p>
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:PUT</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Put</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: GCPIntegrationAPI#update_gcp_integration\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -1459,7 +1459,7 @@ The unspecified fields will keep their original values.</p>
 </div>
 
       <div id="footer">
-  Generated on Mon Jun 13 08:20:55 2022 by
+  Generated on Mon Jun 13 08:30:38 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>

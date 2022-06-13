@@ -946,13 +946,13 @@
       <pre class="lines">
 
 
+29
 30
 31
-32
-33</pre>
+32</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 29</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_api_key'>create_api_key</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_create_api_key_with_http_info'>create_api_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1039,7 +1039,6 @@
       <pre class="lines">
 
 
-40
 41
 42
 43
@@ -1097,10 +1096,11 @@
 95
 96
 97
-98</pre>
+98
+99</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 40</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 41</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_api_key_with_http_info'>create_api_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1155,7 +1155,7 @@
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:POST</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Post</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: KeyManagementAPI#create_api_key\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -1198,13 +1198,13 @@
       <pre class="lines">
 
 
+104
 105
 106
-107
-108</pre>
+107</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 105</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 104</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_current_user_application_key'>create_current_user_application_key</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_create_current_user_application_key_with_http_info'>create_current_user_application_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1291,7 +1291,6 @@
       <pre class="lines">
 
 
-115
 116
 117
 118
@@ -1349,10 +1348,11 @@
 170
 171
 172
-173</pre>
+173
+174</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 115</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 116</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_current_user_application_key_with_http_info'>create_current_user_application_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1407,7 +1407,7 @@
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:POST</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Post</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: KeyManagementAPI#create_current_user_application_key\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -1450,13 +1450,13 @@
       <pre class="lines">
 
 
+179
 180
 181
-182
-183</pre>
+182</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 180</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 179</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_api_key'>delete_api_key</span><span class='lparen'>(</span><span class='id identifier rubyid_api_key_id'>api_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_delete_api_key_with_http_info'>delete_api_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_api_key_id'>api_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1547,7 +1547,6 @@
       <pre class="lines">
 
 
-190
 191
 192
 193
@@ -1603,10 +1602,11 @@
 243
 244
 245
-246</pre>
+246
+247</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 190</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 191</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_api_key_with_http_info'>delete_api_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_api_key_id'>api_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1627,7 +1627,7 @@
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;api_key_id&#39; when calling KeyManagementAPI.delete_api_key</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/api_keys/{api_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>api_key_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_api_key_id'>api_key_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/api_keys/{api_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{api_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_api_key_id'>api_key_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -1635,7 +1635,7 @@
   <span class='comment'># header parameters
 </span>  <span class='id identifier rubyid_header_params'>header_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:header_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
   <span class='comment'># HTTP header &#39;Accept&#39; (if needed)
-</span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_accept'>select_header_accept</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>application/json</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_accept'>select_header_accept</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>*/*</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
 
   <span class='comment'># form parameters
 </span>  <span class='id identifier rubyid_form_params'>form_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:form_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -1659,7 +1659,7 @@
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:DELETE</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Delete</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: KeyManagementAPI#delete_api_key\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -1702,13 +1702,13 @@
       <pre class="lines">
 
 
+252
 253
 254
-255
-256</pre>
+255</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 253</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 252</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_application_key'>delete_application_key</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_delete_application_key_with_http_info'>delete_application_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1799,7 +1799,6 @@
       <pre class="lines">
 
 
-263
 264
 265
 266
@@ -1855,10 +1854,11 @@
 316
 317
 318
-319</pre>
+319
+320</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 263</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 264</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_application_key_with_http_info'>delete_application_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1879,7 +1879,7 @@
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;app_key_id&#39; when calling KeyManagementAPI.delete_application_key</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/application_keys/{app_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>app_key_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/application_keys/{app_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{app_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -1887,7 +1887,7 @@
   <span class='comment'># header parameters
 </span>  <span class='id identifier rubyid_header_params'>header_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:header_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
   <span class='comment'># HTTP header &#39;Accept&#39; (if needed)
-</span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_accept'>select_header_accept</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>application/json</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_accept'>select_header_accept</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>*/*</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
 
   <span class='comment'># form parameters
 </span>  <span class='id identifier rubyid_form_params'>form_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:form_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -1911,7 +1911,7 @@
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:DELETE</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Delete</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: KeyManagementAPI#delete_application_key\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -1954,13 +1954,13 @@
       <pre class="lines">
 
 
+325
 326
 327
-328
-329</pre>
+328</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 326</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 325</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_current_user_application_key'>delete_current_user_application_key</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_delete_current_user_application_key_with_http_info'>delete_current_user_application_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2051,7 +2051,6 @@
       <pre class="lines">
 
 
-336
 337
 338
 339
@@ -2107,10 +2106,11 @@
 389
 390
 391
-392</pre>
+392
+393</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 336</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 337</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_current_user_application_key_with_http_info'>delete_current_user_application_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2131,7 +2131,7 @@
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;app_key_id&#39; when calling KeyManagementAPI.delete_current_user_application_key</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/current_user/application_keys/{app_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>app_key_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/current_user/application_keys/{app_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{app_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -2139,7 +2139,7 @@
   <span class='comment'># header parameters
 </span>  <span class='id identifier rubyid_header_params'>header_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:header_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
   <span class='comment'># HTTP header &#39;Accept&#39; (if needed)
-</span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_accept'>select_header_accept</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>application/json</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_header_params'>header_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_select_header_accept'>select_header_accept</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>*/*</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
 
   <span class='comment'># form parameters
 </span>  <span class='id identifier rubyid_form_params'>form_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:form_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -2163,7 +2163,7 @@
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:DELETE</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Delete</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: KeyManagementAPI#delete_current_user_application_key\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -2206,13 +2206,13 @@
       <pre class="lines">
 
 
+398
+399
 400
-401
-402
-403</pre>
+401</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 400</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 398</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_api_key'>get_api_key</span><span class='lparen'>(</span><span class='id identifier rubyid_api_key_id'>api_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_get_api_key_with_http_info'>get_api_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_api_key_id'>api_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2407,7 +2407,7 @@
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;api_key_id&#39; when calling KeyManagementAPI.get_api_key</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/api_keys/{api_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>api_key_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_api_key_id'>api_key_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/api_keys/{api_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{api_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_api_key_id'>api_key_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -2440,7 +2440,7 @@
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:GET</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Get</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: KeyManagementAPI#get_api_key\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -2483,13 +2483,13 @@
       <pre class="lines">
 
 
-476
-477
-478
-479</pre>
+473
+474
+475
+476</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 476</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 473</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_application_key'>get_application_key</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_get_application_key_with_http_info'>get_application_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2603,6 +2603,7 @@
       <pre class="lines">
 
 
+486
 487
 488
 489
@@ -2659,11 +2660,10 @@
 540
 541
 542
-543
-544</pre>
+543</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 487</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 486</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_application_key_with_http_info'>get_application_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2684,7 +2684,7 @@
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;app_key_id&#39; when calling KeyManagementAPI.get_application_key</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/application_keys/{app_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>app_key_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/application_keys/{app_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{app_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -2717,7 +2717,7 @@
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:GET</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Get</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: KeyManagementAPI#get_application_key\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -2760,13 +2760,13 @@
       <pre class="lines">
 
 
-551
-552
-553
-554</pre>
+548
+549
+550
+551</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 551</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 548</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_current_user_application_key'>get_current_user_application_key</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_get_current_user_application_key_with_http_info'>get_current_user_application_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2857,6 +2857,7 @@
       <pre class="lines">
 
 
+560
 561
 562
 563
@@ -2912,11 +2913,10 @@
 613
 614
 615
-616
-617</pre>
+616</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 561</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 560</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_current_user_application_key_with_http_info'>get_current_user_application_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2937,7 +2937,7 @@
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;app_key_id&#39; when calling KeyManagementAPI.get_current_user_application_key</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/current_user/application_keys/{app_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>app_key_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/current_user/application_keys/{app_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{app_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -2969,7 +2969,7 @@
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:GET</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Get</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: KeyManagementAPI#get_current_user_application_key\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -3012,13 +3012,13 @@
       <pre class="lines">
 
 
-632
-633
-634
-635</pre>
+621
+622
+623
+624</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 632</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 621</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_api_keys'>list_api_keys</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_list_api_keys_with_http_info'>list_api_keys_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -3211,6 +3211,15 @@
       <pre class="lines">
 
 
+641
+642
+643
+644
+645
+646
+647
+648
+649
 650
 651
 652
@@ -3267,15 +3276,10 @@
 703
 704
 705
-706
-707
-708
-709
-710
-711</pre>
+706</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 650</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 641</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_api_keys_with_http_info'>list_api_keys_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -3290,6 +3294,10 @@
 
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Calling API: KeyManagementAPI.list_api_keys ...</span><span class='tstring_end'>&#39;</span></span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_allowable_values'>allowable_values</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>created_at</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-created_at</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>last4</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-last4</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>modified_at</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-modified_at</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>name</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-name</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_client_side_validation'>client_side_validation</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;sort&#39;</span><span class='rbracket'>]</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_allowable_values'>allowable_values</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;sort&#39;</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>invalid value for \&quot;sort\&quot;, must be one of </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_allowable_values'>allowable_values</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
 </span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/api_keys</span><span class='tstring_end'>&#39;</span></span>
@@ -3333,7 +3341,7 @@
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:GET</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Get</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: KeyManagementAPI#list_api_keys\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -3376,13 +3384,13 @@
       <pre class="lines">
 
 
-723
-724
-725
-726</pre>
+711
+712
+713
+714</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 723</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 711</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_application_keys'>list_application_keys</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_list_application_keys_with_http_info'>list_application_keys_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -3539,6 +3547,16 @@
       <pre class="lines">
 
 
+728
+729
+730
+731
+732
+733
+734
+735
+736
+737
 738
 739
 740
@@ -3591,16 +3609,10 @@
 787
 788
 789
-790
-791
-792
-793
-794
-795
-796</pre>
+790</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 738</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 728</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_application_keys_with_http_info'>list_application_keys_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -3615,6 +3627,10 @@
 
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Calling API: KeyManagementAPI.list_application_keys ...</span><span class='tstring_end'>&#39;</span></span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_allowable_values'>allowable_values</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>created_at</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-created_at</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>last4</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-last4</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>name</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-name</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_client_side_validation'>client_side_validation</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;sort&#39;</span><span class='rbracket'>]</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_allowable_values'>allowable_values</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;sort&#39;</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>invalid value for \&quot;sort\&quot;, must be one of </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_allowable_values'>allowable_values</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
 </span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/application_keys</span><span class='tstring_end'>&#39;</span></span>
@@ -3655,7 +3671,7 @@
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:GET</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Get</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: KeyManagementAPI#list_application_keys\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -3698,13 +3714,13 @@
       <pre class="lines">
 
 
-808
-809
-810
-811</pre>
+795
+796
+797
+798</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 808</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 795</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_current_user_application_keys'>list_current_user_application_keys</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_list_current_user_application_keys_with_http_info'>list_current_user_application_keys_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -3861,6 +3877,17 @@
       <pre class="lines">
 
 
+812
+813
+814
+815
+816
+817
+818
+819
+820
+821
+822
 823
 824
 825
@@ -3912,17 +3939,10 @@
 871
 872
 873
-874
-875
-876
-877
-878
-879
-880
-881</pre>
+874</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 823</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 812</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_current_user_application_keys_with_http_info'>list_current_user_application_keys_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -3937,6 +3957,10 @@
 
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Calling API: KeyManagementAPI.list_current_user_application_keys ...</span><span class='tstring_end'>&#39;</span></span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_allowable_values'>allowable_values</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>created_at</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-created_at</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>last4</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-last4</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>name</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-name</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_client_side_validation'>client_side_validation</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;sort&#39;</span><span class='rbracket'>]</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_allowable_values'>allowable_values</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;sort&#39;</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>invalid value for \&quot;sort\&quot;, must be one of </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_allowable_values'>allowable_values</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
 </span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/current_user/application_keys</span><span class='tstring_end'>&#39;</span></span>
@@ -3977,7 +4001,7 @@
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:GET</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Get</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: KeyManagementAPI#list_current_user_application_keys\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -4020,13 +4044,13 @@
       <pre class="lines">
 
 
-889
-890
-891
-892</pre>
+879
+880
+881
+882</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 889</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 879</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_api_key'>update_api_key</span><span class='lparen'>(</span><span class='id identifier rubyid_api_key_id'>api_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_update_api_key_with_http_info'>update_api_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_api_key_id'>api_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -4128,6 +4152,14 @@
       <pre class="lines">
 
 
+892
+893
+894
+895
+896
+897
+898
+899
 900
 901
 902
@@ -4182,18 +4214,10 @@
 951
 952
 953
-954
-955
-956
-957
-958
-959
-960
-961
-962</pre>
+954</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 900</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 892</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_api_key_with_http_info'>update_api_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_api_key_id'>api_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -4218,7 +4242,7 @@
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;body&#39; when calling KeyManagementAPI.update_api_key</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/api_keys/{api_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>api_key_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_api_key_id'>api_key_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/api_keys/{api_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{api_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_api_key_id'>api_key_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -4252,7 +4276,7 @@
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:PATCH</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Patch</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: KeyManagementAPI#update_api_key\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -4295,13 +4319,13 @@
       <pre class="lines">
 
 
-970
-971
-972
-973</pre>
+959
+960
+961
+962</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 970</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 959</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_application_key'>update_application_key</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_update_application_key_with_http_info'>update_application_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -4403,6 +4427,15 @@
       <pre class="lines">
 
 
+972
+973
+974
+975
+976
+977
+978
+979
+980
 981
 982
 983
@@ -4456,19 +4489,10 @@
 1031
 1032
 1033
-1034
-1035
-1036
-1037
-1038
-1039
-1040
-1041
-1042
-1043</pre>
+1034</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 981</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 972</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_application_key_with_http_info'>update_application_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -4493,7 +4517,7 @@
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;body&#39; when calling KeyManagementAPI.update_application_key</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/application_keys/{app_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>app_key_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/application_keys/{app_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{app_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -4527,7 +4551,7 @@
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:PATCH</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Patch</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: KeyManagementAPI#update_application_key\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -4570,13 +4594,13 @@
       <pre class="lines">
 
 
-1051
-1052
-1053
-1054</pre>
+1039
+1040
+1041
+1042</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 1051</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 1039</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_current_user_application_key'>update_current_user_application_key</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_update_current_user_application_key_with_http_info'>update_current_user_application_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -4678,6 +4702,16 @@
       <pre class="lines">
 
 
+1052
+1053
+1054
+1055
+1056
+1057
+1058
+1059
+1060
+1061
 1062
 1063
 1064
@@ -4730,20 +4764,10 @@
 1111
 1112
 1113
-1114
-1115
-1116
-1117
-1118
-1119
-1120
-1121
-1122
-1123
-1124</pre>
+1114</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 1062</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/key_management_api.rb', line 1052</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_current_user_application_key_with_http_info'>update_current_user_application_key_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -4768,7 +4792,7 @@
     <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;body&#39; when calling KeyManagementAPI.update_current_user_application_key</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/current_user/application_keys/{app_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>app_key_id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/current_user/application_keys/{app_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>{app_key_id}</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>CGI</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_app_key_id'>app_key_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%2F</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -4802,7 +4826,7 @@
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:PATCH</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Patch</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: KeyManagementAPI#update_current_user_application_key\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -4818,7 +4842,7 @@
 </div>
 
       <div id="footer">
-  Generated on Mon Jun 13 08:20:54 2022 by
+  Generated on Mon Jun 13 08:30:37 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>

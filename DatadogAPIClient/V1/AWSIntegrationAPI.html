@@ -716,13 +716,13 @@
       <pre class="lines">
 
 
+29
 30
 31
-32
-33</pre>
+32</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 29</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_aws_account'>create_aws_account</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_create_aws_account_with_http_info'>create_aws_account_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -816,10 +816,6 @@ A unique AWS Account ID for role based authentication.</p>
       <pre class="lines">
 
 
-40
-41
-42
-43
 44
 45
 46
@@ -874,10 +870,14 @@ A unique AWS Account ID for role based authentication.</p>
 95
 96
 97
-98</pre>
+98
+99
+100
+101
+102</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 40</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 44</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_aws_account_with_http_info'>create_aws_account_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -932,7 +932,7 @@ A unique AWS Account ID for role based authentication.</p>
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:POST</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Post</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: AWSIntegrationAPI#create_aws_account\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -975,13 +975,13 @@ A unique AWS Account ID for role based authentication.</p>
       <pre class="lines">
 
 
-105
-106
 107
-108</pre>
+108
+109
+110</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 105</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 107</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_aws_tag_filter'>create_aws_tag_filter</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_create_aws_tag_filter_with_http_info'>create_aws_tag_filter_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1072,10 +1072,6 @@ A unique AWS Account ID for role based authentication.</p>
       <pre class="lines">
 
 
-115
-116
-117
-118
 119
 120
 121
@@ -1130,10 +1126,14 @@ A unique AWS Account ID for role based authentication.</p>
 170
 171
 172
-173</pre>
+173
+174
+175
+176
+177</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 115</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 119</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_aws_tag_filter_with_http_info'>create_aws_tag_filter_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1188,7 +1188,7 @@ A unique AWS Account ID for role based authentication.</p>
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:POST</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Post</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: AWSIntegrationAPI#create_aws_tag_filter\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -1231,13 +1231,13 @@ A unique AWS Account ID for role based authentication.</p>
       <pre class="lines">
 
 
-180
-181
 182
-183</pre>
+183
+184
+185</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 180</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 182</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_new_aws_external_id'>create_new_aws_external_id</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_create_new_aws_external_id_with_http_info'>create_new_aws_external_id_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1328,10 +1328,6 @@ A unique AWS Account ID for role based authentication.</p>
       <pre class="lines">
 
 
-190
-191
-192
-193
 194
 195
 196
@@ -1386,10 +1382,14 @@ A unique AWS Account ID for role based authentication.</p>
 245
 246
 247
-248</pre>
+248
+249
+250
+251
+252</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 190</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 194</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_new_aws_external_id_with_http_info'>create_new_aws_external_id_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1444,7 +1444,7 @@ A unique AWS Account ID for role based authentication.</p>
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:PUT</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Put</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: AWSIntegrationAPI#create_new_aws_external_id\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -1487,13 +1487,13 @@ A unique AWS Account ID for role based authentication.</p>
       <pre class="lines">
 
 
-255
-256
 257
-258</pre>
+258
+259
+260</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 255</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 257</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_aws_account'>delete_aws_account</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_delete_aws_account_with_http_info'>delete_aws_account_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1584,10 +1584,6 @@ A unique AWS Account ID for role based authentication.</p>
       <pre class="lines">
 
 
-265
-266
-267
-268
 269
 270
 271
@@ -1642,10 +1638,14 @@ A unique AWS Account ID for role based authentication.</p>
 320
 321
 322
-323</pre>
+323
+324
+325
+326
+327</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 265</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 269</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_aws_account_with_http_info'>delete_aws_account_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1700,7 +1700,7 @@ A unique AWS Account ID for role based authentication.</p>
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:DELETE</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Delete</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: AWSIntegrationAPI#delete_aws_account\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -1743,13 +1743,13 @@ A unique AWS Account ID for role based authentication.</p>
       <pre class="lines">
 
 
-330
-331
 332
-333</pre>
+333
+334
+335</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 330</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 332</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_aws_tag_filter'>delete_aws_tag_filter</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_delete_aws_tag_filter_with_http_info'>delete_aws_tag_filter_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1840,10 +1840,6 @@ A unique AWS Account ID for role based authentication.</p>
       <pre class="lines">
 
 
-340
-341
-342
-343
 344
 345
 346
@@ -1898,10 +1894,14 @@ A unique AWS Account ID for role based authentication.</p>
 395
 396
 397
-398</pre>
+398
+399
+400
+401
+402</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 340</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 344</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_aws_tag_filter_with_http_info'>delete_aws_tag_filter_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1956,7 +1956,7 @@ A unique AWS Account ID for role based authentication.</p>
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:DELETE</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Delete</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: AWSIntegrationAPI#delete_aws_tag_filter\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -1999,13 +1999,13 @@ A unique AWS Account ID for role based authentication.</p>
       <pre class="lines">
 
 
-404
-405
-406
-407</pre>
+407
+408
+409
+410</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 404</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 407</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_available_aws_namespaces'>list_available_aws_namespaces</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_list_available_aws_namespaces_with_http_info'>list_available_aws_namespaces_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2081,11 +2081,6 @@ A unique AWS Account ID for role based authentication.</p>
       <pre class="lines">
 
 
-413
-414
-415
-416
-417
 418
 419
 420
@@ -2133,10 +2128,15 @@ A unique AWS Account ID for role based authentication.</p>
 462
 463
 464
-465</pre>
+465
+466
+467
+468
+469
+470</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 413</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 418</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_available_aws_namespaces_with_http_info'>list_available_aws_namespaces_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2185,7 +2185,7 @@ A unique AWS Account ID for role based authentication.</p>
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:GET</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Get</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: AWSIntegrationAPI#list_available_aws_namespaces\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -2228,13 +2228,13 @@ A unique AWS Account ID for role based authentication.</p>
       <pre class="lines">
 
 
-474
 475
 476
-477</pre>
+477
+478</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 474</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 475</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_aws_accounts'>list_aws_accounts</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_list_aws_accounts_with_http_info'>list_aws_accounts_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2355,9 +2355,6 @@ A unique AWS Account ID for role based authentication.</p>
       <pre class="lines">
 
 
-486
-487
-488
 489
 490
 491
@@ -2410,10 +2407,13 @@ A unique AWS Account ID for role based authentication.</p>
 538
 539
 540
-541</pre>
+541
+542
+543
+544</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 486</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 489</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_aws_accounts_with_http_info'>list_aws_accounts_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2465,7 +2465,7 @@ A unique AWS Account ID for role based authentication.</p>
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:GET</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Get</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: AWSIntegrationAPI#list_aws_accounts\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -2508,13 +2508,13 @@ A unique AWS Account ID for role based authentication.</p>
       <pre class="lines">
 
 
-548
 549
 550
-551</pre>
+551
+552</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 548</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 549</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_aws_tag_filters'>list_aws_tag_filters</span><span class='lparen'>(</span><span class='id identifier rubyid_account_id'>account_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_list_aws_tag_filters_with_http_info'>list_aws_tag_filters_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_account_id'>account_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2605,9 +2605,6 @@ A unique AWS Account ID for role based authentication.</p>
       <pre class="lines">
 
 
-558
-559
-560
 561
 562
 563
@@ -2662,10 +2659,13 @@ A unique AWS Account ID for role based authentication.</p>
 612
 613
 614
-615</pre>
+615
+616
+617
+618</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 558</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 561</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list_aws_tag_filters_with_http_info'>list_aws_tag_filters_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_account_id'>account_id</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2719,7 +2719,7 @@ A unique AWS Account ID for role based authentication.</p>
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:GET</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Get</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: AWSIntegrationAPI#list_aws_tag_filters\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -2762,13 +2762,13 @@ A unique AWS Account ID for role based authentication.</p>
       <pre class="lines">
 
 
+623
+624
 625
-626
-627
-628</pre>
+626</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 625</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/aws_integration_api.rb', line 623</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_aws_account'>update_aws_account</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_update_aws_account_with_http_info'>update_aws_account_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -3028,7 +3028,7 @@ A unique AWS Account ID for role based authentication.</p>
     <span class='symbol'>:return_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_return_type'>return_type</span>
   <span class='rparen'>)</span>
 
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='symbol'>:PUT</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_status_code'>status_code</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_call_api'>call_api</span><span class='lparen'>(</span><span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Put</span><span class='comma'>,</span> <span class='id identifier rubyid_local_var_path'>local_var_path</span><span class='comma'>,</span> <span class='id identifier rubyid_new_options'>new_options</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>API called: AWSIntegrationAPI#update_aws_account\nData: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nStatus code: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status_code'>status_code</span><span class='embexpr_end'>}</span><span class='tstring_content'>\nHeaders: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_headers'>headers</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
@@ -3044,7 +3044,7 @@ A unique AWS Account ID for role based authentication.</p>
 </div>
 
       <div id="footer">
-  Generated on Mon Jun 13 08:20:55 2022 by
+  Generated on Mon Jun 13 08:30:38 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>
