@@ -173,6 +173,58 @@
 </li>
 
     
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#learning_method-instance_method" title="#learning_method (instance method)">#<strong>learning_method</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The learning method used to determine when signals should be generated for values that weren&#39;t learned.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#learning_threshold-instance_method" title="#learning_threshold (instance method)">#<strong>learning_threshold</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>A number of occurrences after which signals will be generated for values that weren&#39;t learned.</p>
+</div></span>
+  
+</li>
+
+    
   </ul>
 
 
@@ -476,6 +528,90 @@ weren&#39;t learned. If set to 0, a signal will be generated for all new values 
 
 <span class='kw'>def</span> <span class='id identifier rubyid_learning_duration'>learning_duration</span>
   <span class='ivar'>@learning_duration</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="learning_method=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="learning_method-instance_method">
+  
+    #<strong>learning_method</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>The learning method used to determine when signals should be generated for values that weren&#39;t learned.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+36
+37
+38</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/security_monitoring_rule_new_value_options.rb', line 36</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_learning_method'>learning_method</span>
+  <span class='ivar'>@learning_method</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="learning_threshold=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="learning_threshold-instance_method">
+  
+    #<strong>learning_threshold</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>A number of occurrences after which signals will be generated for values that weren&#39;t learned.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+39
+40
+41</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/security_monitoring_rule_new_value_options.rb', line 39</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_learning_threshold'>learning_threshold</span>
+  <span class='ivar'>@learning_threshold</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1204,7 +1340,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Sat Jun 18 12:26:22 2022 by
+  Generated on Mon Jun 20 08:48:32 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>
