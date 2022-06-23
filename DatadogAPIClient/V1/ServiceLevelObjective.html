@@ -222,7 +222,7 @@ for one or more timeframes, and metadata (<code>name</code>, <code>description</
   
 
   
-    <span class="summary_desc"><div class='inline'><p>A list of (up to 20) monitor groups that narrow the scope of a monitor service level objective.</p>
+    <span class="summary_desc"><div class='inline'><p>A list of (up to 100) monitor groups that narrow the scope of a monitor service level objective.</p>
 </div></span>
   
 </li>
@@ -380,7 +380,7 @@ for one or more timeframes, and metadata (<code>name</code>, <code>description</
   
 
   
-    <span class="summary_desc"><div class='inline'><p>A metric SLI query.</p>
+    <span class="summary_desc"><div class='inline'><p>A metric-based SLO.</p>
 </div></span>
   
 </li>
@@ -836,7 +836,7 @@ Optional in create/update requests.</p>
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>A list of (up to 20) monitor groups that narrow the scope of a monitor service level objective.</p>
+    <p>A list of (up to 100) monitor groups that narrow the scope of a monitor service level objective.</p>
 
 <p>Included in service level objective responses if it is not empty. Optional in
 create/update requests for monitor service level objectives, but may only be
@@ -1015,7 +1015,7 @@ objective. <strong>Required if type is <code>monitor</code></strong>.</p>
   <div class="discussion">
     <p>The union of monitor tags for all monitors referenced by the <code>monitor_ids</code>
 field.
-Always included in service level objective responses for monitor service level
+Always included in service level objective responses for monitor-based service level
 objectives (but may be empty). Ignored in create/update requests. Does not
 affect which monitors are included in the service level objective (that is
 determined entirely by the <code>monitor_ids</code> field).</p>
@@ -1102,7 +1102,7 @@ determined entirely by the <code>monitor_ids</code> field).</p>
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>A metric SLI query. <strong>Required if type is <code>metric</code></strong>. Note that Datadog only allows the sum by aggregator
+    <p>A metric-based SLO. <strong>Required if type is <code>metric</code></strong>. Note that Datadog only allows the sum by aggregator
 to be used because this will sum up all request counts instead of averaging them, or taking the max or
 min of all of those requests.</p>
 
@@ -2008,7 +2008,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Thu Jun 23 07:23:15 2022 by
+  Generated on Thu Jun 23 07:56:03 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>
