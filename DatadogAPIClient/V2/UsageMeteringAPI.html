@@ -300,7 +300,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Get hourly usage for Application Security.</p>
+    <span class="summary_desc"><div class='inline'><p>Get hourly usage for application security.</p>
 </div></span>
   
 </li>
@@ -323,7 +323,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Get hourly usage for Application Security.</p>
+    <span class="summary_desc"><div class='inline'><p>Get hourly usage for application security.</p>
 </div></span>
   
 </li>
@@ -346,7 +346,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Get hourly usage for Lambda Traced Invocations.</p>
+    <span class="summary_desc"><div class='inline'><p>Get hourly usage for lambda traced invocations.</p>
 </div></span>
   
 </li>
@@ -369,7 +369,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Get hourly usage for Lambda Traced Invocations.</p>
+    <span class="summary_desc"><div class='inline'><p>Get hourly usage for lambda traced invocations.</p>
 </div></span>
   
 </li>
@@ -392,7 +392,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Get hourly usage for Observability Pipelines.</p>
+    <span class="summary_desc"><div class='inline'><p>Get hourly usage for observability pipelines.</p>
 </div></span>
   
 </li>
@@ -415,7 +415,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Get hourly usage for Observability Pipelines.</p>
+    <span class="summary_desc"><div class='inline'><p>Get hourly usage for observability pipelines.</p>
 </div></span>
   
 </li>
@@ -1504,7 +1504,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Get hourly usage for Application Security.</p>
+    <p>Get hourly usage for application security.</p>
 
 
   </div>
@@ -1553,9 +1553,10 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Get hourly usage for Application Security.</p>
+    <p>Get hourly usage for application security.</p>
 
-<p>Get hourly usage for Application Security .</p>
+<p>Get hourly usage for application security .
+<strong>Note:</strong> hourly usage data for all products is now available in the <a href="https://docs.datadoghq.com/api/latest/usage-metering/#get-hourly-usage-by-product-family">Get hourly usage by product family API</a></p>
 
 
   </div>
@@ -1645,7 +1646,6 @@
       <pre class="lines">
 
 
-290
 291
 292
 293
@@ -1703,10 +1703,11 @@
 345
 346
 347
-348</pre>
+348
+349</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 290</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 291</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_usage_application_security_monitoring_with_http_info'>get_usage_application_security_monitoring_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1783,7 +1784,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Get hourly usage for Lambda Traced Invocations.</p>
+    <p>Get hourly usage for lambda traced invocations.</p>
 
 
   </div>
@@ -1804,13 +1805,13 @@
       <pre class="lines">
 
 
-353
 354
 355
-356</pre>
+356
+357</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 353</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 354</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_usage_lambda_traced_invocations'>get_usage_lambda_traced_invocations</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_get_usage_lambda_traced_invocations_with_http_info'>get_usage_lambda_traced_invocations_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1832,9 +1833,10 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Get hourly usage for Lambda Traced Invocations.</p>
+    <p>Get hourly usage for lambda traced invocations.</p>
 
-<p>Get hourly usage for Lambda Traced Invocations.</p>
+<p>Get hourly usage for lambda traced invocations.
+<strong>Note:</strong> hourly usage data for all products is now available in the <a href="https://docs.datadoghq.com/api/latest/usage-metering/#get-hourly-usage-by-product-family">Get hourly usage by product family API</a></p>
 
 
   </div>
@@ -1924,8 +1926,6 @@
       <pre class="lines">
 
 
-366
-367
 368
 369
 370
@@ -1982,10 +1982,12 @@
 421
 422
 423
-424</pre>
+424
+425
+426</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 366</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 368</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_usage_lambda_traced_invocations_with_http_info'>get_usage_lambda_traced_invocations_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2062,7 +2064,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Get hourly usage for Observability Pipelines.</p>
+    <p>Get hourly usage for observability pipelines.</p>
 
 
   </div>
@@ -2083,13 +2085,13 @@
       <pre class="lines">
 
 
-429
-430
 431
-432</pre>
+432
+433
+434</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 429</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 431</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_usage_observability_pipelines'>get_usage_observability_pipelines</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_get_usage_observability_pipelines_with_http_info'>get_usage_observability_pipelines_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2111,9 +2113,10 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Get hourly usage for Observability Pipelines.</p>
+    <p>Get hourly usage for observability pipelines.</p>
 
-<p>Get hourly usage for Observability Pipelines.</p>
+<p>Get hourly usage for observability pipelines.
+<strong>Note:</strong> hourly usage data for all products is now available in the <a href="https://docs.datadoghq.com/api/latest/usage-metering/#get-hourly-usage-by-product-family">Get hourly usage by product family API</a></p>
 
 
   </div>
@@ -2203,9 +2206,6 @@
       <pre class="lines">
 
 
-442
-443
-444
 445
 446
 447
@@ -2261,10 +2261,13 @@
 497
 498
 499
-500</pre>
+500
+501
+502
+503</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 442</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 445</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_usage_observability_pipelines_with_http_info'>get_usage_observability_pipelines_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2335,7 +2338,7 @@
 </div>
 
       <div id="footer">
-  Generated on Wed Jul 20 12:11:43 2022 by
+  Generated on Mon Jul 25 17:43:22 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>
