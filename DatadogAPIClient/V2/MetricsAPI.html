@@ -3308,6 +3308,8 @@ The maximum payload size is 500 kilobytes (512000 bytes). Compressed payloads mu
 <li>The full payload is approximately 100 bytes.</li>
 </ul>
 
+<p>Host name is one of the resources in the Resources field.</p>
+
 
   </div>
 </div>
@@ -3392,8 +3394,6 @@ The maximum payload size is 500 kilobytes (512000 bytes). Compressed payloads mu
       <pre class="lines">
 
 
-755
-756
 757
 758
 759
@@ -3455,10 +3455,12 @@ The maximum payload size is 500 kilobytes (512000 bytes). Compressed payloads mu
 815
 816
 817
-818</pre>
+818
+819
+820</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/metrics_api.rb', line 755</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/metrics_api.rb', line 757</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_submit_metrics_with_http_info'>submit_metrics_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -3811,7 +3813,7 @@ Can only be used with application keys from users with the <code>Manage Tags for
 </div>
 
       <div id="footer">
-  Generated on Mon Jul 25 17:42:30 2022 by
+  Generated on Tue Jul 26 14:03:47 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>
