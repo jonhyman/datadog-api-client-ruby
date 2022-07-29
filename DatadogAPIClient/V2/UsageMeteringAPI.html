@@ -194,7 +194,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#get_estimated_cost_by_org-instance_method" title="#get_estimated_cost_by_org (instance method)">#<strong>get_estimated_cost_by_org</strong>(opts = {})  &#x21d2; Object </a>
+      <a href="#get_estimated_cost_by_org-instance_method" title="#get_estimated_cost_by_org (instance method)">#<strong>get_estimated_cost_by_org</strong>(view, opts = {})  &#x21d2; Object </a>
     
 
     
@@ -208,7 +208,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Get estimated cost across multi-org account.</p>
+    <span class="summary_desc"><div class='inline'><p>Get estimated cost across your account.</p>
 </div></span>
   
 </li>
@@ -217,7 +217,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#get_estimated_cost_by_org_with_http_info-instance_method" title="#get_estimated_cost_by_org_with_http_info (instance method)">#<strong>get_estimated_cost_by_org_with_http_info</strong>(opts = {})  &#x21d2; Array&lt;(CostByOrgResponse, Integer, Hash)&gt; </a>
+      <a href="#get_estimated_cost_by_org_with_http_info-instance_method" title="#get_estimated_cost_by_org_with_http_info (instance method)">#<strong>get_estimated_cost_by_org_with_http_info</strong>(view, opts = {})  &#x21d2; Array&lt;(CostByOrgResponse, Integer, Hash)&gt; </a>
     
 
     
@@ -231,7 +231,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Get estimated cost across multi-org account.</p>
+    <span class="summary_desc"><div class='inline'><p>Get estimated cost across your account.</p>
 </div></span>
   
 </li>
@@ -828,7 +828,7 @@
       <div class="method_details ">
   <h3 class="signature " id="get_estimated_cost_by_org-instance_method">
   
-    #<strong>get_estimated_cost_by_org</strong>(opts = {})  &#x21d2; <tt>Object</tt> 
+    #<strong>get_estimated_cost_by_org</strong>(view, opts = {})  &#x21d2; <tt>Object</tt> 
   
 
   
@@ -836,7 +836,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Get estimated cost across multi-org account.</p>
+    <p>Get estimated cost across your account.</p>
 
 
   </div>
@@ -865,8 +865,8 @@
     <td>
       <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 105</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_get_estimated_cost_by_org'>get_estimated_cost_by_org</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_get_estimated_cost_by_org_with_http_info'>get_estimated_cost_by_org_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_get_estimated_cost_by_org'>get_estimated_cost_by_org</span><span class='lparen'>(</span><span class='id identifier rubyid_view'>view</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_get_estimated_cost_by_org_with_http_info'>get_estimated_cost_by_org_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_view'>view</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -877,7 +877,7 @@
       <div class="method_details ">
   <h3 class="signature " id="get_estimated_cost_by_org_with_http_info-instance_method">
   
-    #<strong>get_estimated_cost_by_org_with_http_info</strong>(opts = {})  &#x21d2; <tt>Array&lt;(<span class='object_link'><a href="CostByOrgResponse.html" title="DatadogAPIClient::V2::CostByOrgResponse (class)">CostByOrgResponse</a></span>, Integer, Hash)&gt;</tt> 
+    #<strong>get_estimated_cost_by_org_with_http_info</strong>(view, opts = {})  &#x21d2; <tt>Array&lt;(<span class='object_link'><a href="CostByOrgResponse.html" title="DatadogAPIClient::V2::CostByOrgResponse (class)">CostByOrgResponse</a></span>, Integer, Hash)&gt;</tt> 
   
 
   
@@ -885,9 +885,10 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Get estimated cost across multi-org account.</p>
+    <p>Get estimated cost across your account.</p>
 
-<p>Get estimated cost across multi-org account.</p>
+<p>Get estimated cost across multi-org and single root-org accounts.
+Estimated cost data is only available for the current month and previous month. To access historical costs prior to this, use the /cost_by_org endpoint.</p>
 
 
   </div>
@@ -895,6 +896,21 @@
 <div class="tags">
   <p class="tag_title">Parameters:</p>
 <ul class="param">
+  
+    <li>
+      
+        <span class='name'>view</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>String to specify whether cost is broken down at a parent-org level or at the sub-org level. Currently, only the &#39;sub-org&#39; view is supported.</p>
+</div>
+      
+    </li>
   
     <li>
       
@@ -918,6 +934,8 @@
   
     
     
+    
+    
     <p class="tag_title">Options Hash (<tt>opts</tt>):</p>
     <ul class="option">
       
@@ -928,7 +946,7 @@
             
           </span>
           
-            &mdash; <div class='inline'><p>Datetime in ISO-8601 format, UTC, precise to month: <code>[YYYY-MM]</code> for cost beginning this month. Either start_month or start_date should be specified, but not both.</p>
+            &mdash; <div class='inline'><p>Datetime in ISO-8601 format, UTC, precise to month: <code>[YYYY-MM]</code> for cost beginning this month. Either start_month or start_date should be specified, but not both. (start_month cannot go beyond two months in the past)</p>
 </div>
           
         </li>
@@ -952,7 +970,7 @@
             
           </span>
           
-            &mdash; <div class='inline'><p>Datetime in ISO-8601 format, UTC, precise to day: <code>[YYYY-MM-DD]</code> for cost beginning this day. Either start_month or start_date should be specified, but not both.</p>
+            &mdash; <div class='inline'><p>Datetime in ISO-8601 format, UTC, precise to day: <code>[YYYY-MM-DD]</code> for cost beginning this day. Either start_month or start_date should be specified, but not both. (start_date cannot go beyond two months in the past)</p>
 </div>
           
         </li>
@@ -996,8 +1014,6 @@
       <pre class="lines">
 
 
-120
-121
 122
 123
 124
@@ -1052,12 +1068,19 @@
 173
 174
 175
-176</pre>
+176
+177
+178
+179
+180
+181
+182
+183</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 120</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 122</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_get_estimated_cost_by_org_with_http_info'>get_estimated_cost_by_org_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_get_estimated_cost_by_org_with_http_info'>get_estimated_cost_by_org_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_view'>view</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_unstable_operations'>unstable_operations</span><span class='period'>.</span><span class='id identifier rubyid_has_key?'>has_key?</span><span class='lparen'>(</span><span class='symbol'>:get_estimated_cost_by_org</span><span class='rparen'>)</span>
     <span class='id identifier rubyid_unstable_enabled'>unstable_enabled</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_unstable_operations'>unstable_operations</span><span class='lbracket'>[</span><span class='symbol'>:get_estimated_cost_by_org</span><span class='rbracket'>]</span>
@@ -1071,11 +1094,16 @@
   <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_debugging'>debugging</span>
     <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Calling API: UsageMeteringAPI.get_estimated_cost_by_org ...</span><span class='tstring_end'>&#39;</span></span>
   <span class='kw'>end</span>
+  <span class='comment'># verify the required parameter &#39;view&#39; is set
+</span>  <span class='kw'>if</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_client_side_validation'>client_side_validation</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_view'>view</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_fail'>fail</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Missing the required parameter &#39;view&#39; when calling UsageMeteringAPI.get_estimated_cost_by_org</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
   <span class='comment'># resource path
-</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/usage/estimated_cost_by_org</span><span class='tstring_end'>&#39;</span></span>
+</span>  <span class='id identifier rubyid_local_var_path'>local_var_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/api/v2/usage/estimated_cost</span><span class='tstring_end'>&#39;</span></span>
 
   <span class='comment'># query parameters
 </span>  <span class='id identifier rubyid_query_params'>query_params</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:query_params</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_query_params'>query_params</span><span class='lbracket'>[</span><span class='symbol'>:&#39;view&#39;</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_view'>view</span>
   <span class='id identifier rubyid_query_params'>query_params</span><span class='lbracket'>[</span><span class='symbol'>:&#39;start_month&#39;</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;start_month&#39;</span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;start_month&#39;</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
   <span class='id identifier rubyid_query_params'>query_params</span><span class='lbracket'>[</span><span class='symbol'>:&#39;end_month&#39;</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;end_month&#39;</span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;end_month&#39;</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
   <span class='id identifier rubyid_query_params'>query_params</span><span class='lbracket'>[</span><span class='symbol'>:&#39;start_date&#39;</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;start_date&#39;</span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:&#39;start_date&#39;</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
@@ -1151,13 +1179,13 @@
       <pre class="lines">
 
 
-181
-182
-183
-184</pre>
+188
+189
+190
+191</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 181</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 188</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_hourly_usage'>get_hourly_usage</span><span class='lparen'>(</span><span class='id identifier rubyid_filter_timestamp_start'>filter_timestamp_start</span><span class='comma'>,</span> <span class='id identifier rubyid_filter_product_families'>filter_product_families</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_get_hourly_usage_with_http_info'>get_hourly_usage_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_filter_timestamp_start'>filter_timestamp_start</span><span class='comma'>,</span> <span class='id identifier rubyid_filter_product_families'>filter_product_families</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1336,13 +1364,6 @@
       <pre class="lines">
 
 
-199
-200
-201
-202
-203
-204
-205
 206
 207
 208
@@ -1409,10 +1430,17 @@
 269
 270
 271
-272</pre>
+272
+273
+274
+275
+276
+277
+278
+279</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 199</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 206</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_hourly_usage_with_http_info'>get_hourly_usage_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_filter_timestamp_start'>filter_timestamp_start</span><span class='comma'>,</span> <span class='id identifier rubyid_filter_product_families'>filter_product_families</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1525,13 +1553,13 @@
       <pre class="lines">
 
 
-277
-278
-279
-280</pre>
+284
+285
+286
+287</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 277</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 284</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_usage_application_security_monitoring'>get_usage_application_security_monitoring</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_get_usage_application_security_monitoring_with_http_info'>get_usage_application_security_monitoring_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1646,13 +1674,6 @@
       <pre class="lines">
 
 
-291
-292
-293
-294
-295
-296
-297
 298
 299
 300
@@ -1704,10 +1725,17 @@
 346
 347
 348
-349</pre>
+349
+350
+351
+352
+353
+354
+355
+356</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 291</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 298</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_usage_application_security_monitoring_with_http_info'>get_usage_application_security_monitoring_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1805,13 +1833,13 @@
       <pre class="lines">
 
 
-354
-355
-356
-357</pre>
+361
+362
+363
+364</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 354</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 361</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_usage_lambda_traced_invocations'>get_usage_lambda_traced_invocations</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_get_usage_lambda_traced_invocations_with_http_info'>get_usage_lambda_traced_invocations_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -1926,13 +1954,6 @@
       <pre class="lines">
 
 
-368
-369
-370
-371
-372
-373
-374
 375
 376
 377
@@ -1984,10 +2005,17 @@
 423
 424
 425
-426</pre>
+426
+427
+428
+429
+430
+431
+432
+433</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 368</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 375</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_usage_lambda_traced_invocations_with_http_info'>get_usage_lambda_traced_invocations_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2085,13 +2113,13 @@
       <pre class="lines">
 
 
-431
-432
-433
-434</pre>
+438
+439
+440
+441</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 431</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 438</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_usage_observability_pipelines'>get_usage_observability_pipelines</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_get_usage_observability_pipelines_with_http_info'>get_usage_observability_pipelines_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -2206,13 +2234,6 @@
       <pre class="lines">
 
 
-445
-446
-447
-448
-449
-450
-451
 452
 453
 454
@@ -2264,10 +2285,17 @@
 500
 501
 502
-503</pre>
+503
+504
+505
+506
+507
+508
+509
+510</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 445</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/usage_metering_api.rb', line 452</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_usage_observability_pipelines_with_http_info'>get_usage_observability_pipelines_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_start_hr'>start_hr</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -2338,7 +2366,7 @@
 </div>
 
       <div id="footer">
-  Generated on Fri Jul 29 14:16:58 2022 by
+  Generated on Fri Jul 29 19:12:03 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>
