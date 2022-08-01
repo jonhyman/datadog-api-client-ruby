@@ -137,7 +137,7 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#api_key-instance_method" title="#api_key (instance method)">#<strong>api_key</strong>  &#x21d2; Hash </a>
+      <a href="#api_key=-instance_method" title="#api_key= (instance method)">#<strong>api_key</strong>  &#x21d2; Hash </a>
     
 
     
@@ -146,6 +146,8 @@
   
   
     
+    
+      <span class="note title writeonly">writeonly</span>
     
   
   
@@ -1292,11 +1294,11 @@
 </div>
     
       
-      <span id="api_key=-instance_method"></span>
+      <span id="api_key-instance_method"></span>
       <div class="method_details ">
-  <h3 class="signature " id="api_key-instance_method">
+  <h3 class="signature " id="api_key=-instance_method">
   
-    #<strong>api_key</strong>  &#x21d2; <tt>Hash</tt> 
+    #<strong>api_key=</strong>(api_key)  &#x21d2; <tt>Hash</tt> 
   
 
   
@@ -1353,8 +1355,8 @@
     <td>
       <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/configuration.rb', line 45</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_api_key'>api_key</span>
-  <span class='ivar'>@api_key</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_api_key='>api_key=</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+  <span class='ivar'>@api_key</span> <span class='op'>=</span> <span class='id identifier rubyid_value'>value</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2229,6 +2231,8 @@ Default to nil.</p>
     <p>TLS/SSL setting
 Set this to customize the certificate file to verify the peer.</p>
 
+<p><a href="https://github.com/typhoeus/typhoeus/blob/master/lib/typhoeus/easy_factory.rb#L145">https://github.com/typhoeus/typhoeus/blob/master/lib/typhoeus/easy_factory.rb#L145</a></p>
+
 
   </div>
 </div>
@@ -2251,6 +2255,13 @@ Set this to customize the certificate file to verify the peer.</p>
     </li>
   
 </ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li>`cainfo` option of Typhoeus, `--cert` option of libcurl. Related source code:</li>
+    
+  </ul>
 
 </div><table class="source_code">
   <tr>
@@ -3522,7 +3533,7 @@ Default to true.</p>
 </div>
 
       <div id="footer">
-  Generated on Fri Jul 29 21:21:40 2022 by
+  Generated on Mon Aug  1 14:36:05 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>
