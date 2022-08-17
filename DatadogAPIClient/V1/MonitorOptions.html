@@ -254,6 +254,32 @@
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#group_retention_duration-instance_method" title="#group_retention_duration (instance method)">#<strong>group_retention_duration</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The time span after which groups with missing data are dropped from the monitor state.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#groupby_simple_monitor-instance_method" title="#groupby_simple_monitor (instance method)">#<strong>groupby_simple_monitor</strong>  &#x21d2; Object </a>
     
 
@@ -508,6 +534,32 @@
 
   
     <span class="summary_desc"><div class='inline'><p>A Boolean indicating whether this monitor notifies when data stops reporting.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#on_missing_data-instance_method" title="#on_missing_data (instance method)">#<strong>on_missing_data</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Controls how groups or monitors are treated if an evaluation does not return any data points.</p>
 </div></span>
   
 </li>
@@ -1213,6 +1265,51 @@ This is useful for AWS CloudWatch and other backfilled metrics to ensure the mon
 </div>
     
       
+      <span id="group_retention_duration=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="group_retention_duration-instance_method">
+  
+    #<strong>group_retention_duration</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>The time span after which groups with missing data are dropped from the monitor state.
+The minimum value is one hour, and the maximum value is 72 hours.
+Example values are: &quot;60m&quot;, &quot;1h&quot;, and &quot;2d&quot;.
+This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tracking, Event, Logs, and RUM monitors.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+52
+53
+54</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 52</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_group_retention_duration'>group_retention_duration</span>
+  <span class='ivar'>@group_retention_duration</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
       <span id="groupby_simple_monitor=-instance_method"></span>
       <div class="method_details ">
   <h3 class="signature " id="groupby_simple_monitor-instance_method">
@@ -1652,6 +1749,52 @@ If omitted, 2x the evaluation timeframe is used for query alerts, and 24 hours i
 </div>
     
       
+      <span id="on_missing_data=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="on_missing_data-instance_method">
+  
+    #<strong>on_missing_data</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Controls how groups or monitors are treated if an evaluation does not return any data points.
+The default option results in different behavior depending on the monitor query type.
+For monitors using Count queries, an empty monitor evaluation is treated as 0 and is compared to the threshold conditions.
+For monitor using any query type other than Count, for example Gauge or Rate, the monitor shows the last known status.
+This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tracking, Event, Logs, and RUM monitors.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+105
+106
+107</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 105</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_on_missing_data'>on_missing_data</span>
+  <span class='ivar'>@on_missing_data</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
       <span id="renotify_interval=-instance_method"></span>
       <div class="method_details ">
   <h3 class="signature " id="renotify_interval-instance_method">
@@ -1933,12 +2076,12 @@ otherwise some evaluations are skipped. Default is false.</p>
       <pre class="lines">
 
 
-116
-117
-118</pre>
+129
+130
+131</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 116</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 129</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_threshold_windows'>threshold_windows</span>
   <span class='ivar'>@threshold_windows</span>
@@ -1975,12 +2118,12 @@ otherwise some evaluations are skipped. Default is false.</p>
       <pre class="lines">
 
 
-119
-120
-121</pre>
+132
+133
+134</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 119</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 132</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_thresholds'>thresholds</span>
   <span class='ivar'>@thresholds</span>
@@ -2059,12 +2202,12 @@ otherwise some evaluations are skipped. Default is false.</p>
       <pre class="lines">
 
 
-125
-126
-127</pre>
+138
+139
+140</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 125</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 138</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_variables'>variables</span>
   <span class='ivar'>@variables</span>
@@ -2812,7 +2955,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Wed Aug 17 15:30:54 2022 by
+  Generated on Wed Aug 17 18:47:01 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>
