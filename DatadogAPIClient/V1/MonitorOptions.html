@@ -1764,7 +1764,7 @@ If omitted, 2x the evaluation timeframe is used for query alerts, and 24 hours i
     <p>Controls how groups or monitors are treated if an evaluation does not return any data points.
 The default option results in different behavior depending on the monitor query type.
 For monitors using Count queries, an empty monitor evaluation is treated as 0 and is compared to the threshold conditions.
-For monitor using any query type other than Count, for example Gauge or Rate, the monitor shows the last known status.
+For monitors using any query type other than Count, for example Gauge, Measure, or Rate, the monitor shows the last known status.
 This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tracking, Event, Logs, and RUM monitors.</p>
 
 
@@ -2955,7 +2955,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Thu Aug 25 07:48:17 2022 by
+  Generated on Fri Aug 26 08:26:53 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>
