@@ -540,6 +540,58 @@
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#estimated_ingested_logs_percentage-instance_method" title="#estimated_ingested_logs_percentage (instance method)">#<strong>estimated_ingested_logs_percentage</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The percentage of estimated live ingested logs usage by tag(s).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#estimated_ingested_logs_usage-instance_method" title="#estimated_ingested_logs_usage (instance method)">#<strong>estimated_ingested_logs_usage</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The estimated live ingested logs usage by tag(s).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#estimated_ingested_spans_percentage-instance_method" title="#estimated_ingested_spans_percentage (instance method)">#<strong>estimated_ingested_spans_percentage</strong>  &#x21d2; Object </a>
     
 
@@ -1954,6 +2006,90 @@
 </div>
     
       
+      <span id="estimated_ingested_logs_percentage=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="estimated_ingested_logs_percentage-instance_method">
+  
+    #<strong>estimated_ingested_logs_percentage</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>The percentage of estimated live ingested logs usage by tag(s). This field is in private beta.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+77
+78
+79</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 77</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_estimated_ingested_logs_percentage'>estimated_ingested_logs_percentage</span>
+  <span class='ivar'>@estimated_ingested_logs_percentage</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="estimated_ingested_logs_usage=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="estimated_ingested_logs_usage-instance_method">
+  
+    #<strong>estimated_ingested_logs_usage</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>The estimated live ingested logs usage by tag(s). This field is in private beta.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+80
+81
+82</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 80</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_estimated_ingested_logs_usage'>estimated_ingested_logs_usage</span>
+  <span class='ivar'>@estimated_ingested_logs_usage</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
       <span id="estimated_ingested_spans_percentage=-instance_method"></span>
       <div class="method_details ">
   <h3 class="signature " id="estimated_ingested_spans_percentage-instance_method">
@@ -1980,12 +2116,12 @@
       <pre class="lines">
 
 
-77
-78
-79</pre>
+83
+84
+85</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 77</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 83</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_estimated_ingested_spans_percentage'>estimated_ingested_spans_percentage</span>
   <span class='ivar'>@estimated_ingested_spans_percentage</span>
@@ -2022,12 +2158,12 @@
       <pre class="lines">
 
 
-80
-81
-82</pre>
+86
+87
+88</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 80</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 86</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_estimated_ingested_spans_usage'>estimated_ingested_spans_usage</span>
   <span class='ivar'>@estimated_ingested_spans_usage</span>
@@ -3515,7 +3651,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Mon Aug 29 07:54:08 2022 by
+  Generated on Mon Aug 29 15:18:14 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>
