@@ -150,7 +150,7 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#parser-instance_method" title="#parser (instance method)">#<strong>parser</strong>  &#x21d2; Object </a>
+      <a href="#local_variable_name-instance_method" title="#local_variable_name (instance method)">#<strong>local_variable_name</strong>  &#x21d2; Object </a>
     
 
     
@@ -159,7 +159,31 @@
   
   
     
-      <span class="note title readonly">readonly</span>
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>When type is <code>local_variable</code>, name of the local variable to use to extract the value.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parser-instance_method" title="#parser (instance method)">#<strong>parser</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
     
     
   
@@ -470,6 +494,48 @@
 </div>
     
       
+      <span id="local_variable_name=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="local_variable_name-instance_method">
+  
+    #<strong>local_variable_name</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>When type is <code>local_variable</code>, name of the local variable to use to extract the value.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+32
+33
+34</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_global_variable_parse_test_options.rb', line 32</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_local_variable_name'>local_variable_name</span>
+  <span class='ivar'>@local_variable_name</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
       <span id="parser=-instance_method"></span>
       <div class="method_details ">
   <h3 class="signature " id="parser-instance_method">
@@ -496,12 +562,12 @@
       <pre class="lines">
 
 
-32
-33
-34</pre>
+35
+36
+37</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_global_variable_parse_test_options.rb', line 32</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_global_variable_parse_test_options.rb', line 35</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_parser'>parser</span>
   <span class='ivar'>@parser</span>
@@ -538,12 +604,12 @@
       <pre class="lines">
 
 
-35
-36
-37</pre>
+38
+39
+40</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_global_variable_parse_test_options.rb', line 35</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_global_variable_parse_test_options.rb', line 38</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_type'>type</span>
   <span class='ivar'>@type</span>
@@ -1291,7 +1357,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Tue Aug 30 12:51:04 2022 by
+  Generated on Wed Aug 31 07:05:52 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>
