@@ -199,6 +199,16 @@ on your configuration object:</p>
 <span class='id identifier rubyid_client'>client</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="DatadogAPIClient.html" title="DatadogAPIClient (module)">DatadogAPIClient</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="DatadogAPIClient/APIClient.html" title="DatadogAPIClient::APIClient (class)">APIClient</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="DatadogAPIClient/APIClient.html#initialize-instance_method" title="DatadogAPIClient::APIClient#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_config'>config</span><span class='rparen'>)</span>
 </code></pre>
 
+<h3 id="configure-proxy">Configure proxy</h3>
+
+<p>You can configure the client to use proxy by setting <code>http_proxyaddr</code> and <code>http_proxyport</code> keys on configuration object:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_config'>config</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="DatadogAPIClient.html" title="DatadogAPIClient (module)">DatadogAPIClient</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="DatadogAPIClient/Configuration.html" title="DatadogAPIClient::Configuration (class)">Configuration</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="DatadogAPIClient/Configuration.html#initialize-instance_method" title="DatadogAPIClient::Configuration#initialize (method)">new</a></span></span>
+<span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_http_proxyaddr'>http_proxyaddr</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>127.0.0.1</span><span class='tstring_end'>&#39;</span></span>
+<span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_http_proxyport'>http_proxyport</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>3128</span><span class='tstring_end'>&#39;</span></span>
+<span class='id identifier rubyid_client'>client</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="DatadogAPIClient.html" title="DatadogAPIClient (module)">DatadogAPIClient</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="DatadogAPIClient/APIClient.html" title="DatadogAPIClient::APIClient (class)">APIClient</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="DatadogAPIClient/APIClient.html#initialize-instance_method" title="DatadogAPIClient::APIClient#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_config'>config</span><span class='rparen'>)</span>
+</code></pre>
+
 <h3 id="pagination">Pagination</h3>
 
 <p>Several listing operations have a pagination method to help consume all the items available.
@@ -228,7 +238,7 @@ For example, to retrieve all your incidents:</p>
 </div></div>
 
       <div id="footer">
-  Generated on Tue Sep 13 13:29:19 2022 by
+  Generated on Wed Sep 14 14:40:13 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>
