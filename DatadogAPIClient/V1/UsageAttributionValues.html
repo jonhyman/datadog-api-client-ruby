@@ -176,6 +176,58 @@
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#apm_fargate_percentage-instance_method" title="#apm_fargate_percentage (instance method)">#<strong>apm_fargate_percentage</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The percentage of APM ECS Fargate task usage by tag(s).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#apm_fargate_usage-instance_method" title="#apm_fargate_usage (instance method)">#<strong>apm_fargate_usage</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The APM ECS Fargate task usage by tag(s).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#apm_host_percentage-instance_method" title="#apm_host_percentage (instance method)">#<strong>apm_host_percentage</strong>  &#x21d2; Object </a>
     
 
@@ -1678,6 +1730,90 @@
 </div>
     
       
+      <span id="apm_fargate_percentage=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="apm_fargate_percentage-instance_method">
+  
+    #<strong>apm_fargate_percentage</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>The percentage of APM ECS Fargate task usage by tag(s).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+35
+36
+37</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_attribution_values.rb', line 35</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_apm_fargate_percentage'>apm_fargate_percentage</span>
+  <span class='ivar'>@apm_fargate_percentage</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="apm_fargate_usage=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="apm_fargate_usage-instance_method">
+  
+    #<strong>apm_fargate_usage</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>The APM ECS Fargate task usage by tag(s).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+38
+39
+40</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_attribution_values.rb', line 38</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_apm_fargate_usage'>apm_fargate_usage</span>
+  <span class='ivar'>@apm_fargate_usage</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
       <span id="apm_host_percentage=-instance_method"></span>
       <div class="method_details ">
   <h3 class="signature " id="apm_host_percentage-instance_method">
@@ -1788,12 +1924,12 @@
       <pre class="lines">
 
 
-41
-42
-43</pre>
+47
+48
+49</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_attribution_values.rb', line 41</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_attribution_values.rb', line 47</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_appsec_percentage'>appsec_percentage</span>
   <span class='ivar'>@appsec_percentage</span>
@@ -1830,12 +1966,12 @@
       <pre class="lines">
 
 
-44
-45
-46</pre>
+50
+51
+52</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_attribution_values.rb', line 44</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_attribution_values.rb', line 50</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_appsec_usage'>appsec_usage</span>
   <span class='ivar'>@appsec_usage</span>
@@ -2712,12 +2848,12 @@
       <pre class="lines">
 
 
-107
-108
-109</pre>
+113
+114
+115</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_attribution_values.rb', line 107</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_attribution_values.rb', line 113</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_estimated_indexed_spans_percentage'>estimated_indexed_spans_percentage</span>
   <span class='ivar'>@estimated_indexed_spans_percentage</span>
@@ -2754,12 +2890,12 @@
       <pre class="lines">
 
 
-110
-111
-112</pre>
+116
+117
+118</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_attribution_values.rb', line 110</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_attribution_values.rb', line 116</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_estimated_indexed_spans_usage'>estimated_indexed_spans_usage</span>
   <span class='ivar'>@estimated_indexed_spans_usage</span>
@@ -2796,12 +2932,12 @@
       <pre class="lines">
 
 
-113
-114
-115</pre>
+119
+120
+121</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_attribution_values.rb', line 113</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_attribution_values.rb', line 119</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_estimated_ingested_logs_percentage'>estimated_ingested_logs_percentage</span>
   <span class='ivar'>@estimated_ingested_logs_percentage</span>
@@ -2838,12 +2974,12 @@
       <pre class="lines">
 
 
-116
-117
-118</pre>
+122
+123
+124</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_attribution_values.rb', line 116</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_attribution_values.rb', line 122</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_estimated_ingested_logs_usage'>estimated_ingested_logs_usage</span>
   <span class='ivar'>@estimated_ingested_logs_usage</span>
@@ -2880,12 +3016,12 @@
       <pre class="lines">
 
 
-119
-120
-121</pre>
+125
+126
+127</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_attribution_values.rb', line 119</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_attribution_values.rb', line 125</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_estimated_ingested_spans_percentage'>estimated_ingested_spans_percentage</span>
   <span class='ivar'>@estimated_ingested_spans_percentage</span>
@@ -2922,12 +3058,12 @@
       <pre class="lines">
 
 
-122
-123
-124</pre>
+128
+129
+130</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_attribution_values.rb', line 122</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_attribution_values.rb', line 128</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_estimated_ingested_spans_usage'>estimated_ingested_spans_usage</span>
   <span class='ivar'>@estimated_ingested_spans_usage</span>
@@ -4331,7 +4467,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Wed Sep 14 14:40:54 2022 by
+  Generated on Fri Sep 16 09:15:07 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>
