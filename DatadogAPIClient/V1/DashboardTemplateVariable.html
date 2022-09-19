@@ -167,7 +167,33 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The default value for the template variable on dashboard load.</p>
+    <span class="summary_desc"><div class='inline'><p>(deprecated) The default value for the template variable on dashboard load.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#defaults-instance_method" title="#defaults (instance method)">#<strong>defaults</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>One or many default values for template variables on load.</p>
 </div></span>
   
 </li>
@@ -506,7 +532,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>The default value for the template variable on dashboard load.</p>
+    <p>(deprecated) The default value for the template variable on dashboard load. Cannot be used in conjunction with <code>defaults</code>.</p>
 
 
   </div>
@@ -529,6 +555,48 @@
 
 <span class='kw'>def</span> <span class='id identifier rubyid_default'>default</span>
   <span class='ivar'>@default</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="defaults=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="defaults-instance_method">
+  
+    #<strong>defaults</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>One or many default values for template variables on load. If more than one default is specified, they will be unioned together with <code>OR</code>. Cannot be used in conjunction with <code>default</code>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+35
+36
+37</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/dashboard_template_variable.rb', line 35</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_defaults'>defaults</span>
+  <span class='ivar'>@defaults</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1349,7 +1417,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Fri Sep 16 12:30:33 2022 by
+  Generated on Mon Sep 19 17:52:52 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>
