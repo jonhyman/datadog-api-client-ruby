@@ -1790,11 +1790,12 @@ If omitted, 2x the evaluation timeframe is used for query alerts, and 24 hours i
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Controls what granularity a monitor alerts on. Only available for multi-alerts.
-For instance, a monitor grouped by <code>cluster</code>, <code>namespace</code>, <code>pod</code> can be configured to only notify on each
+    <p>Controls what granularity a monitor alerts on. Only available for monitors with groupings.
+For instance, a monitor grouped by <code>cluster</code>, <code>namespace</code>, and <code>pod</code> can be configured to only notify on each
 new <code>cluster</code> violating the alert conditions by setting <code>notify_by</code> to <code>[&quot;cluster&quot;]</code>. Tags mentioned
-in <code>notify_by</code> have to be a subset of the grouping tags in the query.
-For example, a query grouped by <code>cluster</code>, <code>namespace</code> cannot notify on <code>region</code>.</p>
+in <code>notify_by</code> must be a subset of the grouping tags in the query.
+For example, a query grouped by <code>cluster</code> and <code>namespace</code> cannot notify on <code>region</code>.
+Setting <code>notify_by</code> to <code>[*]</code> configures the monitor to notify as a simple-alert.</p>
 
 
   </div>
@@ -1808,12 +1809,12 @@ For example, a query grouped by <code>cluster</code>, <code>namespace</code> can
       <pre class="lines">
 
 
-102
 103
-104</pre>
+104
+105</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 102</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 103</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_notify_by'>notify_by</span>
   <span class='ivar'>@notify_by</span>
@@ -1896,12 +1897,12 @@ This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tr
       <pre class="lines">
 
 
-112
 113
-114</pre>
+114
+115</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 112</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 113</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_on_missing_data'>on_missing_data</span>
   <span class='ivar'>@on_missing_data</span>
@@ -2193,12 +2194,12 @@ otherwise some evaluations are skipped. Default is false.</p>
       <pre class="lines">
 
 
-136
 137
-138</pre>
+138
+139</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 136</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 137</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_threshold_windows'>threshold_windows</span>
   <span class='ivar'>@threshold_windows</span>
@@ -2235,12 +2236,12 @@ otherwise some evaluations are skipped. Default is false.</p>
       <pre class="lines">
 
 
-139
 140
-141</pre>
+141
+142</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 139</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 140</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_thresholds'>thresholds</span>
   <span class='ivar'>@thresholds</span>
@@ -2319,12 +2320,12 @@ otherwise some evaluations are skipped. Default is false.</p>
       <pre class="lines">
 
 
-145
 146
-147</pre>
+147
+148</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 145</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 146</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_variables'>variables</span>
   <span class='ivar'>@variables</span>
@@ -3190,7 +3191,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Fri Oct 14 08:23:21 2022 by
+  Generated on Fri Oct 14 15:40:38 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>
