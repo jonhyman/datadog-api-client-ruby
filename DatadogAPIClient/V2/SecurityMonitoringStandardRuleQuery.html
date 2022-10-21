@@ -219,7 +219,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The target field to aggregate over when using the sum or max aggregations.</p>
+    <span class="summary_desc"><div class='inline'><p>(Deprecated) The target field to aggregate over when using the sum or max aggregations.</p>
 </div></span>
   
 </li>
@@ -245,7 +245,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Group of target fields to aggregate over when using the new value aggregations.</p>
+    <span class="summary_desc"><div class='inline'><p>Group of target fields to aggregate over when using the sum, max, geo data, or new value aggregations.</p>
 </div></span>
   
 </li>
@@ -464,8 +464,8 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>The target field to aggregate over when using the sum or max
-aggregations.</p>
+    <p>(Deprecated) The target field to aggregate over when using the sum or max
+aggregations. <code>metrics</code> field should be used instead.</p>
 
 
   </div>
@@ -507,7 +507,7 @@ aggregations.</p>
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Group of target fields to aggregate over when using the new value aggregations.</p>
+    <p>Group of target fields to aggregate over when using the sum, max, geo data, or new value aggregations. The sum, max, and geo data aggregations only accept one value in this list, whereas the new value aggregation accepts up to five values.</p>
 
 
   </div>
@@ -626,7 +626,7 @@ aggregations.</p>
 </div>
 
       <div id="footer">
-  Generated on Fri Oct 14 15:41:28 2022 by
+  Generated on Fri Oct 21 14:44:10 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>
