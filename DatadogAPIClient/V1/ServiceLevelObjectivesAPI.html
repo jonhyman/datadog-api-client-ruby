@@ -3032,13 +3032,13 @@ Examples of both are shown.</p>
       <pre class="lines">
 
 
-608
-609
-610
-611</pre>
+602
+603
+604
+605</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/service_level_objectives_api.rb', line 608</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/service_level_objectives_api.rb', line 602</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_search_slo'>search_slo</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_search_slo_with_http_info'>search_slo_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -3171,6 +3171,12 @@ Examples of both are shown.</p>
       <pre class="lines">
 
 
+617
+618
+619
+620
+621
+622
 623
 624
 625
@@ -3219,16 +3225,10 @@ Examples of both are shown.</p>
 668
 669
 670
-671
-672
-673
-674
-675
-676
-677</pre>
+671</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/service_level_objectives_api.rb', line 623</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/service_level_objectives_api.rb', line 617</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_search_slo_with_http_info'>search_slo_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_unstable_enabled'>unstable_enabled</span> <span class='op'>=</span> <span class='ivar'>@api_client</span><span class='period'>.</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_unstable_operations'>unstable_operations</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>v1.search_slo</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span><span class='rbracket'>]</span>
@@ -3574,7 +3574,7 @@ Examples of both are shown.</p>
 </div>
 
       <div id="footer">
-  Generated on Tue Oct 25 16:59:58 2022 by
+  Generated on Tue Oct 25 18:31:54 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>
