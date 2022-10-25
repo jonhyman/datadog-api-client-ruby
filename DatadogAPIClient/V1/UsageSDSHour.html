@@ -124,6 +124,58 @@
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#apm_scanned_bytes-instance_method" title="#apm_scanned_bytes (instance method)">#<strong>apm_scanned_bytes</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The total number of bytes scanned of APM usage across all usage types by the Sensitive Data Scanner from the start of the given hour’s month until the given hour.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#events_scanned_bytes-instance_method" title="#events_scanned_bytes (instance method)">#<strong>events_scanned_bytes</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The total number of bytes scanned of Events usage across all usage types by the Sensitive Data Scanner from the start of the given hour’s month until the given hour.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#hour-instance_method" title="#hour (instance method)">#<strong>hour</strong>  &#x21d2; Object </a>
     
 
@@ -220,6 +272,32 @@
 
   
     <span class="summary_desc"><div class='inline'><p>The organization public ID.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#rum_scanned_bytes-instance_method" title="#rum_scanned_bytes (instance method)">#<strong>rum_scanned_bytes</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The total number of bytes scanned of RUM usage across all usage types by the Sensitive Data Scanner from the start of the given hour’s month until the given hour.</p>
 </div></span>
   
 </li>
@@ -521,9 +599,93 @@
     <h2>Instance Attribute Details</h2>
     
       
-      <span id="hour=-instance_method"></span>
+      <span id="apm_scanned_bytes=-instance_method"></span>
       <div class="method_details first">
-  <h3 class="signature first" id="hour-instance_method">
+  <h3 class="signature first" id="apm_scanned_bytes-instance_method">
+  
+    #<strong>apm_scanned_bytes</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>The total number of bytes scanned of APM usage across all usage types by the Sensitive Data Scanner from the start of the given hour’s month until the given hour.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+29
+30
+31</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_sds_hour.rb', line 29</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_apm_scanned_bytes'>apm_scanned_bytes</span>
+  <span class='ivar'>@apm_scanned_bytes</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="events_scanned_bytes=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="events_scanned_bytes-instance_method">
+  
+    #<strong>events_scanned_bytes</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>The total number of bytes scanned of Events usage across all usage types by the Sensitive Data Scanner from the start of the given hour’s month until the given hour.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+32
+33
+34</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_sds_hour.rb', line 32</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_events_scanned_bytes'>events_scanned_bytes</span>
+  <span class='ivar'>@events_scanned_bytes</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="hour=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="hour-instance_method">
   
     #<strong>hour</strong>  &#x21d2; <tt>Object</tt> 
   
@@ -682,6 +844,48 @@
 
 <span class='kw'>def</span> <span class='id identifier rubyid_public_id'>public_id</span>
   <span class='ivar'>@public_id</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="rum_scanned_bytes=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="rum_scanned_bytes-instance_method">
+  
+    #<strong>rum_scanned_bytes</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>The total number of bytes scanned of RUM usage across all usage types by the Sensitive Data Scanner from the start of the given hour’s month until the given hour.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+47
+48
+49</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/usage_sds_hour.rb', line 47</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_rum_scanned_bytes'>rum_scanned_bytes</span>
+  <span class='ivar'>@rum_scanned_bytes</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1570,7 +1774,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Tue Oct 25 16:33:12 2022 by
+  Generated on Tue Oct 25 16:59:26 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>
