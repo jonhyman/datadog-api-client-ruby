@@ -202,6 +202,32 @@
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#body_type-instance_method" title="#body_type (instance method)">#<strong>body_type</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Type of the request body.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#certificate-instance_method" title="#certificate (instance method)">#<strong>certificate</strong>  &#x21d2; Object </a>
     
 
@@ -1119,6 +1145,48 @@
 </div>
     
       
+      <span id="body_type=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="body_type-instance_method">
+  
+    #<strong>body_type</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Type of the request body.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+38
+39
+40</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 38</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_body_type'>body_type</span>
+  <span class='ivar'>@body_type</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
       <span id="certificate=-instance_method"></span>
       <div class="method_details ">
   <h3 class="signature " id="certificate-instance_method">
@@ -1145,12 +1213,12 @@
       <pre class="lines">
 
 
-38
-39
-40</pre>
+41
+42
+43</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 38</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 41</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_certificate'>certificate</span>
   <span class='ivar'>@certificate</span>
@@ -1187,12 +1255,12 @@
       <pre class="lines">
 
 
-41
-42
-43</pre>
+44
+45
+46</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 41</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 44</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_certificate_domains'>certificate_domains</span>
   <span class='ivar'>@certificate_domains</span>
@@ -1481,12 +1549,12 @@
       <pre class="lines">
 
 
-62
-63
-64</pre>
+65
+66
+67</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 62</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 65</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_metadata'>metadata</span>
   <span class='ivar'>@metadata</span>
@@ -1523,12 +1591,12 @@
       <pre class="lines">
 
 
-65
-66
-67</pre>
+68
+69
+70</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 65</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 68</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_method'>method</span>
   <span class='ivar'>@method</span>
@@ -1691,12 +1759,12 @@
       <pre class="lines">
 
 
-77
-78
-79</pre>
+80
+81
+82</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 77</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 80</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_proxy'>proxy</span>
   <span class='ivar'>@proxy</span>
@@ -1819,12 +1887,12 @@ the same IP address and TCP port number.</p>
       <pre class="lines">
 
 
-88
-89
-90</pre>
+91
+92
+93</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 88</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 91</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_service'>service</span>
   <span class='ivar'>@service</span>
@@ -2832,7 +2900,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Tue Nov  8 10:14:01 2022 by
+  Generated on Wed Nov  9 16:19:54 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.6).
 </div>
