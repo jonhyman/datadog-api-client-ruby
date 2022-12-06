@@ -152,6 +152,34 @@
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#client_token-instance_method" title="#client_token (instance method)">#<strong>client_token</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Client token of the RUM application.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#created_at-instance_method" title="#created_at (instance method)">#<strong>created_at</strong>  &#x21d2; Object </a>
     
 
@@ -227,7 +255,33 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Client token of the RUM application.</p>
+    <span class="summary_desc"><div class='inline'><p>Hash of the RUM application.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#is_active-instance_method" title="#is_active (instance method)">#<strong>is_active</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Indicates if the RUM application is active.</p>
 </div></span>
   
 </li>
@@ -436,6 +490,48 @@
 </div>
     
       
+      <span id="client_token=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="client_token-instance_method">
+  
+    #<strong>client_token</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Client token of the RUM application.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+32
+33
+34</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/rum_application_attributes.rb', line 32</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_client_token'>client_token</span>
+  <span class='ivar'>@client_token</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
       <span id="created_at=-instance_method"></span>
       <div class="method_details ">
   <h3 class="signature " id="created_at-instance_method">
@@ -462,12 +558,12 @@
       <pre class="lines">
 
 
-32
-33
-34</pre>
+35
+36
+37</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/rum_application_attributes.rb', line 32</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/rum_application_attributes.rb', line 35</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_created_at'>created_at</span>
   <span class='ivar'>@created_at</span>
@@ -504,12 +600,12 @@
       <pre class="lines">
 
 
-35
-36
-37</pre>
+38
+39
+40</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/rum_application_attributes.rb', line 35</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/rum_application_attributes.rb', line 38</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_created_by_handle'>created_by_handle</span>
   <span class='ivar'>@created_by_handle</span>
@@ -532,7 +628,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Client token of the RUM application.</p>
+    <p>Hash of the RUM application. Optional.</p>
 
 
   </div>
@@ -546,15 +642,57 @@
       <pre class="lines">
 
 
-38
-39
-40</pre>
+41
+42
+43</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/rum_application_attributes.rb', line 38</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/rum_application_attributes.rb', line 41</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_hash='>hash=</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
   <span class='ivar'>@hash</span> <span class='op'>=</span> <span class='id identifier rubyid_value'>value</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="is_active=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="is_active-instance_method">
+  
+    #<strong>is_active</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Indicates if the RUM application is active.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+44
+45
+46</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/rum_application_attributes.rb', line 44</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_is_active'>is_active</span>
+  <span class='ivar'>@is_active</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -588,12 +726,12 @@
       <pre class="lines">
 
 
-41
-42
-43</pre>
+47
+48
+49</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/rum_application_attributes.rb', line 41</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/rum_application_attributes.rb', line 47</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_name'>name</span>
   <span class='ivar'>@name</span>
@@ -630,12 +768,12 @@
       <pre class="lines">
 
 
-44
-45
-46</pre>
+50
+51
+52</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/rum_application_attributes.rb', line 44</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/rum_application_attributes.rb', line 50</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_org_id'>org_id</span>
   <span class='ivar'>@org_id</span>
@@ -672,12 +810,12 @@
       <pre class="lines">
 
 
-47
-48
-49</pre>
+53
+54
+55</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/rum_application_attributes.rb', line 47</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/rum_application_attributes.rb', line 53</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_type'>type</span>
   <span class='ivar'>@type</span>
@@ -714,12 +852,12 @@
       <pre class="lines">
 
 
-50
-51
-52</pre>
+56
+57
+58</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/rum_application_attributes.rb', line 50</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/rum_application_attributes.rb', line 56</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_updated_at'>updated_at</span>
   <span class='ivar'>@updated_at</span>
@@ -756,12 +894,12 @@
       <pre class="lines">
 
 
-53
-54
-55</pre>
+59
+60
+61</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/rum_application_attributes.rb', line 53</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/rum_application_attributes.rb', line 59</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_updated_by_handle'>updated_by_handle</span>
   <span class='ivar'>@updated_by_handle</span>
@@ -777,7 +915,7 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Dec  1 13:47:17 2022 by
+  Generated on Tue Dec  6 12:18:33 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.7).
 </div>
