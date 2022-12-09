@@ -228,6 +228,32 @@
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#call_type-instance_method" title="#call_type (instance method)">#<strong>call_type</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The type of gRPC call to perform.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#certificate-instance_method" title="#certificate (instance method)">#<strong>certificate</strong>  &#x21d2; Object </a>
     
 
@@ -481,7 +507,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The HTTP method.</p>
+    <span class="summary_desc"><div class='inline'><p>Either the HTTP method/verb to use or a gRPC method available on the service set in the <code>service</code> field.</p>
 </div></span>
   
 </li>
@@ -665,7 +691,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>gRPC service on which you want to perform the healthcheck.</p>
+    <span class="summary_desc"><div class='inline'><p>The gRPC service on which you want to perform the gRPC call.</p>
 </div></span>
   
 </li>
@@ -1187,6 +1213,48 @@
 </div>
     
       
+      <span id="call_type=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="call_type-instance_method">
+  
+    #<strong>call_type</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>The type of gRPC call to perform.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+41
+42
+43</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 41</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_call_type'>call_type</span>
+  <span class='ivar'>@call_type</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
       <span id="certificate=-instance_method"></span>
       <div class="method_details ">
   <h3 class="signature " id="certificate-instance_method">
@@ -1213,12 +1281,12 @@
       <pre class="lines">
 
 
-41
-42
-43</pre>
+44
+45
+46</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 41</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 44</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_certificate'>certificate</span>
   <span class='ivar'>@certificate</span>
@@ -1255,12 +1323,12 @@
       <pre class="lines">
 
 
-44
-45
-46</pre>
+47
+48
+49</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 44</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 47</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_certificate_domains'>certificate_domains</span>
   <span class='ivar'>@certificate_domains</span>
@@ -1549,12 +1617,12 @@
       <pre class="lines">
 
 
-65
-66
-67</pre>
+68
+69
+70</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 65</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 68</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_metadata'>metadata</span>
   <span class='ivar'>@metadata</span>
@@ -1577,7 +1645,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>The HTTP method.</p>
+    <p>Either the HTTP method/verb to use or a gRPC method available on the service set in the <code>service</code> field. Required if <code>subtype</code> is <code>HTTP</code> or if <code>subtype</code> is <code>grpc</code> and <code>callType</code> is <code>unary</code>.</p>
 
 
   </div>
@@ -1591,12 +1659,12 @@
       <pre class="lines">
 
 
-68
-69
-70</pre>
+71
+72
+73</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 68</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 71</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_method'>method</span>
   <span class='ivar'>@method</span>
@@ -1759,12 +1827,12 @@
       <pre class="lines">
 
 
-80
-81
-82</pre>
+83
+84
+85</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 80</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 83</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_proxy'>proxy</span>
   <span class='ivar'>@proxy</span>
@@ -1873,7 +1941,7 @@ the same IP address and TCP port number.</p>
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>gRPC service on which you want to perform the healthcheck.</p>
+    <p>The gRPC service on which you want to perform the gRPC call.</p>
 
 
   </div>
@@ -1887,12 +1955,12 @@ the same IP address and TCP port number.</p>
       <pre class="lines">
 
 
-91
-92
-93</pre>
+94
+95
+96</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 91</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/synthetics_test_request.rb', line 94</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_service'>service</span>
   <span class='ivar'>@service</span>
@@ -2900,7 +2968,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Thu Dec  8 13:41:06 2022 by
+  Generated on Fri Dec  9 09:59:19 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.7).
 </div>
