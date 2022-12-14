@@ -124,6 +124,32 @@
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#compliance_rule_options-instance_method" title="#compliance_rule_options (instance method)">#<strong>compliance_rule_options</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Options for cloud_configuration rules.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#decrease_criticality_based_on_env-instance_method" title="#decrease_criticality_based_on_env (instance method)">#<strong>decrease_criticality_based_on_env</strong>  &#x21d2; Object </a>
     
 
@@ -599,9 +625,51 @@
     <h2>Instance Attribute Details</h2>
     
       
-      <span id="decrease_criticality_based_on_env=-instance_method"></span>
+      <span id="compliance_rule_options=-instance_method"></span>
       <div class="method_details first">
-  <h3 class="signature first" id="decrease_criticality_based_on_env-instance_method">
+  <h3 class="signature first" id="compliance_rule_options-instance_method">
+  
+    #<strong>compliance_rule_options</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Options for cloud_configuration rules.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+29
+30
+31</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/security_monitoring_rule_options.rb', line 29</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_compliance_rule_options'>compliance_rule_options</span>
+  <span class='ivar'>@compliance_rule_options</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="decrease_criticality_based_on_env=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="decrease_criticality_based_on_env-instance_method">
   
     #<strong>decrease_criticality_based_on_env</strong>  &#x21d2; <tt>Object</tt> 
   
@@ -627,12 +695,12 @@ The decrement is applied when the environment tag of the signal starts with <cod
       <pre class="lines">
 
 
-31
-32
-33</pre>
+34
+35
+36</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/security_monitoring_rule_options.rb', line 31</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/security_monitoring_rule_options.rb', line 34</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_decrease_criticality_based_on_env'>decrease_criticality_based_on_env</span>
   <span class='ivar'>@decrease_criticality_based_on_env</span>
@@ -669,12 +737,12 @@ The decrement is applied when the environment tag of the signal starts with <cod
       <pre class="lines">
 
 
-34
-35
-36</pre>
+37
+38
+39</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/security_monitoring_rule_options.rb', line 34</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/security_monitoring_rule_options.rb', line 37</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_detection_method'>detection_method</span>
   <span class='ivar'>@detection_method</span>
@@ -712,12 +780,12 @@ and evaluates in real time.</p>
       <pre class="lines">
 
 
-38
-39
-40</pre>
+41
+42
+43</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/security_monitoring_rule_options.rb', line 38</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/security_monitoring_rule_options.rb', line 41</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_evaluation_window'>evaluation_window</span>
   <span class='ivar'>@evaluation_window</span>
@@ -754,12 +822,12 @@ and evaluates in real time.</p>
       <pre class="lines">
 
 
-41
-42
-43</pre>
+44
+45
+46</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/security_monitoring_rule_options.rb', line 41</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/security_monitoring_rule_options.rb', line 44</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_hardcoded_evaluator_type'>hardcoded_evaluator_type</span>
   <span class='ivar'>@hardcoded_evaluator_type</span>
@@ -796,12 +864,12 @@ and evaluates in real time.</p>
       <pre class="lines">
 
 
-44
-45
-46</pre>
+47
+48
+49</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/security_monitoring_rule_options.rb', line 44</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/security_monitoring_rule_options.rb', line 47</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_impossible_travel_options'>impossible_travel_options</span>
   <span class='ivar'>@impossible_travel_options</span>
@@ -839,12 +907,12 @@ this keep alive window.</p>
       <pre class="lines">
 
 
-48
-49
-50</pre>
+51
+52
+53</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/security_monitoring_rule_options.rb', line 48</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/security_monitoring_rule_options.rb', line 51</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_keep_alive'>keep_alive</span>
   <span class='ivar'>@keep_alive</span>
@@ -882,12 +950,12 @@ This time is calculated from the first seen timestamp.</p>
       <pre class="lines">
 
 
-52
-53
-54</pre>
+55
+56
+57</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/security_monitoring_rule_options.rb', line 52</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/security_monitoring_rule_options.rb', line 55</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_max_signal_duration'>max_signal_duration</span>
   <span class='ivar'>@max_signal_duration</span>
@@ -924,12 +992,12 @@ This time is calculated from the first seen timestamp.</p>
       <pre class="lines">
 
 
-55
-56
-57</pre>
+58
+59
+60</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/security_monitoring_rule_options.rb', line 55</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/security_monitoring_rule_options.rb', line 58</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_new_value_options'>new_value_options</span>
   <span class='ivar'>@new_value_options</span>
@@ -1779,7 +1847,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Wed Dec 14 11:04:36 2022 by
+  Generated on Wed Dec 14 13:43:00 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.7).
 </div>
