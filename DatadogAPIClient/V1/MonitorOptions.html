@@ -202,6 +202,32 @@
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#enable_samples-instance_method" title="#enable_samples (instance method)">#<strong>enable_samples</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Whether or not to send a list of samples when the monitor triggers.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#escalation_message-instance_method" title="#escalation_message (instance method)">#<strong>escalation_message</strong>  &#x21d2; Object </a>
     
 
@@ -1273,6 +1299,48 @@
 </div>
     
       
+      <span id="enable_samples=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="enable_samples-instance_method">
+  
+    #<strong>enable_samples</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Whether or not to send a list of samples when the monitor triggers. This is only used by CI Test and Pipeline monitors.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+38
+39
+40</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 38</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_enable_samples'>enable_samples</span>
+  <span class='ivar'>@enable_samples</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
       <span id="escalation_message=-instance_method"></span>
       <div class="method_details ">
   <h3 class="signature " id="escalation_message-instance_method">
@@ -1391,12 +1459,12 @@ This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tr
       <pre class="lines">
 
 
-52
-53
-54</pre>
+55
+56
+57</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 52</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 55</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_group_retention_duration'>group_retention_duration</span>
   <span class='ivar'>@group_retention_duration</span>
@@ -1835,12 +1903,12 @@ Setting <code>notify_by</code> to <code>[*]</code> configures the monitor to not
       <pre class="lines">
 
 
-103
-104
-105</pre>
+106
+107
+108</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 103</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 106</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_notify_by'>notify_by</span>
   <span class='ivar'>@notify_by</span>
@@ -1923,12 +1991,12 @@ This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tr
       <pre class="lines">
 
 
-113
-114
-115</pre>
+116
+117
+118</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 113</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 116</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_on_missing_data'>on_missing_data</span>
   <span class='ivar'>@on_missing_data</span>
@@ -2136,12 +2204,12 @@ otherwise some evaluations are skipped. Default is false.</p>
       <pre class="lines">
 
 
-131
-132
-133</pre>
+134
+135
+136</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 131</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 134</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_scheduling_options'>scheduling_options</span>
   <span class='ivar'>@scheduling_options</span>
@@ -2262,12 +2330,12 @@ otherwise some evaluations are skipped. Default is false.</p>
       <pre class="lines">
 
 
-140
-141
-142</pre>
+143
+144
+145</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 140</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 143</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_threshold_windows'>threshold_windows</span>
   <span class='ivar'>@threshold_windows</span>
@@ -2304,12 +2372,12 @@ otherwise some evaluations are skipped. Default is false.</p>
       <pre class="lines">
 
 
-143
-144
-145</pre>
+146
+147
+148</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 143</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 146</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_thresholds'>thresholds</span>
   <span class='ivar'>@thresholds</span>
@@ -2388,12 +2456,12 @@ otherwise some evaluations are skipped. Default is false.</p>
       <pre class="lines">
 
 
-149
-150
-151</pre>
+152
+153
+154</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 149</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 152</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_variables'>variables</span>
   <span class='ivar'>@variables</span>
@@ -3259,7 +3327,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Tue Dec 13 18:57:35 2022 by
+  Generated on Wed Dec 14 11:03:58 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.7).
 </div>
