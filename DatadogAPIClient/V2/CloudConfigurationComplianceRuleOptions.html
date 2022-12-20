@@ -106,7 +106,8 @@
 
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
-    <p>Options for cloud_configuration rules.</p>
+    <p>Options for cloud_configuration rules.
+Fields <code>resourceType</code> and <code>regoRule</code> are mandatory when managing custom <code>cloud_configuration</code> rules.</p>
 
 
   </div>
@@ -159,8 +160,6 @@
   
   
     
-      <span class="note title readonly">readonly</span>
-    
     
   
   
@@ -186,8 +185,6 @@
   
   
   
-    
-      <span class="note title readonly">readonly</span>
     
     
   
@@ -251,12 +248,12 @@ Must be set to true if <code>regoRule.resourceTypes</code> contains more than on
       <pre class="lines">
 
 
-31
 32
-33</pre>
+33
+34</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/cloud_configuration_compliance_rule_options.rb', line 31</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/cloud_configuration_compliance_rule_options.rb', line 32</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_complex_rule'>complex_rule</span>
   <span class='ivar'>@complex_rule</span>
@@ -293,12 +290,12 @@ Must be set to true if <code>regoRule.resourceTypes</code> contains more than on
       <pre class="lines">
 
 
-34
 35
-36</pre>
+36
+37</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/cloud_configuration_compliance_rule_options.rb', line 34</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/cloud_configuration_compliance_rule_options.rb', line 35</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_rego_rule'>rego_rule</span>
   <span class='ivar'>@rego_rule</span>
@@ -335,12 +332,12 @@ Must be set to true if <code>regoRule.resourceTypes</code> contains more than on
       <pre class="lines">
 
 
-38
 39
-40</pre>
+40
+41</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/cloud_configuration_compliance_rule_options.rb', line 38</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/cloud_configuration_compliance_rule_options.rb', line 39</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_resource_type'>resource_type</span>
   <span class='ivar'>@resource_type</span>
@@ -356,7 +353,7 @@ Must be set to true if <code>regoRule.resourceTypes</code> contains more than on
 </div>
 
       <div id="footer">
-  Generated on Tue Dec 20 10:00:09 2022 by
+  Generated on Tue Dec 20 19:35:42 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.7).
 </div>
