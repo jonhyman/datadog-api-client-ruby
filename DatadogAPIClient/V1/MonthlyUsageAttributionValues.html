@@ -436,6 +436,58 @@
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#cont_percentage-instance_method" title="#cont_percentage (instance method)">#<strong>cont_percentage</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The percentage of container usage without the Datadog Agent by tag(s).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#cont_usage-instance_method" title="#cont_usage (instance method)">#<strong>cont_usage</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The container usage without the Datadog Agent by tag(s).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#container_percentage-instance_method" title="#container_percentage (instance method)">#<strong>container_percentage</strong>  &#x21d2; Object </a>
     
 
@@ -2351,6 +2403,90 @@
 </div>
     
       
+      <span id="cont_percentage=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="cont_percentage-instance_method">
+  
+    #<strong>cont_percentage</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>The percentage of container usage without the Datadog Agent by tag(s).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+65
+66
+67</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 65</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cont_percentage'>cont_percentage</span>
+  <span class='ivar'>@cont_percentage</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="cont_usage=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="cont_usage-instance_method">
+  
+    #<strong>cont_usage</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>The container usage without the Datadog Agent by tag(s).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+68
+69
+70</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 68</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cont_usage'>cont_usage</span>
+  <span class='ivar'>@cont_usage</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
       <span id="container_percentage=-instance_method"></span>
       <div class="method_details ">
   <h3 class="signature " id="container_percentage-instance_method">
@@ -2461,12 +2597,12 @@
       <pre class="lines">
 
 
-71
-72
-73</pre>
+77
+78
+79</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 71</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 77</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_cspm_containers_percentage'>cspm_containers_percentage</span>
   <span class='ivar'>@cspm_containers_percentage</span>
@@ -2503,12 +2639,12 @@
       <pre class="lines">
 
 
-74
-75
-76</pre>
+80
+81
+82</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 74</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 80</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_cspm_containers_usage'>cspm_containers_usage</span>
   <span class='ivar'>@cspm_containers_usage</span>
@@ -2545,12 +2681,12 @@
       <pre class="lines">
 
 
-77
-78
-79</pre>
+83
+84
+85</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 77</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 83</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_cspm_hosts_percentage'>cspm_hosts_percentage</span>
   <span class='ivar'>@cspm_hosts_percentage</span>
@@ -2587,12 +2723,12 @@
       <pre class="lines">
 
 
-80
-81
-82</pre>
+86
+87
+88</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 80</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 86</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_cspm_hosts_usage'>cspm_hosts_usage</span>
   <span class='ivar'>@cspm_hosts_usage</span>
@@ -2713,12 +2849,12 @@
       <pre class="lines">
 
 
-89
-90
-91</pre>
+95
+96
+97</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 89</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 95</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_cws_containers_percentage'>cws_containers_percentage</span>
   <span class='ivar'>@cws_containers_percentage</span>
@@ -2755,12 +2891,12 @@
       <pre class="lines">
 
 
-92
-93
-94</pre>
+98
+99
+100</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 92</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 98</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_cws_containers_usage'>cws_containers_usage</span>
   <span class='ivar'>@cws_containers_usage</span>
@@ -2797,12 +2933,12 @@
       <pre class="lines">
 
 
-95
-96
-97</pre>
+101
+102
+103</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 95</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 101</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_cws_hosts_percentage'>cws_hosts_percentage</span>
   <span class='ivar'>@cws_hosts_percentage</span>
@@ -2839,12 +2975,12 @@
       <pre class="lines">
 
 
-98
-99
-100</pre>
+104
+105
+106</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 98</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 104</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_cws_hosts_usage'>cws_hosts_usage</span>
   <span class='ivar'>@cws_hosts_usage</span>
@@ -2881,12 +3017,12 @@
       <pre class="lines">
 
 
-101
-102
-103</pre>
+107
+108
+109</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 101</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 107</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_dbm_hosts_percentage'>dbm_hosts_percentage</span>
   <span class='ivar'>@dbm_hosts_percentage</span>
@@ -2923,12 +3059,12 @@
       <pre class="lines">
 
 
-104
-105
-106</pre>
+110
+111
+112</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 104</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 110</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_dbm_hosts_usage'>dbm_hosts_usage</span>
   <span class='ivar'>@dbm_hosts_usage</span>
@@ -2965,12 +3101,12 @@
       <pre class="lines">
 
 
-107
-108
-109</pre>
+113
+114
+115</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 107</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 113</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_dbm_queries_percentage'>dbm_queries_percentage</span>
   <span class='ivar'>@dbm_queries_percentage</span>
@@ -3007,12 +3143,12 @@
       <pre class="lines">
 
 
-110
-111
-112</pre>
+116
+117
+118</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 110</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 116</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_dbm_queries_usage'>dbm_queries_usage</span>
   <span class='ivar'>@dbm_queries_usage</span>
@@ -3049,12 +3185,12 @@
       <pre class="lines">
 
 
-113
-114
-115</pre>
+119
+120
+121</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 113</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 119</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_estimated_indexed_logs_percentage'>estimated_indexed_logs_percentage</span>
   <span class='ivar'>@estimated_indexed_logs_percentage</span>
@@ -3091,12 +3227,12 @@
       <pre class="lines">
 
 
-116
-117
-118</pre>
+122
+123
+124</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 116</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 122</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_estimated_indexed_logs_usage'>estimated_indexed_logs_usage</span>
   <span class='ivar'>@estimated_indexed_logs_usage</span>
@@ -3133,12 +3269,12 @@
       <pre class="lines">
 
 
-119
-120
-121</pre>
+125
+126
+127</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 119</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 125</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_estimated_indexed_spans_percentage'>estimated_indexed_spans_percentage</span>
   <span class='ivar'>@estimated_indexed_spans_percentage</span>
@@ -3175,12 +3311,12 @@
       <pre class="lines">
 
 
-122
-123
-124</pre>
+128
+129
+130</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 122</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 128</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_estimated_indexed_spans_usage'>estimated_indexed_spans_usage</span>
   <span class='ivar'>@estimated_indexed_spans_usage</span>
@@ -3217,12 +3353,12 @@
       <pre class="lines">
 
 
-125
-126
-127</pre>
+131
+132
+133</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 125</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 131</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_estimated_ingested_logs_percentage'>estimated_ingested_logs_percentage</span>
   <span class='ivar'>@estimated_ingested_logs_percentage</span>
@@ -3259,12 +3395,12 @@
       <pre class="lines">
 
 
-128
-129
-130</pre>
+134
+135
+136</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 128</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 134</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_estimated_ingested_logs_usage'>estimated_ingested_logs_usage</span>
   <span class='ivar'>@estimated_ingested_logs_usage</span>
@@ -3301,12 +3437,12 @@
       <pre class="lines">
 
 
-131
-132
-133</pre>
+137
+138
+139</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 131</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 137</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_estimated_ingested_spans_percentage'>estimated_ingested_spans_percentage</span>
   <span class='ivar'>@estimated_ingested_spans_percentage</span>
@@ -3343,12 +3479,12 @@
       <pre class="lines">
 
 
-134
-135
-136</pre>
+140
+141
+142</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 134</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 140</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_estimated_ingested_spans_usage'>estimated_ingested_spans_usage</span>
   <span class='ivar'>@estimated_ingested_spans_usage</span>
@@ -3385,12 +3521,12 @@
       <pre class="lines">
 
 
-137
-138
-139</pre>
+143
+144
+145</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 137</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 143</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_estimated_rum_sessions_percentage'>estimated_rum_sessions_percentage</span>
   <span class='ivar'>@estimated_rum_sessions_percentage</span>
@@ -3427,12 +3563,12 @@
       <pre class="lines">
 
 
-140
-141
-142</pre>
+146
+147
+148</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 140</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monthly_usage_attribution_values.rb', line 146</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_estimated_rum_sessions_usage'>estimated_rum_sessions_usage</span>
   <span class='ivar'>@estimated_rum_sessions_usage</span>
@@ -5038,7 +5174,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Wed Dec 28 16:35:02 2022 by
+  Generated on Wed Dec 28 18:22:06 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.7).
 </div>
