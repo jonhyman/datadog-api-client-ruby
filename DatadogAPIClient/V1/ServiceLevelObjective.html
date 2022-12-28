@@ -415,6 +415,32 @@ for one or more timeframes, and metadata (<code>name</code>, <code>description</
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#target_threshold-instance_method" title="#target_threshold (instance method)">#<strong>target_threshold</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The target threshold such that when the service level indicator is above this threshold over the given timeframe, the objective is being met.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#thresholds-instance_method" title="#thresholds (instance method)">#<strong>thresholds</strong>  &#x21d2; Object </a>
     
 
@@ -443,6 +469,32 @@ for one or more timeframes, and metadata (<code>name</code>, <code>description</
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#timeframe-instance_method" title="#timeframe (instance method)">#<strong>timeframe</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The SLO time window options.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#type-instance_method" title="#type (instance method)">#<strong>type</strong>  &#x21d2; Object </a>
     
 
@@ -463,6 +515,32 @@ for one or more timeframes, and metadata (<code>name</code>, <code>description</
 
   
     <span class="summary_desc"><div class='inline'><p>The type of the service level objective.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#warning_threshold-instance_method" title="#warning_threshold (instance method)">#<strong>warning_threshold</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The optional warning threshold such that when the service level indicator is below this value for the given threshold, but above the target threshold, the objective appears in a &quot;warning&quot; state.</p>
 </div></span>
   
 </li>
@@ -1223,6 +1301,49 @@ Optional in create/update requests.</p>
 </div>
     
       
+      <span id="target_threshold=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="target_threshold-instance_method">
+  
+    #<strong>target_threshold</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>The target threshold such that when the service level indicator is above this
+threshold over the given timeframe, the objective is being met.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+87
+88
+89</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/service_level_objective.rb', line 87</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_target_threshold'>target_threshold</span>
+  <span class='ivar'>@target_threshold</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
       <span id="thresholds=-instance_method"></span>
       <div class="method_details ">
   <h3 class="signature " id="thresholds-instance_method">
@@ -1266,6 +1387,48 @@ objective object.</p>
 </div>
     
       
+      <span id="timeframe=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="timeframe-instance_method">
+  
+    #<strong>timeframe</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>The SLO time window options.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+94
+95
+96</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/service_level_objective.rb', line 94</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_timeframe'>timeframe</span>
+  <span class='ivar'>@timeframe</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
       <span id="type=-instance_method"></span>
       <div class="method_details ">
   <h3 class="signature " id="type-instance_method">
@@ -1292,15 +1455,60 @@ objective object.</p>
       <pre class="lines">
 
 
-90
-91
-92</pre>
+97
+98
+99</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/service_level_objective.rb', line 90</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/service_level_objective.rb', line 97</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_type'>type</span>
   <span class='ivar'>@type</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="warning_threshold=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="warning_threshold-instance_method">
+  
+    #<strong>warning_threshold</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>The optional warning threshold such that when the service level indicator is
+below this value for the given threshold, but above the target threshold, the
+objective appears in a &quot;warning&quot; state. This value must be greater than the target
+threshold.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+103
+104
+105</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/service_level_objective.rb', line 103</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_warning_threshold'>warning_threshold</span>
+  <span class='ivar'>@warning_threshold</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2171,7 +2379,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Fri Dec 23 20:22:43 2022 by
+  Generated on Wed Dec 28 16:34:42 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.7).
 </div>
