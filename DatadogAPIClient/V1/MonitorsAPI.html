@@ -1075,6 +1075,8 @@
 <li>error-tracking: <code>error-tracking alert</code></li>
 </ul>
 
+<p><strong>Note</strong>: Synthetic monitors are created through the Synthetics API. See the <a href="https://docs.datadoghq.com/api/latest/synthetics/">Synthetics API</a> documentation for more information.</p>
+
 <h4 id="query-types">Query Types</h4>
 
 <p><strong>Metric Alert Query</strong></p>
@@ -3261,13 +3263,13 @@ Example(APM Traces): <code>error-tracking-traces(query).rollup(rollup_method[, m
       <pre class="lines">
 
 
-765
-766
 767
-768</pre>
+768
+769
+770</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/monitors_api.rb', line 765</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/monitors_api.rb', line 767</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_validate_existing_monitor'>validate_existing_monitor</span><span class='lparen'>(</span><span class='id identifier rubyid_monitor_id'>monitor_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid__status_code'>_status_code</span><span class='comma'>,</span> <span class='id identifier rubyid__headers'>_headers</span> <span class='op'>=</span> <span class='id identifier rubyid_validate_existing_monitor_with_http_info'>validate_existing_monitor_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_monitor_id'>monitor_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='rparen'>)</span>
@@ -3373,8 +3375,6 @@ Example(APM Traces): <code>error-tracking-traces(query).rollup(rollup_method[, m
       <pre class="lines">
 
 
-778
-779
 780
 781
 782
@@ -3427,10 +3427,12 @@ Example(APM Traces): <code>error-tracking-traces(query).rollup(rollup_method[, m
 829
 830
 831
-832</pre>
+832
+833
+834</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/monitors_api.rb', line 778</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/api/monitors_api.rb', line 780</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_validate_existing_monitor_with_http_info'>validate_existing_monitor_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_monitor_id'>monitor_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -3753,7 +3755,7 @@ Example(APM Traces): <code>error-tracking-traces(query).rollup(rollup_method[, m
 </div>
 
       <div id="footer">
-  Generated on Wed Dec 28 18:21:08 2022 by
+  Generated on Thu Dec 29 18:38:54 2022 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.7).
 </div>
