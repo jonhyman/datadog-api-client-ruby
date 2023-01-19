@@ -516,6 +516,32 @@
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#notification_preset_name-instance_method" title="#notification_preset_name (instance method)">#<strong>notification_preset_name</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Toggles the display of additional content sent in the monitor notification.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#notify_audit-instance_method" title="#notify_audit (instance method)">#<strong>notify_audit</strong>  &#x21d2; Object </a>
     
 
@@ -1830,6 +1856,48 @@ If omitted, 2x the evaluation timeframe is used for query alerts, and 24 hours i
 </div>
     
       
+      <span id="notification_preset_name=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="notification_preset_name-instance_method">
+  
+    #<strong>notification_preset_name</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Toggles the display of additional content sent in the monitor notification.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+98
+99
+100</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 98</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_notification_preset_name'>notification_preset_name</span>
+  <span class='ivar'>@notification_preset_name</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
       <span id="notify_audit=-instance_method"></span>
       <div class="method_details ">
   <h3 class="signature " id="notify_audit-instance_method">
@@ -1903,12 +1971,12 @@ Setting <code>notify_by</code> to <code>[*]</code> configures the monitor to not
       <pre class="lines">
 
 
-106
-107
-108</pre>
+109
+110
+111</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 106</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 109</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_notify_by'>notify_by</span>
   <span class='ivar'>@notify_by</span>
@@ -1991,12 +2059,12 @@ This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tr
       <pre class="lines">
 
 
-116
-117
-118</pre>
+119
+120
+121</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 116</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 119</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_on_missing_data'>on_missing_data</span>
   <span class='ivar'>@on_missing_data</span>
@@ -2204,12 +2272,12 @@ otherwise some evaluations are skipped. Default is false.</p>
       <pre class="lines">
 
 
-134
-135
-136</pre>
+137
+138
+139</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 134</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 137</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_scheduling_options'>scheduling_options</span>
   <span class='ivar'>@scheduling_options</span>
@@ -2330,12 +2398,12 @@ otherwise some evaluations are skipped. Default is false.</p>
       <pre class="lines">
 
 
-143
-144
-145</pre>
+146
+147
+148</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 143</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 146</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_threshold_windows'>threshold_windows</span>
   <span class='ivar'>@threshold_windows</span>
@@ -2372,12 +2440,12 @@ otherwise some evaluations are skipped. Default is false.</p>
       <pre class="lines">
 
 
-146
-147
-148</pre>
+149
+150
+151</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 146</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 149</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_thresholds'>thresholds</span>
   <span class='ivar'>@thresholds</span>
@@ -2456,12 +2524,12 @@ otherwise some evaluations are skipped. Default is false.</p>
       <pre class="lines">
 
 
-152
-153
-154</pre>
+155
+156
+157</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 152</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v1/models/monitor_options.rb', line 155</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_variables'>variables</span>
   <span class='ivar'>@variables</span>
@@ -3327,7 +3395,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Wed Jan 18 17:30:12 2023 by
+  Generated on Thu Jan 19 16:57:12 2023 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.7).
 </div>
