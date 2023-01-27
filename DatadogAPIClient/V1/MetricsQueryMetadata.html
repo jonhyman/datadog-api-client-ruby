@@ -1248,8 +1248,9 @@
 </h3><div class="docstring">
   <div class="discussion">
     <p>Detailed information about the metric unit.
-First element describes the &quot;primary unit&quot; (for example, <code>bytes</code> in <code>bytes per second</code>),
-second describes the &quot;per unit&quot; (for example, <code>second</code> in <code>bytes per second</code>).</p>
+The first element describes the &quot;primary unit&quot; (for example, <code>bytes</code> in <code>bytes per second</code>).
+The second element describes the &quot;per unit&quot; (for example, <code>second</code> in <code>bytes per second</code>).
+If the second element is not present, the API returns null.</p>
 
 
   </div>
@@ -2134,7 +2135,7 @@ For object, use to_hash. Otherwise, just return the value</p>
 </div>
 
       <div id="footer">
-  Generated on Fri Jan 27 18:52:53 2023 by
+  Generated on Fri Jan 27 19:25:42 2023 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.7).
 </div>
