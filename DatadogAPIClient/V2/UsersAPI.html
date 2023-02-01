@@ -148,7 +148,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#create_service_account-instance_method" title="#create_service_account (instance method)">#<strong>create_service_account</strong>(body, opts = {})  &#x21d2; Object </a>
+      <a href="#create_service_account-instance_method" title="#create_service_account (instance method)">#<strong>create_service_account</strong>(body, opts = {})  &#x21d2; UserResponse </a>
     
 
     
@@ -162,7 +162,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Create a service account.</p>
+    <span class="summary_desc"><div class='inline'><p>Create a service account Create a service account for your organization.</p>
 </div></span>
   
 </li>
@@ -185,7 +185,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>Create a service account.</p>
+    <span class="summary_desc"><div class='inline'><p>Create a service account Create a service account for your organization.</p>
 </div></span>
   
 </li>
@@ -733,7 +733,7 @@
       <div class="method_details first">
   <h3 class="signature first" id="create_service_account-instance_method">
   
-    #<strong>create_service_account</strong>(body, opts = {})  &#x21d2; <tt>Object</tt> 
+    #<strong>create_service_account</strong>(body, opts = {})  &#x21d2; <tt><span class='object_link'><a href="UserResponse.html" title="DatadogAPIClient::V2::UserResponse (class)">UserResponse</a></span></tt> 
   
 
   
@@ -741,20 +741,59 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Create a service account.</p>
+    <p>Create a service account
+Create a service account for your organization.</p>
 
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>body</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ServiceAccountCreateRequest.html" title="DatadogAPIClient::V2::ServiceAccountCreateRequest (class)">ServiceAccountCreateRequest</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>opts</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>the optional parameters</p>
+</div>
+      
+    </li>
+  
+</ul>
 
-  <p class="tag_title">See Also:</p>
-  <ul class="see">
-    
-      <li><span class='object_link'><a href="#create_service_account_with_http_info-instance_method" title="DatadogAPIClient::V2::UsersAPI#create_service_account_with_http_info (method)">#create_service_account_with_http_info</a></span></li>
-    
-  </ul>
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="UserResponse.html" title="DatadogAPIClient::V2::UserResponse (class)">UserResponse</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -790,9 +829,8 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Create a service account.</p>
-
-<p>Create a service account for your organization.</p>
+    <p>Create a service account
+Create a service account for your organization.</p>
 
 
   </div>
@@ -3353,7 +3391,7 @@ to an administrator user.</p>
 </div>
 
       <div id="footer">
-  Generated on Wed Feb  1 18:22:12 2023 by
+  Generated on Wed Feb  1 19:17:29 2023 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.7).
 </div>
