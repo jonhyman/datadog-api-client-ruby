@@ -124,6 +124,32 @@
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#_hash-instance_method" title="#_hash (instance method)">#<strong>_hash</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Hash of the RUM application.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#application_id-instance_method" title="#application_id (instance method)">#<strong>application_id</strong>  &#x21d2; Object </a>
     
 
@@ -200,34 +226,6 @@
 
   
     <span class="summary_desc"><div class='inline'><p>Handle of the creator user.</p>
-</div></span>
-  
-</li>
-
-    
-      <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#hash=-instance_method" title="#hash= (instance method)">#<strong>hash</strong>  &#x21d2; Object </a>
-    
-
-    
-  </span>
-  
-  
-  
-    
-    
-      <span class="note title writeonly">writeonly</span>
-    
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'><p>Hash of the RUM application.</p>
 </div></span>
   
 </li>
@@ -420,9 +418,51 @@
     <h2>Instance Attribute Details</h2>
     
       
-      <span id="application_id=-instance_method"></span>
+      <span id="_hash=-instance_method"></span>
       <div class="method_details first">
-  <h3 class="signature first" id="application_id-instance_method">
+  <h3 class="signature first" id="_hash-instance_method">
+  
+    #<strong>_hash</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Hash of the RUM application. Optional.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+38
+39
+40</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/rum_application_list_attributes.rb', line 38</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid__hash'>_hash</span>
+  <span class='ivar'>@_hash</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="application_id=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="application_id-instance_method">
   
     #<strong>application_id</strong>  &#x21d2; <tt>Object</tt> 
   
@@ -539,48 +579,6 @@
 
 <span class='kw'>def</span> <span class='id identifier rubyid_created_by_handle'>created_by_handle</span>
   <span class='ivar'>@created_by_handle</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      
-      <span id="hash-instance_method"></span>
-      <div class="method_details ">
-  <h3 class="signature " id="hash=-instance_method">
-  
-    #<strong>hash=</strong>(value)  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    <p>Hash of the RUM application. Optional.</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-38
-39
-40</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/models/rum_application_list_attributes.rb', line 38</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_hash='>hash=</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
-  <span class='ivar'>@hash</span> <span class='op'>=</span> <span class='id identifier rubyid_value'>value</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -845,7 +843,7 @@
 </div>
 
       <div id="footer">
-  Generated on Tue Feb 28 11:10:47 2023 by
+  Generated on Wed Mar  1 15:45:05 2023 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.7).
 </div>
