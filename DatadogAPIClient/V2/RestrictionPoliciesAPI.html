@@ -956,6 +956,36 @@
 <li>Service Level Objectives: <code>slo</code></li>
 </ul>
 
+<h4 id="supported-relations-for-resources">Supported relations for resources</h4>
+
+<table><thead>
+<tr>
+<th>Resource Type</th>
+<th>Supported Relations</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Connections</td>
+<td><code>viewer</code>, <code>editor</code>, <code>resolver</code></td>
+</tr>
+<tr>
+<td>Dashboards</td>
+<td><code>viewer</code>, <code>editor</code></td>
+</tr>
+<tr>
+<td>Notebooks</td>
+<td><code>viewer</code>, <code>editor</code></td>
+</tr>
+<tr>
+<td>Security Rules</td>
+<td><code>viewer</code>, <code>editor</code></td>
+</tr>
+<tr>
+<td>Service Level Objectives</td>
+<td><code>viewer</code>, <code>editor</code></td>
+</tr>
+</tbody></table>
+
 
   </div>
 </div>
@@ -1036,15 +1066,6 @@
       <pre class="lines">
 
 
-180
-181
-182
-183
-184
-185
-186
-187
-188
 189
 190
 191
@@ -1090,10 +1111,19 @@
 231
 232
 233
-234</pre>
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/restriction_policies_api.rb', line 180</span>
+      <pre class="code"><span class="info file"># File 'lib/datadog_api_client/v2/api/restriction_policies_api.rb', line 189</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update_restriction_policy_with_http_info'>update_restriction_policy_with_http_info</span><span class='lparen'>(</span><span class='id identifier rubyid_resource_id'>resource_id</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
 
@@ -1160,7 +1190,7 @@
 </div>
 
       <div id="footer">
-  Generated on Tue Mar 14 18:57:50 2023 by
+  Generated on Wed Mar 15 18:57:24 2023 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-2.7.7).
 </div>
