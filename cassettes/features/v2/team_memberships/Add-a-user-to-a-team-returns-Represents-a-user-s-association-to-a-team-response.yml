@@ -1,0 +1,78 @@
+http_interactions:
+- recorded_at: Wed, 15 Mar 2023 19:33:14 GMT
+  request:
+    body:
+      encoding: UTF-8
+      string: '{"data":{"attributes":{"handle":"api-spec-test-team","name":"Example
+        Team"},"type":"team"}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://api.datad0g.com/api/v2/team
+  response:
+    body:
+      encoding: UTF-8
+      string: '{"data":{"type":"team","id":"3a8280ca-c368-11ed-844f-da7ad0900001","attributes":{"name":"Example
+        Team","handle":"api-spec-test-team","summary":null,"description":null,"color":0,"created_at":"2023-03-15T19:33:14.400058+00:00","modified_at":"2023-03-15T19:33:14.400061+00:00","user_count":0,"link_count":0},"relationships":{"team_links":{"links":{"related":"/api/v2/team/3a8280ca-c368-11ed-844f-da7ad0900001/links"}},"user_team_permissions":{"links":{"related":"/api/v2/team/3a8280ca-c368-11ed-844f-da7ad0900001/permission-settings"}}}}}
+
+        '
+    headers:
+      Content-Type:
+      - application/json
+    status:
+      code: 201
+      message: Created
+- recorded_at: Wed, 15 Mar 2023 19:33:14 GMT
+  request:
+    body:
+      encoding: UTF-8
+      string: '{"data":{"attributes":{"email":"Test-Add_a_user_to_a_team_returns_Represents_a_user_s_association_to_a_team_response-1678908794@datadoghq.com","title":"user
+        title"},"type":"users"}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://api.datad0g.com/api/v2/users
+  response:
+    body:
+      encoding: UTF-8
+      string: '{"data":{"type":"users","id":"3ab0d97d-c368-11ed-8870-ea6241af8fc6","attributes":{"name":null,"handle":"test-add_a_user_to_a_team_returns_represents_a_user_s_association_to_a_team_response-1678908794@datadoghq.com","created_at":"2023-03-15T19:33:14.705502+00:00","modified_at":"2023-03-15T19:33:14.711895+00:00","email":"test-add_a_user_to_a_team_returns_represents_a_user_s_association_to_a_team_response-1678908794@datadoghq.com","icon":"https://secure.gravatar.com/avatar/7ba7002f00a0656877e456ba272a50c4?s=48&d=retro","title":"user
+        title","verified":false,"service_account":false,"disabled":false,"allowed_login_methods":[],"status":"Pending"},"relationships":{"roles":{"data":[]},"org":{"data":{"type":"orgs","id":"5ab5f304-8831-11ec-ac25-da7ad0900001"}}}}}
+
+        '
+    headers:
+      Content-Type:
+      - application/json
+    status:
+      code: 201
+      message: Created
+- recorded_at: Wed, 15 Mar 2023 19:33:14 GMT
+  request:
+    body:
+      encoding: UTF-8
+      string: '{"data":{"attributes":{"role":"admin"},"relationships":{"user":{"data":{"id":"3ab0d97d-c368-11ed-8870-ea6241af8fc6","type":"users"}}},"type":"team_memberships"}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://api.datad0g.com/api/v2/team/3a8280ca-c368-11ed-844f-da7ad0900001/memberships
+  response:
+    body:
+      encoding: UTF-8
+      string: '{"data":{"type":"team_memberships","id":"TeamMembership-3a8280ca-c368-11ed-844f-da7ad0900001-453441","attributes":{"role":"admin"},"relationships":{"user":{"data":{"type":"users","id":"3ab0d97d-c368-11ed-8870-ea6241af8fc6"}}}},"included":[{"type":"users","id":"3ab0d97d-c368-11ed-8870-ea6241af8fc6","attributes":{"name":null,"handle":"test-add_a_user_to_a_team_returns_represents_a_user_s_association_to_a_team_response-1678908794@datadoghq.com","email":"test-add_a_user_to_a_team_returns_represents_a_user_s_association_to_a_team_response-1678908794@datadoghq.com","icon":"https://secure.gravatar.com/avatar/7ba7002f00a0656877e456ba272a50c4?s=48&d=retro","disabled":false,"service_account":false}}]}
+
+        '
+    headers:
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
+recorded_with: VCR 6.0.0

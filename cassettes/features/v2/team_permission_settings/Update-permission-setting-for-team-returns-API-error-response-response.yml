@@ -1,0 +1,65 @@
+http_interactions:
+- recorded_at: Thu, 23 Mar 2023 18:20:00 GMT
+  request:
+    body:
+      encoding: UTF-8
+      string: '{"data":{"attributes":{"handle":"1679595600","name":"1679595600"},"type":"team"}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://api.datadoghq.com/api/v2/team
+  response:
+    body:
+      encoding: UTF-8
+      string: '{"data":{"type":"team","id":"52e474d0-c9a7-11ed-b082-da7ad0900002","attributes":{"name":"1679595600","handle":"1679595600","summary":null,"description":null,"color":3,"created_at":"2023-03-23T18:20:00.576675+00:00","modified_at":"2023-03-23T18:20:00.576679+00:00","user_count":0,"link_count":0},"relationships":{"team_links":{"links":{"related":"/api/v2/team/52e474d0-c9a7-11ed-b082-da7ad0900002/links"}},"user_team_permissions":{"links":{"related":"/api/v2/team/52e474d0-c9a7-11ed-b082-da7ad0900002/permission-settings"}}}}}
+
+        '
+    headers:
+      Content-Type:
+      - application/json
+    status:
+      code: 201
+      message: Created
+- recorded_at: Thu, 23 Mar 2023 18:20:00 GMT
+  request:
+    body:
+      encoding: UTF-8
+      string: '{"data":{"attributes":{"value":"admins"},"type":"team_permission_settings"}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+    method: PUT
+    uri: https://api.datadoghq.com/api/v2/team/52e474d0-c9a7-11ed-b082-da7ad0900002/permission-settings/REPLACE.ME
+  response:
+    body:
+      encoding: UTF-8
+      string: '{"errors":["Invalid action type \"REPLACE.ME\". Valid actions: manage_membership,
+        edit not found"]}'
+    headers:
+      Content-Type:
+      - application/json
+    status:
+      code: 404
+      message: Not Found
+- recorded_at: Thu, 23 Mar 2023 18:20:00 GMT
+  request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+    method: DELETE
+    uri: https://api.datadoghq.com/api/v2/team/52e474d0-c9a7-11ed-b082-da7ad0900002
+  response:
+    body:
+      encoding: UTF-8
+      string: ''
+    headers: {}
+    status:
+      code: 204
+      message: No Content
+recorded_with: VCR 6.0.0
