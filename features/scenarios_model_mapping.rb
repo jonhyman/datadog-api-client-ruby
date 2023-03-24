@@ -269,7 +269,6 @@ ScenariosModelMappings = {
     },
     "v1.ListDowntimes" => {
             "current_only" => "Boolean",
-            "with_creator" => "Boolean",
     },
     "v1.CreateDowntime" => {
             "body" => "Downtime",

@@ -87,10 +87,9 @@ Feature: Downtimes
     When the request is sent
     Then the response status is 200 OK
 
-  @team:DataDog/monitor-app
+  @generated @skip @team:DataDog/monitor-app
   Scenario: Get all downtimes returns "OK" response
     Given new "ListDowntimes" request
-    And request contains "with_creator" parameter with value true
     When the request is sent
     Then the response status is 200 OK
 

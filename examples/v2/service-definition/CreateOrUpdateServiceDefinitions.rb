@@ -11,7 +11,7 @@ body = DatadogAPIClient::V2::ServiceDefinitionV2.new({
       type: DatadogAPIClient::V2::ServiceDefinitionV2EmailType::EMAIL,
     }),
   ],
-  dd_service: "service-Example-Create_or_update_service_definition_returns_CREATED_response",
+  dd_service: "service-examplecreateorupdateservicedefinitionreturnscreatedresponse",
   dd_team: "my-team",
   docs: [
     DatadogAPIClient::V2::ServiceDefinitionV2Doc.new({
